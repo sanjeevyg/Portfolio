@@ -7,7 +7,10 @@ import Contact from './Pages/Home.js';
 
 function App() {
   return (
+    
     <Switch>
+      {/* <div> Hello </div> */}
+      <Route exact path='/' render={(routerProps) => <Home {...routerProps} name="Yogi" />}/>
       <Route exact path="/" render={(routerProps) => <Home {...routerProps}/>}/>
       <Route exact path="/projects" render={(routerProps) => <Project {...routerProps}/>}/>
       <Route exact path="/about" render={(routerProps) => <About {...routerProps}/>}/>

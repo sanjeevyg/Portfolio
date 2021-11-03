@@ -6,6 +6,7 @@ export default function Home({...routerProps}) {
     return (
         <div>
               <Link to="/projects">Project</Link>
+              <Link to="/about">About</Link>
         </div>
     )
 }
