@@ -21,7 +21,7 @@ export default function Home(props) {
                         {state ? 
                         <div> 
                             <ul> Projects </ul>
-                            <ul> Contact </ul>
+                            {/* <ul> Contact </ul> */}
                         </div> : 
                         <div>test</div>
                         }
