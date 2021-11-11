@@ -12,8 +12,10 @@ function App() {
       <Route exact path="/projects" render={(routerProps) => <Project {...routerProps}/>}/>
       <Route exact path="/about" render={(routerProps) => <About {...routerProps}/>}/>
       <Route exact path="/contact" render={(routerProps) => <Contact {...routerProps}/>}/>
+      
     </Switch>
   );
+  
 }
 
 export default App;

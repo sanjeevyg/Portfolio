@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { FaBars, FaAngleDoubleLeft} from 'react-icons/fa';
+import { AiOutlineMenu, AiOutlineMenuFold, AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai';
 
 
 export default function Home(props) {
@@ -14,21 +14,27 @@ export default function Home(props) {
 
     return (
         <div class="home">
-            <section>
-                <div onClick={handleToggle} className= {state ? "toggleActive" : "toggle"}>
-                    <div> 
-                        {state ? <FaAngleDoubleLeft size={36}/> : <FaBars size={36}/>}
-                        {state ? 
-                        <div> 
-                            <ul> Projects </ul>
-                            {/* <ul> Contact </ul> */}
-                        </div> : 
-                        <div>test</div>
-                        }
+            
+                    <div onClick={handleToggle} className={ state ? "toogle active": "toggle" }> 
+                        {state ? <AiOutlineMenuFold size={36}/> : <AiOutlineMenu size={36}/>}
                     </div>
-                  
-                </div>
-            </section>
+
+                    <div className = {state ? "pages active" : "pages"}>
+                        <ul>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Projects</li>
+                        </ul>
+                        <div className="socialBar">
+                            <ul> 
+                                <li><a href="#"><AiFillInstagram size={36}/></a></li>
+                                <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
+                                <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
+                                <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
+                                <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
+                            </ul>
+                        </div>
+                    </div>
         </div>
     )
 }
