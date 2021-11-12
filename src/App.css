@@ -1,6 +1,6 @@
 
 
-.toggle,.active {
+.toggle {
   position: fixed;
   top: 0%;
   right: 0%;
@@ -17,6 +17,14 @@
   color: white;
   font-weight: lighter;
   /* transform:translate(50%); */
+}
+
+.toggle, .active {
+  transition: .5s ease-in;
+}
+
+.toggle:hover {
+  background: red;
 }
 
 

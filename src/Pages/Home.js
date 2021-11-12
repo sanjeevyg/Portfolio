@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { AiOutlineMenu, AiOutlineMenuFold, AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineMenuFold, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillProject} from 'react-icons/ai';
 
 
 export default function Home(props) {
@@ -15,7 +15,7 @@ export default function Home(props) {
     return (
         <div class="home">
             
-                    <div onClick={handleToggle} className={ state ? "toogle active": "toggle" }> 
+                    <div onClick={handleToggle} className={ state ? "toggle active": "toggle" }> 
                         {state ? <AiOutlineMenuFold size={36}/> : <AiOutlineMenu size={36}/>}
                     </div>
 
@@ -29,9 +29,8 @@ export default function Home(props) {
                             <ul> 
                                 <li><a href="#"><AiFillInstagram size={36}/></a></li>
                                 <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
-                                <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
-                                <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
-                                <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
+                                <li><a href="#"><AiFillGithub size={36}/></a></li>
+                                <li><a href="#"><AiFillProject size={36}/></a></li>
                             </ul>
                         </div>
                     </div>
