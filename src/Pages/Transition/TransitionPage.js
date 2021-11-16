@@ -16,6 +16,8 @@ export default function TransitionPage() {
 
     return (
         <div className="transition">
+            TRANSITION
+
             <div onClick={handleToggle} className={ state ? "toggle active": "toggle" }> 
                 {state ? <AiOutlineMenuFold size={36}/> : <AiOutlineMenu size={36}/>}
             </div>
