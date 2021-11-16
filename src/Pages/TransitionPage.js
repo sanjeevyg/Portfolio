@@ -27,10 +27,10 @@ export default function TransitionPage() {
                 </ul>
                 <div className="socialBar">
                     <ul> 
-                        <li><a href="#"><AiFillInstagram size={36}/></a></li>
+                        {/* <li><a href="#"><AiFillInstagram size={36}/></a></li>
                         <li><a href="#"><AiFillTwitterCircle size={36}/></a></li>
                         <li><a href="#"><AiFillGithub size={36}/></a></li>
-                        <li><a href="#"><AiFillProject size={36}/></a></li>
+                        <li><a href="#"><AiFillProject size={36}/></a></li> */}
                     </ul>
                 </div>
             </div>
