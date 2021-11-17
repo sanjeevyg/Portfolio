@@ -1,8 +1,92 @@
 .home {
-    background-color: chocolate;
     height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 5rem;
+    background-color: rgba(238, 228, 241, 0.445);
+    
+   
 }
+
+.svgb {
+    margin-right: 300px ;
+    display: flex;
+    align-self: center;
+    /* background-color: dimgray; */
+    position: relative;
+}
+
+.programmer {
+    display: flex;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 120px;
+    z-index: 0;
+}
+
+.watch {
+    display: flex;
+    position: absolute;
+    margin-top: 410px;
+}
+
+.books {
+    display: flex;
+    position: absolute;
+    margin-top: 327px;
+    margin-left: 370px;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 20pt;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+  
+  
+#socialbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 275px;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+    align-self: flex-end;
+  }
+
+  #socialbar a {
+      margin: 21px;
+      color: rgb(107, 90, 90);
+  }
+
+  #name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin-left: 70px;
+      color: rgb(107, 90, 90);
+      font-size: 15pt;
+  }
+
+  #letsTalk {
+      margin-right: 300px;
+      
+  }
+
+  #letsTalk button {
+      font-size: 9pt;
+      padding: 9px 17px;
+      background-color: rgb(29, 80, 219);
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      border: none;
+      font-style: arial;
+      font-weight: bold;
+  }

@@ -17,20 +17,20 @@ function App() {
     // </Switch>
 
     <div className="container">
-      <section > 
+      <section> 
         <Home/>
       </section>
       <section>
-        <TransitionPage />
+        <TransitionPage/>
       </section>
       <section>
-        <Project />
+        <Project/>
       </section>
       <section>
         <About />
       </section>
       <section>
-        <Contact />
+        <Contact/>
       </section>
     </div>
   );

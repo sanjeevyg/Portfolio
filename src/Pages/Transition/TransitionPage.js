@@ -7,18 +7,18 @@ import './index.css'
 
 export default function TransitionPage() {
     
-    const [state, setToggleState] = useState(false)
+    // const [state, setToggleState] = useState(false)
 
-    const handleToggle = () => {
-        setToggleState(!state)
-    }
+    // const handleToggle = () => {
+    //     setToggleState(!state)
+    // }
 
 
     return (
         <div className="transition">
             TRANSITION
 
-            <div onClick={handleToggle} className={ state ? "toggle active": "toggle" }> 
+            {/* <div onClick={handleToggle} className={ state ? "toggle active": "toggle" }> 
                 {state ? <AiOutlineMenuFold size={36}/> : <AiOutlineMenu size={36}/>}
             </div>
 
@@ -36,7 +36,7 @@ export default function TransitionPage() {
                         <li><a href="#"><AiFillProject size={36}/></a></li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
         </div>
             
     )
