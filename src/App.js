@@ -21,10 +21,10 @@ function App() {
         <Home/>
       </section>
       <section>
-        <TransitionPage/>
+        <Project/>
       </section>
       <section>
-        <Project/>
+        <TransitionPage/>
       </section>
       <section>
         <About />

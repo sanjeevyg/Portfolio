@@ -4,26 +4,29 @@ import SvgHomeBackground from '../../icons/Components/HomeBackground';
 import SvgBooks from '../../icons/Components/Books';
 import SvgWatch from '../../icons/Components/Watch';
 import SvgProgrammer from '../../icons/Components/Programmer';
+import SvgBg from '../../icons/Components/Bg';
 import { AiOutlineMenu, AiOutlineMenuFold, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillProject} from 'react-icons/ai';
 import { GiBarbedSun} from 'react-icons/gi';
 
-
+// npx @svgr/cli src/svg --out-dir src/icons/Components --icon
 
 
 
 export default function Home(props) {
     return (
         <div className="home">
-            <div className="background">
+            {/* <div className="background">
                 
                 <button>Feedback</button>
-            </div>
+            </div> */}
+            {/* <section className="backG"> 
+                <div><SvgBg id="bg" height="1000px" width="1000px"/> </div>
+            </section> */}
             <section className="header">
                 <div id="name">
                     <div className="star">
                         <a href="#"><GiBarbedSun size={55}/></a>
                     </div>
-
                     <div>SANJEEV YOGI</div>
                     <span>PROJECTS</span>
                     <span>ABOUT</span>
@@ -57,9 +60,11 @@ export default function Home(props) {
                 </div>
                 <div className="description">Full stack software engineer</div>
             </section>
-            <section className="svgb">
+           
+            <section className="svgb" >
                 <SvgHomeBackground className="homeBackground" height="500px" width="500px"/>
                 <SvgWatch className="watch"/>
+                
                 <SvgProgrammer className="programmer" height="320px" width="320px"/>
                 <SvgBooks className="books"  height="160px" width="160px" />
             </section>
