@@ -40,21 +40,29 @@ export default function Project() {
     return (
         <div classNam="projectContainer" ref={ref}>
           <section className="projectOne"> 
-            <div className="container"
-                onMouseEnter={animateIn}
-                onMouseLeave={animateOut}
-            >
-              <div className="cardOne" >
-                  <img src={projectOneLogo} alt="logo" height="400" width="400"/>
+            <div className="containerOne">
+                {/* onMouseEnter={animateIn} */}
+                {/* onMouseLeave={animateOut} */}
+             
+              <div className="info"> 
+                <h1 className="title">SKY GAZER</h1>
+                <h4> App built for planets</h4>
+                <button>1</button>
+                <button>2</button>
+                <button class="active">3</button>
+                <button>3</button>
+                <div className="visitWebsite"> 
+                  <button>Visit Website</button>
+                </div>
               </div>
-            
+              <div class="cardOne"> 
+                <div className="skyGazer" >
+                    <img src={projectOneLogo} alt="skyGazer" height="400" width="400"/>
+                </div>
+              </div>
+              
            </div>
           </section>
-
-
-
-
-     
         </div>
     )
 }

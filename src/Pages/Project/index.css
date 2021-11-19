@@ -7,7 +7,7 @@
 }
 
 
-.projectone {
+.projectOne {
     min-height: 100vh;
     display: flex;
     background-color: rgb(224, 64, 184);
@@ -16,28 +16,31 @@
 
 }
 
-.projectContainer {
-    background-color: lightcyan;
-}
-.one {
-    /* position: relative; */
+
+.containerOne {
     background-color: lightblue;
     display: flex;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     height: 500px;
     width: 1000px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     transition: all 0.5 s ease;
+    padding-left: 200px;
+    padding-right: 50px;
     /* transform-style: preserve-3d; */
 }
 
-.one img {
-    margin-right: 50px;
-    filter: drop-shadow(-10px 5px 20px rgb(21, 98, 124));
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.pJ {
-    background-color: lightsalmon;
-    padding: 150px 150px;
+.info button {
+    padding: 7px 15px;
+    margin: 7px;
 }
+

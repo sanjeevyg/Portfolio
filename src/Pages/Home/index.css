@@ -44,6 +44,7 @@
     height: 50px;
     font-size: 20pt;
     padding-top: 20px;
+    margin-left: 250px;
     justify-content: space-between;
 }
 
@@ -118,7 +119,7 @@
 
   .portfolio {
       align-self: center;
-      margin-right: 250px;
+      margin-left: 250px;
       margin-bottom: 70px;
       font-size: 69pt;
       font-weight: bold;
