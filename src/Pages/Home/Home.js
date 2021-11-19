@@ -8,6 +8,7 @@ import SvgBg from '../../icons/Components/Bg';
 import { AiOutlineMenu, AiOutlineMenuFold, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillProject} from 'react-icons/ai';
 import { GiBarbedSun} from 'react-icons/gi';
 
+
 // npx @svgr/cli src/svg --out-dir src/icons/Components --icon
 
 
