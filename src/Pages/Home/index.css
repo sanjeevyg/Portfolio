@@ -1,3 +1,5 @@
+
+
 .home {
     height: 100vh;
     width: 100%;
@@ -9,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: hidden; */
     
     /* background-color: #F8FBFF; */
 }
@@ -76,7 +79,7 @@
   }
 
  .svgContainer {
-     margin-right: 200px;
+     margin-right: 300px;
  }
   .svgGroup {
       display: flex;
@@ -91,19 +94,31 @@
       color: rgb(66, 46, 46)
   }
 
-
-  .socialBar {
+  .socialBar{
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
-    width: 100px;
+    width: 60px;
     height: 100vh;
-    border-right: 1px solid rgba(0,0,0,0.1);
+    /* border-left: 1px solid rgba(0,0,0,0.1); */
+    /* border-left: 1px solid rgba(255, 255, 255, 0.5); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(to right, rgb(64, 66, 231), #fcfdff); */
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* z-index: 1; */
+    /* background: linear-gradient(to left, #2518cf, #fafafa); */
+   
+  }
+
+  .socialBar::before{
+    content: "";
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 9;
+   
   }
 
   #socialListContainer {
@@ -119,7 +134,59 @@
   }
   
   #socialListContainer li a {
-    color: #4C5F76;
+    /* position: relative; */
+    color: #2f6db9;
+    margin: 5px;
+    /* right: 0; */
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+    font-size: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: 0.5s, z-index 0.5s, tranform 0.5s;
+    transition-delay: 0.5s, 0s, 0s;
+  }
+
+  #socialListContainer li a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 100%;
+      /* background: rgba(255, 255, 255, 0.5); */
+      /* transform: skewX(45deg) translateY((150px)); */
+  }
+
+  #socialListContainer li a:hover {
+      transition-delay: 0s, 0.5s, 0.5s;
+      z-index: 10;
+      color: rgb(129, 171, 218);
+      margin-right: 200px;
+      transform: translateX(50px);
+  }
+
+  .coverOne{
+     position: absolute;
+     right: 0;
+     /* background: rgba(71, 114, 207, 0.5); */
+     width: 40px;
+     height: 100vh;
+     z-index: 1;
+     filter: blur(15px);
+     border-left: 1px solid rgba(0,0,0,0.5);
+     backdrop-filter: blur(50px);
   }
 
   .menuContainer {
@@ -128,10 +195,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    z-index: 11;
   }
-
-
 
   .description {
       font-size: 15pt;
@@ -139,7 +204,7 @@
       color: rgba(79, 80, 88, 0.705);
       padding-left: 5px;
       margin-top: 25px;
-     
+      border-left: blue;
   }
 
   .star {

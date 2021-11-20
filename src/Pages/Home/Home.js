@@ -35,6 +35,9 @@ export default function Home(props) {
                         <a href="#"><AiOutlineMenu size={37}/></a>
                     </ul>
                 </div>
+                <div className="coverOne"></div>
+                <div className="coverTwo"></div>
+                <div className="coverThree"></div>
                 <div id="socialListContainer"> 
                     <li><a href="#"><AiFillInstagram size={37}/></a></li>
                     <li><a href="#"><AiFillTwitterCircle size={37}/></a></li>
