@@ -54,29 +54,6 @@
   }
   
   
-  .socialBar {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border-right: 1px solid rgba(0,0,0,0.1);
-  }
-  
-  .socialBar ul li  {
-    list-style: none;
-  }
-  
-  .socialBar ul li a {
-    display: inline-block;
-    padding: 20px;
-    margin-right: 40px;
-    color: #4C5F76;
-  }
   
   .pages ul li {
     list-style: none;

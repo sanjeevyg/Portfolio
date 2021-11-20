@@ -1,9 +1,7 @@
 import React from 'react';
 import './index.css';
 import projectOneLogo from '../../svg/astronomy.png';
-import useMouse from '@react-hook/mouse-position';
-import { useState, useRef, useEffect } from 'react';
-import { GiYunluo } from 'react-icons/gi';
+import { useRef } from 'react';
 
 export default function Project() {
 
@@ -11,7 +9,6 @@ export default function Project() {
     const image = useRef(null)
   
     const handleMouseMove = (e) => {
-      console.log(e.pageX)
       let xAxis = (window.innerWidth /2 - e.pageX)/70;
       let yAxis = (window.innerWidth /2 - e.pageY)/70;
       
@@ -42,9 +39,6 @@ export default function Project() {
                 <div className="info"> 
                     <h1 className="title">SKY GAZER</h1>
                     <h4> App built for planets</h4>
-                    <button>1</button>
-                    <button>2</button>
-                    <button class="active">3</button>
                     <button>3</button>
                     <div className="visitWebsite"> 
                         <button>Visit Website</button>
