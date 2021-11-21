@@ -2,7 +2,7 @@
 
 .home {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,7 +12,6 @@
     padding: 0;
     box-sizing: border-box;
     /* overflow: hidden; */
-    
     /* background-color: #F8FBFF; */
 }
 
@@ -23,9 +22,8 @@
     height: 50px;
     font-size: 20pt;
     padding-top: 20px;
-    margin-left: 550px;
+    margin-left: 650px;
     justify-content: space-between;
-    /* background-color: yellow; */
 }
 
   
@@ -35,7 +33,6 @@
       font-weight: bold;
       color: rgb(107, 90, 90);
       font-size: 12pt;
-      /* background-color: violet; */
       min-height: 5rem;
       display: flex;
       flex-direction: row;
@@ -48,6 +45,7 @@
       padding-left: 50px;
       font-size: 9pt;
   }
+
 
 
   /* .letsTalk button {
@@ -65,7 +63,7 @@
 
 
   .centralContent {
-      font-size: 69pt;
+      font-size: 55pt;
       font-weight: bold;
       color: rgb(29, 80, 219);
       /* background-color: rgb(224, 64, 104); */
@@ -83,11 +81,14 @@
  }
   .svgGroup {
       display: flex;
-      /* background-color: slateblue; */
   }
 
   .centralText {
-    margin-left: 270px;
+    margin-left: 330px;
+  }
+
+  .centralText span {
+      color: rgba(79, 80, 88, 0.705);
   }
 
   .leftText span {
@@ -100,16 +101,12 @@
     top: 0;
     width: 60px;
     height: 100vh;
-    /* border-left: 1px solid rgba(0,0,0,0.1); */
-    /* border-left: 1px solid rgba(255, 255, 255, 0.5); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background: rgba(255, 255, 255, 0.1); */
-    /* z-index: 1; */
     /* background: linear-gradient(to left, #2518cf, #fafafa); */
-   
   }
 
   .socialBar::before{
@@ -134,17 +131,15 @@
   }
   
   #socialListContainer li a {
-    /* position: relative; */
+    position: relative;
     color: #2f6db9;
     margin: 5px;
-    /* right: 0; */
-    margin-right: 30px;
+    right: 20px;
     width: 80px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: #fff; */
     font-size: 2em;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -156,6 +151,7 @@
     text-decoration: none;
     transition: 0.5s, z-index 0.5s, tranform 0.5s;
     transition-delay: 0.5s, 0s, 0s;
+    overflow: hidden;
   }
 
   #socialListContainer li a:before {
@@ -163,24 +159,31 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 50px;
+      width: 40px;
       height: 100%;
-      /* background: rgba(255, 255, 255, 0.5); */
-      /* transform: skewX(45deg) translateY((150px)); */
+      background: rgba(255, 255, 255, 0.5);
+      transform: skewX(45deg) translateY(150px);
+      transition: .5s;
   }
+  
 
   #socialListContainer li a:hover {
       transition-delay: 0s, 0.5s, 0.5s;
-      z-index: 10;
-      color: rgb(129, 171, 218);
-      margin-right: 200px;
-      transform: translateX(50px);
+      z-index: 12;
+      color: rgb(61, 4, 195);
+      /* color: red; */
+      /* left: 100; */
+      transform: translateX(20px);
+  }
+
+  #socialListContainer li a:hover::before {
+      transform: skewX(45deg) translateY(-150px);
   }
 
   .coverOne{
      position: absolute;
      right: 0;
-     /* background: rgba(71, 114, 207, 0.5); */
+     /* background: rgba(169, 192, 243, 0.5); */
      width: 40px;
      height: 100vh;
      z-index: 1;
@@ -191,12 +194,18 @@
 
   .menuContainer {
     position: fixed;
-    top: 0px;
+    top: 50px;
+    right: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 11;
+  
   }
+
+  .menu a {
+    color: #2f6db9;
+  } 
 
   .description {
       font-size: 15pt;
@@ -238,4 +247,16 @@
     margin-top: 327px;
     margin-left: 370px;
 }
+
+
+.bottom{
+    position: absolute;
+    content: "";
+    color: white;
+    bottom: 0;
+    width: 100vw;
+    min-height: 80px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    right: 300px;
+  }
 

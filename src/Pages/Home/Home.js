@@ -19,36 +19,37 @@ export default function Home(props) {
             <section className="header">
                 <div id="headerLeft">
                     <div className="star">
-                        <a href="#"><GiBarbedSun size={55}/></a>
+                         <SvgHomeBackground className="logo" height="50px" width="50px"/>
                     </div>
-                    <div>SANJEEV YOGI</div>
+                    <div>PORTFOLIO</div>
                     <span>PROJECTS</span>
+                    <span>BLOGS</span>
                     <span>ABOUT</span>
                     <span>CONTACT</span>
-                    <span>BLOGS</span>
                 </div>
-              
-            </section>
-            <section className="socialBar">
                 <div className="menuContainer">
                     <ul className="menu">
                         <a href="#"><AiOutlineMenu size={37}/></a>
                     </ul>
                 </div>
+               
+            </section>
+            <section className="socialBar">
+               
                 <div className="coverOne"></div>
-                <div className="coverTwo"></div>
-                <div className="coverThree"></div>
                 <div id="socialListContainer"> 
-                    <li><a href="#"><AiFillInstagram size={37}/></a></li>
-                    <li><a href="#"><AiFillTwitterCircle size={37}/></a></li>
-                    <li><a href="#"><AiFillGithub size={37}/></a></li>
                     <li><a href="#"><AiFillLinkedin size={37}/></a></li>
+                    <li><a href="#"><AiFillGithub size={37}/></a></li>
+                    <li><a href="#"><AiFillTwitterCircle size={37}/></a></li>
+                    <li><a href="#"><AiFillInstagram size={37}/></a></li>
                 </div>
                 </section>
             <section className="centralContent">
                 <div className="centralText">
-                    POR<span>TFO</span>LIO
-                    <div className="description">Full stack software engneer</div>
+                    {`Hi, \n 
+                    this is Yogi!`}
+                    {/* POR<span>TFO</span>LIO */}
+                    <div className="description">Full stack software engineer</div>
                 </div>
                 <div className="svgContainer">
                     <div className="svgGroup">
@@ -58,7 +59,11 @@ export default function Home(props) {
                         <SvgBooks className="books"  height="160px" width="160px" />
                     </div>
                 </div>
+                <section className="bottom">
+                </section>
+              
             </section>
+           
            
             
         </div>

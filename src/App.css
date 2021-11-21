@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  /* background-color: seagreen; */
+  
 }
 
 * {
@@ -10,12 +12,16 @@
   padding: 0;
   box-sizing: border-box;
 
+
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  
   /* overflow: hidden; */
 }
+
+.site-wrap {overflow-x:hidden}
 
 
 

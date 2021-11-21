@@ -4,16 +4,20 @@
     justify-content: center;
     align-items: center;
     font-size: 15rem;
+    background-color: red;
 }
 
 
 .projectOne {
     min-height: 100vh;
+    margin-left: 200px;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 3000px;
-
+    /* background-color: rgb(192, 67, 67); */
+    /* z-index: -3; */
 }
 
 
