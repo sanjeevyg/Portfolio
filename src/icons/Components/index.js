@@ -1,5 +1,5 @@
-export { default as Bg } from './Bg'
 export { default as Books } from './Books'
+export { default as FinalLogo } from './FinalLogo'
 export { default as HomeBackground } from './HomeBackground'
 export { default as Programmer } from './Programmer'
 export { default as Watch } from './Watch'

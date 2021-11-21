@@ -16,9 +16,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  
-  /* overflow: hidden; */
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
+  overflow-x: hidden;
 }
 
 .site-wrap {overflow-x:hidden}
