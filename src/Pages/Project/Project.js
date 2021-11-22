@@ -48,7 +48,7 @@ export default function Project() {
                     <img src={projectOneLogo} alt="skyGazer" />
                     
                 </div>
-                <div className="circle"></div>
+                {/* <div className="circle"></div> */}
                 
               </div>
               
