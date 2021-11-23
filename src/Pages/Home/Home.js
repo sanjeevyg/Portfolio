@@ -64,7 +64,7 @@ export default function Home(props) {
                 <div className="centralText">
                     <div>Hi, <span>I am </span> </div>
                     <div>Sanjeev Yogi. </div>
-                    <div className="description">Full stack software engineer</div>
+                    <div className="description">Full stack software engineer. I love art, design & technology.</div>
                     <button>See Projects</button>
                 </div>
                 <div className="svgContainer">
@@ -75,7 +75,6 @@ export default function Home(props) {
                                  onMouseMove={handleMouseMove}
                                  onMouseLeave={handleMouseLeave}  
                                  onMouseEnter={handleMouseEnter}
-
                                 >
                                 <rect id="Rectangle 13" x="385" y="182" width="501" height="423" rx="24" fill="#B1C2FC" fill-opacity="0.23"/>
                                 <ellipse id="Ellipse10" cx="602" cy="383.5" rx="158" ry="150.5" fill="#0F2DCA" fill-opacity="0.7"/>
