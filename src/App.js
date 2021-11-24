@@ -21,20 +21,20 @@ function App() {
     // </Switch>
     
     
-    <div className="container">
-      <section > 
-        <Home/>
+    <div id="container">
+      <section className="parent"> 
+        <Home />
       </section >
-      <section >
+      <section className="parent">
         <Project/>
       </section>
-      <section >
+      <section className="parent">
         <TransitionPage/>
       </section>
-      <section >
+      <section className="parent">
         <About />
       </section>
-      <section >
+      <section className="parent">
         <Contact/>
       </section>
     </div>

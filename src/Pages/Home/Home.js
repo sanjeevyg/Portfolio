@@ -20,7 +20,7 @@ export default function Home(props) {
     const dispatch = useDispatch()
 
     const options =  {
-        // root: null,
+        root: null,
         rootMargin: '0px',
         threshold: 0
     }
@@ -63,10 +63,6 @@ export default function Home(props) {
         instagramRef.current.style.color = "black"
     }
 
-
-    
-
-
     const handleMouseMove = (e) => {
     let xAxis = (window.innerWidth /2 - e.pageX)/70;
     let yAxis = (window.innerWidth /2 - e.pageY)/70;
@@ -83,7 +79,6 @@ export default function Home(props) {
     geometry.current.style.transition = 'none'
     // image.current.style.transform = 'translateZ(130px)'
     }
-
 
     return (
         <div className="home" ref={targetRef}>
@@ -204,16 +199,12 @@ export default function Home(props) {
                                 </g>
                                 </g>
                             </svg>
-
                     </div>
                 </div>
                 <section className="bottom">
                 </section>
               
             </section>
-           
-           
-            
         </div>
     )
 }

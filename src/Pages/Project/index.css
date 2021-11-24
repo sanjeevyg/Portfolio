@@ -8,7 +8,7 @@
 }
 
 
-.projectOne, .projectTwo, .projectThree {
+.sectionContainer {
     min-height: 100vh;
     margin-left: 200px;
     width: 80vw;
@@ -21,7 +21,7 @@
 }
 
 
-.containerOne, .containterTwo, .containerThree {
+.subsectionContainer{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,9 +30,18 @@
     padding-top: 50px;
     padding-bottom: 50px;
     transform-style: preserve-3d;
+    /* background-color: cornflowerblue; */
 }
 
-.cardOne, .cardTwo, .cardThree {
+/* .one {
+    background-color: cyan;
+}
+
+.two {
+    background-color: darkgreen;
+} */
+
+.card {
     min-height: 50vh;
     width: 60rem;
     display: flex;
@@ -44,9 +53,17 @@
     background-color: rgb(226, 166, 0);
 }
 
-/* .cardTwo {
-    background-color: rgb(226, 34, 0);
-} */
+.cOne {
+    background-color: rgb(226, 166, 0);
+}
+
+.cTwo {
+    background-color: rgb(72, 226, 0);
+}
+
+.cThree {
+    background-color: rgb(207, 0, 226);
+} 
 
 .skyGazer {
     min-height: 35vh;
@@ -103,5 +120,40 @@
     color: #585858;
     font-weight: bolder;
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+}
+
+
+:root {
+    --text-color: rgb(226, 166, 0);
+  }
+.pageNumber {
+    font-family: "Abril Fatface";
+    font-weight: bolder;
+    color: var(--text-color);
+    position: absolute;
+    font-size: 7rem;
+    bottom: 150px;
+    right: 100px;
+}
+
+.projectNumber {
+    /* writing-mode: vertical-rl; */
+    text-orientation: sideways-right;
+    font-family: "Abril Fatface";
+    font-weight: bolder;
+    /* color: var(--text-color); */
+    color: rgb(83, 55, 46);
+    position: absolute;
+    font-size: 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    top: 200px;
+    /* transform: rotate(180deg); */
+    z-index: 9;
+    /* background-color: darkolivegreen; */
+    left: 0px;
+    /* top: 200px; */
 }
 

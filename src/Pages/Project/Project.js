@@ -7,13 +7,63 @@ import { useDispatch } from 'react-redux';
 
 export default function Project() {
 
-
-    const dispatch = useDispatch()
     const image = useRef(null)
 
-    const containerOne = useRef(null)
-    const containerTwo = useRef(null)
-    const containerThree = useRef(null)
+    const sectionOne = useRef(null)
+    const sectionTwo = useRef(null)
+    const sectionThree = useRef(null)
+    
+
+    const handleMouseMovePone = (e) => {
+      let xAxis = (window.innerWidth /2 - e.pageX)/90;
+      let yAxis = (window.innerWidth /2 - e.pageY)/90;
+      sectionOne.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+    }
+
+    const handleMouseLeavePone = () =>  {
+      sectionOne.current.style.transform = `rotateY(0deg) rotateX(0deg)`
+      sectionOne.current.style.transition = 'all .9s ease'
+    }
+
+    const handleMouseEnterPone = () => {
+      sectionOne.current.style.transition = 'none'
+      image.current.style.transform = 'translateZ(130px)'
+    }
+
+    const handleMouseMovePtwo = (e) => {
+      let xAxis = (window.innerWidth /2 - e.pageX)/90;
+      let yAxis = (window.innerWidth /2 - e.pageY)/90;
+      sectionTwo.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+    }
+
+    const handleMouseLeavePtwo = () =>  {
+      sectionTwo.current.style.transform = `rotateY(0deg) rotateX(0deg)`
+      sectionTwo.current.style.transition = 'all .9s ease'
+    }
+
+    const handleMouseEnterPtwo = () => {
+      sectionTwo.current.style.transition = 'none'
+      image.current.style.transform = 'translateZ(130px)'
+    }
+
+    const handleMouseMovePthree = (e) => {
+      let xAxis = (window.innerWidth /2 - e.pageX)/90;
+      let yAxis = (window.innerWidth /2 - e.pageY)/90;
+      sectionThree.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+      }
+  
+      const handleMouseLeavePthree = () =>  {
+      sectionThree.current.style.transform = `rotateY(0deg) rotateX(0deg)`
+      sectionThree.current.style.transition = 'all .9s ease'
+      }
+  
+      const handleMouseEnterPthree = () => {
+      sectionThree.current.style.transition = 'none'
+      image.current.style.transform = 'translateZ(130px)'
+    }
+
+
+    const dispatch = useDispatch()
 
     let projectOneRef = useRef(null)
     let projectTwoRef = useRef(null)
@@ -29,42 +79,21 @@ export default function Project() {
     let isProjectTwoVisible = useElementOnScreen(projectTwoRef, options)
     let isProjectThreeVisible = useElementOnScreen(projectThreeRef, options)
 
-    // console.log('projecOneStatusCheck', isProjectOneVisible)
-    // console.log('projecTwoStatusCheck', isProjectTwoVisible)
-    // console.log('projecThreeStatusCheck', isProjectThreeVisible)
-
     dispatch({type: "PROJECT_ONE", visibility: isProjectOneVisible})
     dispatch({type: "PROJECT_TWO", visibility: isProjectTwoVisible})
     dispatch({type: "PROJECT_THREE", visibility: isProjectThreeVisible})
   
-    const handleMouseMove = (e) => {
-      let xAxis = (window.innerWidth /2 - e.pageX)/70;
-      let yAxis = (window.innerWidth /2 - e.pageY)/70;
-      
-      containerOne.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
-    }
-
-    const handleMouseLeave = () => {
-      containerOne.current.style.transform = `rotateY(0deg) rotateX(0deg)`
-      containerOne.current.style.transition = 'all .9s ease'
-    }
-
-    const handleMouseEnter = () => {
-      containerOne.current.style.transition = 'none'
-      image.current.style.transform = 'translateZ(130px)'
-    }
    
     return (
         <div classNam="projectContainer" >
-          <section className="projectOne" ref={projectOneRef}> 
-            <div className="containerOne" 
-
-            ref={containerOne}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}  
-            onMouseEnter={handleMouseEnter}  
+          <section className="sectionContainer one" ref={projectOneRef}> 
+            <div className="subsectionContainer subOne" 
+              ref={sectionOne}
+              onMouseMove={handleMouseMovePone}
+              onMouseLeave={handleMouseLeavePone}  
+              onMouseEnter={handleMouseEnterPone}  
             >
-              <div class="cardOne" > 
+              <div class="card cOne" > 
                 <div className="info"> 
                     <h1 className="title">SKY GAZER</h1>
                     <h4> App built for planets</h4>
@@ -75,24 +104,24 @@ export default function Project() {
                 </div>
                 <div className="skyGazer" ref={image}  >
                     <img src={projectOneLogo} alt="skyGazer" />
-                    
                 </div>
-                {/* <div className="circle"></div> */}
-                
               </div>
-              
+           </div>
+           <div className="pageNumber">01</div>
+           <div className="projectNumber"> 
+             <div >PROJECT-ONE</div>
            </div>
           </section>
+          
 
-          <section className="projectTwo" ref={projectTwoRef}> 
-            <div className="containerTwo" 
-
-            ref={containerTwo}
-            // onMouseMove={handleMouseMove}
-            // onMouseLeave={handleMouseLeave}  
-            // onMouseEnter={handleMouseEnter}  
+          <section className="sectionContainer two" ref={projectTwoRef}> 
+            <div className="subsectionContainer subTwo" 
+              ref={sectionTwo}
+              onMouseMove={handleMouseMovePtwo}
+              onMouseLeave={handleMouseLeavePtwo}  
+              onMouseEnter={handleMouseEnterPtwo}  
             >
-              <div class="cardTwo" > 
+              <div class="card cTwo" > 
                 <div className="info"> 
                     <h1 className="title">PROJECT TWO</h1>
                     <h4> App built for planets</h4>
@@ -101,24 +130,22 @@ export default function Project() {
                         <button>Visit Website</button>
                     </div>
                 </div>
-                <div className="skyGazer" ref={image}  >
+                {/* <div className="skyGazer" ref={image}  >
                     <img src={projectOneLogo} alt="skyGazer" />
                     
-                </div>
-                
+                </div> */}
               </div>
-              
            </div>
           </section>
 
-          <section className="projectThree" ref={projectThreeRef}> 
-            <div className="containerThree" 
-            ref={containerThree}
-            // onMouseMove={handleMouseMove}
-            // onMouseLeave={handleMouseLeave}  
-            // onMouseEnter={handleMouseEnter}  
+          <section className="sectionContainer three" ref={projectThreeRef}> 
+            <div className="subsectionContainer subThree" 
+              ref= {sectionThree}
+              onMouseMove={handleMouseMovePthree}
+              onMouseLeave={handleMouseLeavePthree}  
+              onMouseEnter={handleMouseEnterPthree}    
             >
-              <div class="cardThree" > 
+              <div class="card cThree" > 
                 <div className="info"> 
                     <h1 className="title">PROJECT THREE</h1>
                     <h4> App built for planets</h4>
@@ -127,10 +154,10 @@ export default function Project() {
                         <button>Visit Website</button>
                     </div>
                 </div>
-                <div className="skyGazer" ref={image}  >
-                    <img src={projectOneLogo} alt="skyGazer" />
+                {/* <div className="skyGazer" ref={image}  >
+                    <img src={projectThreeLogo} alt="skyGazer" />
                     
-                </div>
+                </div> */}
                 
               </div>
               
