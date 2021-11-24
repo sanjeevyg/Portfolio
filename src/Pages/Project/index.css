@@ -11,6 +11,7 @@
 .sectionContainer {
     min-height: 100vh;
     margin-left: 200px;
+    right: auto;
     width: 80vw;
     display: flex;
     justify-content: center;
@@ -137,23 +138,18 @@
 }
 
 .projectNumber {
-    /* writing-mode: vertical-rl; */
-    text-orientation: sideways-right;
-    font-family: "Abril Fatface";
+    /* background-color: burlywood; */
+    /* text-orientation: sideways-right; */
     font-weight: bolder;
-    /* color: var(--text-color); */
-    color: rgb(83, 55, 46);
-    position: absolute;
-    font-size: 3rem;
-    height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    top: 200px;
-    /* transform: rotate(180deg); */
+    position: fixed;
+    top: 100px;
+    right: 190px;
     z-index: 9;
-    /* background-color: darkolivegreen; */
-    left: 0px;
-    /* top: 200px; */
+    font-size: 2em;
+  
+}
+
+.one {
+    /* background-color: chocolate; */
 }
 

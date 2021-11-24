@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineMenuFold, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillProject} from 'react-icons/ai';
-import './index.css'
+import './index.css';
+
 
 
 

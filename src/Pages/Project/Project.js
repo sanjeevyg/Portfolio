@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 import projectOneLogo from '../../svg/astronomy.png';
 import { useRef } from 'react';
-import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { useDispatch } from 'react-redux';
+import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 
 export default function Project() {
 
@@ -87,6 +87,8 @@ export default function Project() {
     return (
         <div classNam="projectContainer" >
           <section className="sectionContainer one" ref={projectOneRef}> 
+            <div className="projectNumber">PROJECT <span>|</span></div>
+          
             <div className="subsectionContainer subOne" 
               ref={sectionOne}
               onMouseMove={handleMouseMovePone}
@@ -107,10 +109,7 @@ export default function Project() {
                 </div>
               </div>
            </div>
-           <div className="pageNumber">01</div>
-           <div className="projectNumber"> 
-             <div >PROJECT-ONE</div>
-           </div>
+           {/* <div className="pageNumber">01</div> */}
           </section>
           
 
