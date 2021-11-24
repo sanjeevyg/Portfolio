@@ -9,8 +9,11 @@ export default function Project() {
 
 
     const dispatch = useDispatch()
-    const containerOne = useRef(null)
     const image = useRef(null)
+
+    const containerOne = useRef(null)
+    const containerTwo = useRef(null)
+    const containerThree = useRef(null)
 
     let projectOneRef = useRef(null)
     let projectTwoRef = useRef(null)
@@ -18,7 +21,7 @@ export default function Project() {
 
     const options =  {
         root: null,
-        rootMargin: '500px',
+        rootMargin: '0px',
         threshold: .25
     }
    
@@ -26,8 +29,9 @@ export default function Project() {
     let isProjectTwoVisible = useElementOnScreen(projectTwoRef, options)
     let isProjectThreeVisible = useElementOnScreen(projectThreeRef, options)
 
-    console.log('projecOneStatusCheck', isProjectOneVisible)
-    console.log('projecTwoStatusCheck', isProjectTwoVisible)
+    // console.log('projecOneStatusCheck', isProjectOneVisible)
+    // console.log('projecTwoStatusCheck', isProjectTwoVisible)
+    // console.log('projecThreeStatusCheck', isProjectThreeVisible)
 
     dispatch({type: "PROJECT_ONE", visibility: isProjectOneVisible})
     dispatch({type: "PROJECT_TWO", visibility: isProjectTwoVisible})
@@ -83,10 +87,10 @@ export default function Project() {
           <section className="projectTwo" ref={projectTwoRef}> 
             <div className="containerTwo" 
 
-            ref={containerOne}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}  
-            onMouseEnter={handleMouseEnter}  
+            ref={containerTwo}
+            // onMouseMove={handleMouseMove}
+            // onMouseLeave={handleMouseLeave}  
+            // onMouseEnter={handleMouseEnter}  
             >
               <div class="cardTwo" > 
                 <div className="info"> 
@@ -109,10 +113,10 @@ export default function Project() {
 
           <section className="projectThree" ref={projectThreeRef}> 
             <div className="containerThree" 
-            ref={containerOne}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}  
-            onMouseEnter={handleMouseEnter}  
+            ref={containerThree}
+            // onMouseMove={handleMouseMove}
+            // onMouseLeave={handleMouseLeave}  
+            // onMouseEnter={handleMouseEnter}  
             >
               <div class="cardThree" > 
                 <div className="info"> 

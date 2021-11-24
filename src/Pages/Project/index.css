@@ -8,7 +8,7 @@
 }
 
 
-.projectOne, .projectTwo {
+.projectOne, .projectTwo, .projectThree {
     min-height: 100vh;
     margin-left: 200px;
     width: 80vw;
@@ -21,7 +21,7 @@
 }
 
 
-.containerOne, .containterTwo {
+.containerOne, .containterTwo, .containerThree {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +32,7 @@
     transform-style: preserve-3d;
 }
 
-.cardOne, .cardTwo {
+.cardOne, .cardTwo, .cardThree {
     min-height: 50vh;
     width: 60rem;
     display: flex;
@@ -44,9 +44,9 @@
     background-color: rgb(226, 166, 0);
 }
 
-.cardTwo {
+/* .cardTwo {
     background-color: rgb(226, 34, 0);
-}
+} */
 
 .skyGazer {
     min-height: 35vh;

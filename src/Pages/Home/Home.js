@@ -20,24 +20,24 @@ export default function Home(props) {
     const dispatch = useDispatch()
 
     const options =  {
-        root: null,
-        rootMargin: '500px',
-        threshold: 1
+        // root: null,
+        rootMargin: '0px',
+        threshold: 0
     }
    
     let isVisible = useElementOnScreen(targetRef, options)
 
     dispatch({type: "HOME", visibility: isVisible})
-
+    
+    let homeState = useSelector(state => state.homeVisibility)
     let projectOneState = useSelector(state => state.projectOneVisibility)
     let projectTwoState = useSelector(state => state.projectTwoVisibility)
     let projectThreeState = useSelector(state => state.projectThreeVisibility)
-    let homeState = useSelector(state => state.homeVisibility)
 
-    console.log("homestate", homeState)
-    console.log("projectOnestate", projectOneState)
+    // console.log("homestate", homeState)
+    // console.log("projectOnestate", projectOneState)
     console.log("projectTwostate", projectTwoState)
-    console.log("projectThreestate", projectThreeState)
+    // console.log("projectThreestate", projectThreeState)
 
    
     if(homeState) {
@@ -50,16 +50,17 @@ export default function Home(props) {
         githubRef.current.style.color = "rgb(226, 166, 0)"
         twitterRef.current.style.color = "rgb(226, 166, 0)"
         instagramRef.current.style.color = "rgb(226, 166, 0)"
-    } else if (projectTwoState) {
+    } 
+    else if (projectTwoState) {
         linkedinRef.current.style.color = "red"
         githubRef.current.style.color = "red"
         twitterRef.current.style.color = "red"
         instagramRef.current.style.color = "red"
     } else if (projectThreeState) {
-        linkedinRef.current.style.color = "rgb(226, 166, 0)"
-        githubRef.current.style.color = "rgb(226, 166, 0)"
-        twitterRef.current.style.color = "rgb(226, 166, 0)"
-        instagramRef.current.style.color = "rgb(226, 166, 0)"
+        linkedinRef.current.style.color = "black"
+        githubRef.current.style.color = "black"
+        twitterRef.current.style.color = "black"
+        instagramRef.current.style.color = "black"
     }
 
 
