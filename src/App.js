@@ -6,39 +6,9 @@ import Project from './Pages/Project/Project.js';
 import About from './Pages/About/About.js';
 import Contact from './Pages/Contact/Contact.js';
 import TransitionPage from './Pages/Transition/TransitionPage';
-import { useInView } from 'react-intersection-observer'; 
-import { useRef, useMemo, useEffect, useState } from 'react';
+// import { useInView } from 'react-intersection-observer'; 
 
 function App() {
-
-  const home = useRef(null)
-  const contact = useRef(null)
-  const transition = useRef(null)
-  const about = useRef(null)
-  const project = useRef(null)
-
-  const [isVisible, setVisibleState] = useState(false)
-
-  const callback = entries => {
-    const [entry] = entries
-    setVisibleState(entry.isIntersecting)
-  }
-
-  const options = useMemo(() => {return {
-    root: null,
-    rootMargin: '0px',
-    threshold: 1
-  } }, []) 
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(callback, options)
-    const currentTarget = home.current || contact.current || transition.current || about.current || project.current
-    if(currentTarget) observer.observe(currentTarget)
-    console.log(currentTarget)
-
-    return (() => {if(currentTarget) observer.unobserve(currentTarget)})
-
-  }, [home, contact, transition, about, project, options])
 
 
   return (
@@ -54,7 +24,7 @@ function App() {
     <div className="container">
       <section > 
         <Home/>
-      </section>
+      </section >
       <section >
         <Project/>
       </section>
@@ -64,7 +34,7 @@ function App() {
       <section >
         <About />
       </section>
-      <section>
+      <section >
         <Contact/>
       </section>
     </div>

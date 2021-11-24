@@ -2,16 +2,69 @@ import React from 'react';
 import './index.css';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
 import { AiOutlineMenu, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
+
 // npx @svgr/cli src/svg --out-dir src/icons/Components --icon
-
-
 
 export default function Home(props) {
 
+    let targetRef = useRef(null)
+    let linkedinRef = useRef(null)
+    let githubRef = useRef(null)
+    let twitterRef = useRef(null)
+    let instagramRef = useRef(null)
+    let geometry = useRef(null)
 
-    const geometry = useRef(null)
-    const girl = useRef(null)
+    const dispatch = useDispatch()
+
+    const options =  {
+        root: null,
+        rootMargin: '500px',
+        threshold: 1
+    }
+   
+    let isVisible = useElementOnScreen(targetRef, options)
+
+    dispatch({type: "HOME", visibility: isVisible})
+
+    let projectOneState = useSelector(state => state.projectOneVisibility)
+    let projectTwoState = useSelector(state => state.projectTwoVisibility)
+    let projectThreeState = useSelector(state => state.projectThreeVisibility)
+    let homeState = useSelector(state => state.homeVisibility)
+
+    console.log("homestate", homeState)
+    console.log("projectOnestate", projectOneState)
+    console.log("projectTwostate", projectTwoState)
+    console.log("projectThreestate", projectThreeState)
+
+   
+    if(homeState) {
+        linkedinRef.current.style.color = "#2f6db9"
+        githubRef.current.style.color = "#2f6db9"
+        twitterRef.current.style.color = "#2f6db9"
+        instagramRef.current.style.color = "#2f6db9"
+    } else if(projectOneState) {
+        linkedinRef.current.style.color = "rgb(226, 166, 0)"
+        githubRef.current.style.color = "rgb(226, 166, 0)"
+        twitterRef.current.style.color = "rgb(226, 166, 0)"
+        instagramRef.current.style.color = "rgb(226, 166, 0)"
+    } else if (projectTwoState) {
+        linkedinRef.current.style.color = "red"
+        githubRef.current.style.color = "red"
+        twitterRef.current.style.color = "red"
+        instagramRef.current.style.color = "red"
+    } else if (projectThreeState) {
+        linkedinRef.current.style.color = "rgb(226, 166, 0)"
+        githubRef.current.style.color = "rgb(226, 166, 0)"
+        twitterRef.current.style.color = "rgb(226, 166, 0)"
+        instagramRef.current.style.color = "rgb(226, 166, 0)"
+    }
+
+
+    
+
 
     const handleMouseMove = (e) => {
     let xAxis = (window.innerWidth /2 - e.pageX)/70;
@@ -29,8 +82,10 @@ export default function Home(props) {
     geometry.current.style.transition = 'none'
     // image.current.style.transform = 'translateZ(130px)'
     }
+
+
     return (
-        <div className="home">
+        <div className="home" ref={targetRef}>
             <div className="box"></div>
             <section className="header">
                 <div id="headerLeft">
@@ -54,12 +109,12 @@ export default function Home(props) {
                
                 <div className="coverOne"></div>
                 <div id="socialListContainer"> 
-                    <li><a href="#"><AiFillLinkedin size={37}/></a></li>
-                    <li><a href="#"><AiFillGithub size={37}/></a></li>
-                    <li><a href="#"><AiFillTwitterCircle size={37}/></a></li>
-                    <li><a href="#"><AiFillInstagram size={37}/></a></li>
+                    <li ><a href="#" className="socialBarIcon" ref={el => linkedinRef.current = el}><AiFillLinkedin size={37}/></a></li>
+                    <li><a href="#" className="socialBarIcon" ref={el => githubRef.current = el}><AiFillGithub size={37}/></a></li>
+                    <li><a href="#" className="socialBarIcon" ref={el => twitterRef.current = el}><AiFillTwitterCircle size={37}/></a></li>
+                    <li><a href="#" className="socialBarIcon" ref={el => instagramRef.current = el}><AiFillInstagram size={37}/></a></li>
                 </div>
-                </section>
+            </section>
             <section className="centralContent">
                 <div className="centralText">
                     <div>Hi, <span>I am </span> </div>
