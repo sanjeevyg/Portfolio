@@ -54,6 +54,15 @@
     background-color: rgb(226, 166, 0);
 }
 
+.one {
+    background-color: chocolate;
+}
+
+.subOne {
+    background-color: rgb(30, 210, 60);
+}
+
+
 .cOne {
     background-color: rgb(226, 166, 0);
 }
@@ -149,7 +158,4 @@
   
 }
 
-.one {
-    /* background-color: chocolate; */
-}
 

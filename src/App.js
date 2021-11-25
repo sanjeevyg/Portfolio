@@ -1,16 +1,13 @@
 import './App.css';
  import react from 'react';
-// import { Switch, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home.js';
 import Project from './Pages/Project/Project.js';
 import About from './Pages/About/About.js';
 import Contact from './Pages/Contact/Contact.js';
 import TransitionPage from './Pages/Transition/TransitionPage';
-// import { useInView } from 'react-intersection-observer'; 
+
 
 function App() {
-
-
   return (
     // <Switch>
     //   <Route exact path='/' render={(routerProps) => <Home {...routerProps} name="Yogi" />}/>
