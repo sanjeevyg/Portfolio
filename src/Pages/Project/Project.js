@@ -1,9 +1,12 @@
 import React from 'react';
 import './index.css';
 import projectOneLogo from '../../svg/astronomy.png';
+import astonomyImg from '../../svg/astronomyImg.png';
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
+
+const websiteImage = "https://images.immediate.co.uk/production/volatile/sites/4/2021/01/astronomy-beginners-uk-7f589e4.jpg?quality=90&resize=768,574"
 
 export default function Project() {
 
@@ -96,16 +99,16 @@ export default function Project() {
               onMouseEnter={handleMouseEnterPone}  
             >
               <div class="card cOne" > 
-                <div className="info"> 
+                <div className="info infoOne"> 
                     <h1 className="title">SKY GAZER</h1>
-                    <h4> App built for planets</h4>
-                    <button>3</button>
-                    <div className="visitWebsite"> 
-                        <button>Visit Website</button>
+                    <h3> App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                    </h3>
+                    <div className="websiteOne"> 
+                        <button>WEBSITE</button>
                     </div>
                 </div>
                 <div className="skyGazer" ref={image}  >
-                    <img src={projectOneLogo} alt="skyGazer" />
+                    <img src={astonomyImg} alt="skyGazer" />
                 </div>
               </div>
            </div>
@@ -123,8 +126,7 @@ export default function Project() {
               <div class="card cTwo" > 
                 <div className="info"> 
                     <h1 className="title">PROJECT TWO</h1>
-                    <h4> App built for planets</h4>
-                    <button>3</button>
+                    <h4> App's uses the NASA api to find the general information about the planets in solar system and other galaxies.</h4>
                     <div className="visitWebsite"> 
                         <button>Visit Website</button>
                     </div>

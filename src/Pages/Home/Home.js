@@ -22,7 +22,7 @@ export default function Home(props) {
     const options =  {
         root: null,
         rootMargin: '0px',
-        threshold: 0
+        threshold: .5
     }
    
     let isVisible = useElementOnScreen(targetRef, options)
@@ -46,7 +46,7 @@ export default function Home(props) {
         twitterRef.current.style.color = "#2f6db9"
         instagramRef.current.style.color = "#2f6db9"
     } else if(projectOneState) {
-        linkedinRef.current.style.color = "rgb(226, 166, 0)"
+        linkedinRef.current.style.color = "rgb(235, 175, 10)"
         githubRef.current.style.color = "rgb(226, 166, 0)"
         twitterRef.current.style.color = "rgb(226, 166, 0)"
         instagramRef.current.style.color = "rgb(226, 166, 0)"
