@@ -34,10 +34,7 @@ export default function Home(props) {
     let projectTwoState = useSelector(state => state.projectTwoVisibility)
     let projectThreeState = useSelector(state => state.projectThreeVisibility)
 
-    // console.log("homestate", homeState)
-    // console.log("projectOnestate", projectOneState)
     console.log("projectTwostate", projectTwoState)
-    // console.log("projectThreestate", projectThreeState)
 
    
     if(homeState) {

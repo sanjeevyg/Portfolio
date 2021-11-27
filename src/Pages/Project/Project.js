@@ -10,7 +10,8 @@ const websiteImage = "https://images.immediate.co.uk/production/volatile/sites/4
 
 export default function Project() {
 
-    const image = useRef(null)
+  const imageOne = useRef(null)
+  const titleOne = useRef(null)
 
     const sectionOne = useRef(null)
     const sectionTwo = useRef(null)
@@ -30,7 +31,8 @@ export default function Project() {
 
     const handleMouseEnterPone = () => {
       sectionOne.current.style.transition = 'none'
-      image.current.style.transform = 'translateZ(130px)'
+      imageOne.current.style.transform = 'translateZ(150px)'
+      titleOne.current.style.transform = 'rotate(1000px)'
     }
 
     const handleMouseMovePtwo = (e) => {
@@ -46,7 +48,7 @@ export default function Project() {
 
     const handleMouseEnterPtwo = () => {
       sectionTwo.current.style.transition = 'none'
-      image.current.style.transform = 'translateZ(130px)'
+      imageOne.current.style.transform = 'translateZ(130px)'
     }
 
     const handleMouseMovePthree = (e) => {
@@ -62,9 +64,9 @@ export default function Project() {
   
       const handleMouseEnterPthree = () => {
       sectionThree.current.style.transition = 'none'
-      image.current.style.transform = 'translateZ(130px)'
+      imageOne.current.style.transform = 'translateZ(230px)'
+      titleOne.current.style.transform = 'translateZ(230px)'
     }
-
 
     const dispatch = useDispatch()
 
@@ -90,7 +92,7 @@ export default function Project() {
     return (
         <div classNam="projectContainer" >
           <section className="sectionContainer one" ref={projectOneRef}> 
-            <div className="projectNumber">PROJECT <span>|</span></div>
+            <div className="projectNumber">PROJECTS <span>|</span></div>
           
             <div className="subsectionContainer subOne" 
               ref={sectionOne}
@@ -100,19 +102,23 @@ export default function Project() {
             >
               <div class="card cOne" > 
                 <div className="info infoOne"> 
-                    <h1 className="title">SKY GAZER</h1>
-                    <h3> App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                    <h1 className="title" ref={titleOne}>SKY GAZER</h1>
+                    <h3> 
+                      App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
+                    <div className="techInfoOne"> 
+                      <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
+                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript</h4>
+                    </div>
                     <div className="websiteOne"> 
                         <button>WEBSITE</button>
                     </div>
                 </div>
-                <div className="skyGazer" ref={image}  >
-                    <img src={astonomyImg} alt="skyGazer" />
+                <div className="skyGazer" ref={imageOne} >
+                    <img src={astonomyImg} alt="skyGazer"/>
                 </div>
               </div>
            </div>
-           {/* <div className="pageNumber">01</div> */}
           </section>
           
 

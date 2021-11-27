@@ -118,7 +118,7 @@
     /* background-color: blueviolet; */
     height: 50vh;
     width: 25vw;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-left: 50px;
 }
     
@@ -128,9 +128,9 @@
 }
 
 .infoOne h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 2rem 0rem;
-    font-weight: lighter;
+    font-weight: 350;
     overflow-wrap: wrap;
     color: white;
     /* background-color: blue; */
@@ -140,8 +140,9 @@
     padding: .5rem 1rem;
     margin-bottom: 50px;
     border: none;
+    font-size: 1em;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(246, 193, 47);;
     /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
     /* border-radius: 30px; */
@@ -156,26 +157,37 @@
 :root {
     --text-color: rgb(226, 166, 0);
 }
-.pageNumber {
-    font-family: "Abril Fatface";
-    font-weight: bolder;
-    color: var(--text-color);
-    position: absolute;
-    font-size: 7rem;
-    bottom: 150px;
-    right: 100px;
-}
+
 
 .projectNumber {
-    /* background-color: burlywood; */
-    /* text-orientation: sideways-right; */
     font-weight: bolder;
     position: fixed;
     top: 100px;
     right: 190px;
     z-index: 9;
-    font-size: 2em;
-  
+    font-size: 1.3em;
 }
 
+.techInfoOne {
+    display: flex;
+    flex-direction: column;
+    font-weight:  350;
+    font-size: 1.2em;
+}
+
+
+#frontend, #backend {
+    font-weight:  350;
+    color: white;
+}
+
+#backend span {
+    color: white;
+    font-weight:  350;
+}
+
+#frontend span {
+    color: white;
+    font-weight:  350;
+}
 
