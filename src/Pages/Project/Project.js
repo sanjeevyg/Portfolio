@@ -112,6 +112,7 @@ export default function Project() {
                     </div>
                     <div className="websiteOne"> 
                         <button>WEBSITE</button>
+                        <button>PLAY VIDEO</button>
                     </div>
                 </div>
                 <div className="skyGazer" ref={imageOne} >

@@ -22,7 +22,7 @@
 }
 
 
-.subsectionContainer{
+.subsectionContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,7 +68,10 @@
     align-items: space-around;
     justify-content: space-around;
     /* background-color: rgb(179, 179, 179); */
-    background-color: rgb(226, 166, 0)
+    /* background-color: rgb(226, 166, 0) */
+    /* background-color: linear-gradient(to left rgb(226, 166, 0), rgb(224, 189, 93) ); */
+    /* background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #3f87a6); */
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)
 }
 
 .cTwo {
@@ -107,7 +110,7 @@
         margin-left: 300px ;
         z-index: 1;
         border-radius: 15rem;
-    }
+}
     
 .infoOne {
     /* position: relative; */
@@ -118,7 +121,7 @@
     /* background-color: blueviolet; */
     height: 50vh;
     width: 25vw;
-    color: rgb(255, 255, 255);
+    color: rgb(54, 50, 50);
     margin-left: 50px;
 }
     
@@ -132,7 +135,8 @@
     padding: 2rem 0rem;
     font-weight: 350;
     overflow-wrap: wrap;
-    color: white;
+    /* color: white; */
+    color: rgb(73, 65, 65);
     /* background-color: blue; */
 }
 
@@ -143,21 +147,20 @@
     font-size: 1em;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-color: rgb(246, 193, 47);;
+    background-color: rgb(87, 125, 207);
+    margin-right: 15px;
     /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
     /* border-radius: 30px; */
     /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4)); */
-    
 }
+
 .projectNumber span {
     color: blue;
 }
 
-
 :root {
     --text-color: rgb(226, 166, 0);
 }
-
 
 .projectNumber {
     font-weight: bolder;
@@ -175,19 +178,22 @@
     font-size: 1.2em;
 }
 
-
 #frontend, #backend {
     font-weight:  350;
-    color: white;
+    color: rgb(73, 65, 65);
+    
+    /* color: white; */
 }
 
 #backend span {
-    color: white;
+    /* color: white; */
+    color: rgb(73, 65, 65);
     font-weight:  350;
 }
 
 #frontend span {
-    color: white;
+    /* color: white; */
     font-weight:  350;
+    color: rgb(73, 65, 65);
 }
 

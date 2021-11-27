@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
 import { AiOutlineMenu, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
 
@@ -96,10 +96,8 @@ export default function Home(props) {
                         <a href="#"><AiOutlineMenu size={37}/></a>
                     </ul>
                 </div>
-               
             </section>
             <section className="socialBar">
-               
                 <div className="coverOne"></div>
                 <div id="socialListContainer"> 
                     <li ><a href="#" className="socialBarIcon" ref={el => linkedinRef.current = el}><AiFillLinkedin size={37}/></a></li>
@@ -116,8 +114,7 @@ export default function Home(props) {
                     <button>See Projects</button>
                 </div>
                 <div className="svgContainer">
-                    <div className="svgGroup">
-                         <svg width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <svg id="svg" width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="finalLogo">
                                 <g id="geometry" ref={geometry} 
                                  onMouseMove={handleMouseMove}
@@ -196,11 +193,8 @@ export default function Home(props) {
                                 </g>
                                 </g>
                             </svg>
-                    </div>
                 </div>
-                <section className="bottom">
-                </section>
-              
+                <section className="bottom"></section>
             </section>
         </div>
     )

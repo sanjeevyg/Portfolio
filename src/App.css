@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +7,6 @@
 
 html body {
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
-  /* overflow: hidden; */
-  overflow-x: hidden ;
   height: 100vh;
 }
 
