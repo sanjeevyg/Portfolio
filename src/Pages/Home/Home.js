@@ -108,9 +108,9 @@ export default function Home(props) {
             </section>
             <section className="centralContent">
                 <div className="centralText">
-                    <div>Hi, <span>I am </span> </div>
-                    <div>Sanjeev Yogi. </div>
-                    <div className="description">Full stack software engineer. I love art, design & technology.</div>
+                    <p> Hi, <span>I am </span> </p>
+                    <p>Sanjeev Yogi. </p>
+                    <p className="description">Full stack software engineer. I love art, design & technology.</p>
                     <button>See Projects</button>
                 </div>
                 <div className="svgContainer">
@@ -121,7 +121,7 @@ export default function Home(props) {
                                  onMouseLeave={handleMouseLeave}  
                                  onMouseEnter={handleMouseEnter}
                                 >
-                                <rect id="Rectangle 13" x="385" y="182" width="501" height="423" rx="24" fill="#B1C2FC" fill-opacity="0.23"/>
+                                <rect id="Rectangle13" x="385" y="182" width="501" height="423" rx="24" fill="#B1C2FC" fill-opacity="0.23"/>
                                 <ellipse id="Ellipse10" cx="602" cy="383.5" rx="158" ry="150.5" fill="#0F2DCA" fill-opacity="0.7"/>
                                 <ellipse id="Ellipse1" cx="571" cy="396.5" rx="127" ry="121.5" fill="white"/>
                                 <ellipse id="Ellipse14" cx="566" cy="379.5" rx="49" ry="45.5" fill="white" fill-opacity="0.2"/>
