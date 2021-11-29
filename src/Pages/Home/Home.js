@@ -85,7 +85,7 @@ export default function Home(props) {
                     <div className="star">
                          <SvgHomeBackground className="logo" height="50px" width="50px"/>
                     </div>
-                    <div>PORTFOLIO</div>
+                    <div id="titlePortfolio">PORTFOLIO</div>
                     <span>PROJECTS</span>
                     <span>BLOGS</span>
                     <span>ABOUT</span>
@@ -108,10 +108,11 @@ export default function Home(props) {
             </section>
             <section className="centralContent">
                 <div className="centralText">
-                    <p> Hi, <span>I am </span> </p>
-                    <p>Sanjeev Yogi. </p>
+                    <p> Think the Design,</p>
+                    <p> Design the Thinking.</p>
                     <p className="description">Full stack software engineer. I love art, design & technology.</p>
-                    <button>See Projects</button>
+                    <button class='projectButton'>See Projects</button>
+                    <button class='buttonShadow'></button>
                 </div>
                 <div className="svgContainer">
                          <svg id="svg" width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">
