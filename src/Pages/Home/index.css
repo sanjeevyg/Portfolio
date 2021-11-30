@@ -135,7 +135,8 @@
 }
 
 .centralContent {
-    font-size: 61px;
+    /* font-size: 61px; */
+    font-size: 3.65vw;
     color: rgb(44, 40, 40);
     /* background-color: rgb(224, 64, 104); */
     width: 80vw;
@@ -227,18 +228,15 @@
     border: 1px solid rgb(77, 114, 214);
     border-radius: 5px;
     font-weight: bolder;
-
 } 
 
 .description {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.4vw;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
     padding-left: 5px;
     margin-top: 70px;
     width: 33vw;
-    /* margin-bottom: 60px; */
-    /* opacity: 0.9; */
 }
 
 #Subtract {
@@ -248,7 +246,6 @@
 #Rectangle13 {
     fill: rgb(210, 214, 251, 0.9);
 }
-
 
 .star {
     padding-right: 15px;

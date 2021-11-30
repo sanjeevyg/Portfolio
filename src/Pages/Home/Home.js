@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
-import { AiOutlineMenu, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineScissor, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
@@ -93,7 +93,7 @@ export default function Home(props) {
                 </div>
                 <div className="menuContainer">
                     <ul className="menu">
-                        <a href="#"><button>Let's Talk</button></a>
+                        <a href="#"><button>Let's Talk </button></a>
                     </ul>
                 </div>
             </section> 

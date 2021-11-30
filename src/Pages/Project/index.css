@@ -156,6 +156,7 @@
 
 .projectNumber span {
     color: blue;
+    font-size: 1.3rem;
 }
 
 :root {
@@ -163,12 +164,13 @@
 }
 
 .projectNumber {
-    font-weight: bolder;
+    font-family: Avertastd,sans-serif;
+    font-weight: bold;
     position: fixed;
     top: 100px;
     right: 190px;
     z-index: 9;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .techInfoOne {
