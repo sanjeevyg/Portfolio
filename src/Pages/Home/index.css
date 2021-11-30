@@ -45,15 +45,18 @@
 #titlePortfolio {
     color: rgb(44, 40, 40);
     font-weight: bolder;
+    letter-spacing: .05rem;
 }
 
 #headerLeft span {
     padding-left: 50px;
     font-size: 9pt;
+    letter-spacing: .05rem;
 }
 
 #headerLeft span:hover {
     color: rgb(61, 4, 195);
+    font-weight: bolder;
 }
 
 .socialBar{
@@ -126,7 +129,6 @@
 #socialListContainer li a:hover {
     transition-delay: 0s, 0.5s, 0.5s;
     z-index: 12;
-    color: rgb(61, 4, 195);
     transform: translateX(20px);
 }
 
@@ -175,13 +177,14 @@
     font-style: arial;
     font-weight: 600;
     /* box-shadow: 10px 10px  rgba(133, 127, 212, 0.2); */
-    box-shadow: 10px 10px 0px -.5px, rgb(29, 80, 219) 10px 10px;
+    box-shadow: 10px 10px 0px -.7px, rgb(10, 65, 216) 10px 10px;
     /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4)); */
     
 }
 
 .centralText button:hover {
     background-color: rgb(61, 4, 195);
+    transition: .5 ease;
 }
 
 #svg {
@@ -221,6 +224,12 @@
     z-index: 11;
 }
 
+.menuNinety {
+    right: 1vw;
+    transform: rotate(270deg);
+    top: 200px;
+}
+
 .menu a button {
     color: #000000;
     padding: 10px 15px;
@@ -230,13 +239,20 @@
     font-weight: bolder;
 } 
 
+.menu a button:hover {
+    background: #3131e9;
+    color: white;
+    transition: .5s ease;
+}
+
 .description {
-    font-size: 1.4vw;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
     padding-left: 5px;
     margin-top: 70px;
     width: 33vw;
+    letter-spacing: .06em;
 }
 
 #Subtract {

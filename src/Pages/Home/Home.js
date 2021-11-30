@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
-import { AiOutlineMenu, AiOutlineScissor, AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
+import { AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
@@ -34,9 +34,8 @@ export default function Home(props) {
     let projectTwoState = useSelector(state => state.projectTwoVisibility)
     let projectThreeState = useSelector(state => state.projectThreeVisibility)
 
-    console.log("projectTwostate", projectTwoState)
+    // console.log("homeState", homeState)
 
-   
     if(homeState) {
         linkedinRef.current.style.color = "#2f6db9"
         githubRef.current.style.color = "#2f6db9"
@@ -74,7 +73,6 @@ export default function Home(props) {
 
     const handleMouseEnter = () => {
     geometry.current.style.transition = 'none'
-    // image.current.style.transform = 'translateZ(130px)'
     }
 
     return (
@@ -91,7 +89,7 @@ export default function Home(props) {
                     <span>ABOUT</span>
                     <span>CONTACT</span>
                 </div>
-                <div className="menuContainer">
+                <div className={ isVisible ?"menuContainer" : "menuContainer menuNinety" }>
                     <ul className="menu">
                         <a href="#"><button>Let's Talk </button></a>
                     </ul>
@@ -111,7 +109,7 @@ export default function Home(props) {
                     <p> Think the Design,</p>
                     <p> Design the Thinking.</p>
                     <p className="description">Full stack software engineer. I love art, design & technology.</p>
-                    <button class='projectButton'>See Projects</button>
+                    <button className='projectButton'>See Projects </button>
                     <button class='buttonShadow'></button>
                 </div>
                 <div className="svgContainer">

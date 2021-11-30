@@ -27,9 +27,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 79%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 70vh;
+    width: 70vw;
     transform-style: preserve-3d;
     /* background-color: cornflowerblue; */
 }
@@ -43,8 +42,9 @@
 } */
 
 .card {
-    min-height: 55vh;
-    width: 60rem;
+    position: absolute;
+    min-height: 79%;
+    min-width: 81%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,9 @@
     font-weight: 350;
     overflow-wrap: wrap;
     /* color: white; */
-    color: rgb(73, 65, 65);
+    color: rgb(73, 65, 65, 0.9);
+    letter-spacing: .03rem;
+    
     /* background-color: blue; */
 }
 
@@ -154,7 +156,7 @@
     /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4)); */
 }
 
-.projectNumber span {
+.projectTitle span {
     color: blue;
     font-size: 1.3rem;
 }
@@ -163,14 +165,24 @@
     --text-color: rgb(226, 166, 0);
 }
 
-.projectNumber {
+.projectTitle {
     font-family: Avertastd,sans-serif;
     font-weight: bold;
     position: fixed;
     top: 100px;
-    right: 190px;
+    right: 57.5vw;
     z-index: 9;
-    font-size: 1.3rem;
+    letter-spacing: .5em;
+    font-size: 1.1rem;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    border-left: 2px solid rgb(10, 26, 243);
+    /* border-right: 2px solid rgb(0, 0, 0); */
+    /* padding-bottom: 5px; */
+    padding-left: 7px;
+    padding-right: 7px;
+    /* padding: 10px 20px; */
+    /* border-radius: 5px; */
+    /* background: #3f87a6; */
 }
 
 .techInfoOne {
@@ -182,7 +194,8 @@
 
 #frontend, #backend {
     font-weight:  350;
-    color: rgb(73, 65, 65);
+    color: rgba(65, 46, 46, 0.9);
+    letter-spacing: .03rem;
     
     /* color: white; */
 }
@@ -199,3 +212,25 @@
     color: rgb(73, 65, 65);
 }
 
+
+.skyGazerVideo {
+    position: absolute;
+    /* background: rgb(184, 11, 11); */
+    z-index: 99999999;
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+} 
+
+.skyGazerVideo iframe{
+    position: relative;
+    min-height: 79%;
+    min-width: 81%;
+    min-height: 55vh;
+    outline: none;
+    border: none;
+}

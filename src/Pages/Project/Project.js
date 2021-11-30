@@ -87,12 +87,20 @@ export default function Project() {
     dispatch({type: "PROJECT_ONE", visibility: isProjectOneVisible})
     dispatch({type: "PROJECT_TWO", visibility: isProjectTwoVisible})
     dispatch({type: "PROJECT_THREE", visibility: isProjectThreeVisible})
+
+
+    //video 
+
+    const skyGazer = "https://www.youtube.com/embed/G33j5Qi4rE8" 
   
    
     return (
         <div classNam="projectContainer" >
           <section className="sectionContainer one" ref={projectOneRef}> 
-            <div className="projectNumber">PROJECTS <span>|</span></div>
+            <div className="projectTitle">PROJECTS</div>
+            <div className="skyGazerVideo">
+                  <iframe width="560" height="315"  src={skyGazer} allowFullScreen></iframe>
+            </div>
           
             <div className="subsectionContainer subOne" 
               ref={sectionOne}
@@ -112,12 +120,13 @@ export default function Project() {
                     </div>
                     <div className="websiteOne"> 
                         <button>WEBSITE</button>
-                        <button>PLAY VIDEO</button>
+                        <button>VIDEO</button>
                     </div>
                 </div>
                 <div className="skyGazer" ref={imageOne} >
                     <img src={astonomyImg} alt="skyGazer"/>
                 </div>
+                
               </div>
            </div>
           </section>

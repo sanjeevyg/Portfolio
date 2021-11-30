@@ -1,5 +1,4 @@
 import './App.css';
- import react from 'react';
 import Home from './Pages/Home/Home.js';
 import Project from './Pages/Project/Project.js';
 import About from './Pages/About/About.js';

@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { useState, useEffect, useMemo } from 'react';
 
 export default function useElementOnScreen(targetRef, options) {
