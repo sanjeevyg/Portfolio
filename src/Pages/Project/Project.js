@@ -3,14 +3,15 @@ import './index.css';
 import projectOneLogo from '../../svg/astronomy.png';
 import astonomyImg from '../../svg/astronomyImg.png';
 import { useRef } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
+import { AiFillCloseSquare } from 'react-icons/ai';
 
-const websiteImage = "https://images.immediate.co.uk/production/volatile/sites/4/2021/01/astronomy-beginners-uk-7f589e4.jpg?quality=90&resize=768,574"
 
 export default function Project() {
 
   const imageOne = useRef(null)
+  const imageTwo = useRef(null)
   const titleOne = useRef(null)
 
     const sectionOne = useRef(null)
@@ -19,8 +20,8 @@ export default function Project() {
     
 
     const handleMouseMovePone = (e) => {
-      let xAxis = (window.innerWidth /2 - e.pageX)/90;
-      let yAxis = (window.innerWidth /2 - e.pageY)/90;
+      let xAxis = (window.innerWidth /2 - e.pageX)/120;
+      let yAxis = (window.innerWidth /2 - e.pageY)/120;
       sectionOne.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
     }
 
@@ -36,8 +37,8 @@ export default function Project() {
     }
 
     const handleMouseMovePtwo = (e) => {
-      let xAxis = (window.innerWidth /2 - e.pageX)/90;
-      let yAxis = (window.innerWidth /2 - e.pageY)/90;
+      let xAxis = (window.innerWidth /2 - e.pageX)/120;
+      let yAxis = (window.innerWidth /2 - e.pageY)/120;
       sectionTwo.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
     }
 
@@ -48,12 +49,12 @@ export default function Project() {
 
     const handleMouseEnterPtwo = () => {
       sectionTwo.current.style.transition = 'none'
-      imageOne.current.style.transform = 'translateZ(130px)'
+      imageTwo.current.style.transform = 'translateZ(130px)'
     }
 
     const handleMouseMovePthree = (e) => {
-      let xAxis = (window.innerWidth /2 - e.pageX)/90;
-      let yAxis = (window.innerWidth /2 - e.pageY)/90;
+      let xAxis = (window.innerWidth /2 - e.pageX)/120;
+      let yAxis = (window.innerWidth /2 - e.pageY)/120;
       sectionThree.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
       }
   
@@ -91,15 +92,27 @@ export default function Project() {
 
     //video 
 
-    const skyGazer = "https://www.youtube.com/embed/G33j5Qi4rE8" 
-  
+    let skyGazer = ""
+
+    const toggleProjectOne = () => {
+      dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
+    }
+    
+    const projectOneVideoStatus = useSelector(state => state.videoStatus)
+
+    projectOneVideoStatus ? skyGazer="https://www.youtube.com/embed/G33j5Qi4rE8?autoplay=1": skyGazer = "https://www.youtube.com/embed/G33j5Qi4rE8" 
+
+    const closeVideoOne = () => {
+      dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
+    }
    
     return (
         <div classNam="projectContainer" >
           <section className="sectionContainer one" ref={projectOneRef}> 
-            <div className="projectTitle">PROJECTS</div>
-            <div className="skyGazerVideo">
-                  <iframe width="560" height="315"  src={skyGazer} allowFullScreen></iframe>
+            <div className="projectTitle">PROJECT ONE</div>
+            <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
+                  <iframe width="560" height="315" title="videoOne" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
+              <div id="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
             </div>
           
             <div className="subsectionContainer subOne" 
@@ -120,19 +133,19 @@ export default function Project() {
                     </div>
                     <div className="websiteOne"> 
                         <button>WEBSITE</button>
-                        <button>VIDEO</button>
+                        <button onClick={toggleProjectOne}>VIDEO</button>
                     </div>
                 </div>
                 <div className="skyGazer" ref={imageOne} >
                     <img src={astonomyImg} alt="skyGazer"/>
                 </div>
-                
               </div>
            </div>
           </section>
           
 
           <section className="sectionContainer two" ref={projectTwoRef}> 
+            <div className="projectTitle">PROJECT TWO</div>
             <div className="subsectionContainer subTwo" 
               ref={sectionTwo}
               onMouseMove={handleMouseMovePtwo}
@@ -140,12 +153,24 @@ export default function Project() {
               onMouseEnter={handleMouseEnterPtwo}  
             >
               <div class="card cTwo" > 
-                <div className="info"> 
-                    <h1 className="title">PROJECT TWO</h1>
-                    <h4> App's uses the NASA api to find the general information about the planets in solar system and other galaxies.</h4>
-                    <div className="visitWebsite"> 
-                        <button>Visit Website</button>
+                <div className="info infoTwo"> 
+                    <h1 className="title" ref={titleOne}>SKY GAZER</h1>
+                    <h3> 
+                      App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                    </h3>
+                    <div className="techInfoTwo"> 
+                      <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
+                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript</h4>
                     </div>
+                    <div className="websiteTwo"> 
+                        <button>WEBSITE</button>
+                        <button onClick={toggleProjectOne}>VIDEO</button>
+                    </div>
+                    <div className="skyGazer" ref={imageTwo} >
+                      <img src={astonomyImg} alt="skyGazer"/>
+                    </div>
+                   
+                
                 </div>
                 {/* <div className="skyGazer" ref={image}  >
                     <img src={projectOneLogo} alt="skyGazer" />

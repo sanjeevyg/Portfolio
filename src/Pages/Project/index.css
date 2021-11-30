@@ -126,7 +126,7 @@
 }
     
 .infoOne h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 25px;
 }
 
@@ -146,14 +146,21 @@
     padding: .5rem 1rem;
     margin-bottom: 50px;
     border: none;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-color: rgb(87, 125, 207);
+    background-color: rgb(82, 158, 202);
     margin-right: 15px;
+    letter-spacing: .05rem;
     /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
     /* border-radius: 30px; */
     /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4)); */
+}
+
+.websiteOne button:hover {
+    transform: scale(1.1);
+    background-color: rgb(78, 72, 72);
+    transition: .7 s ease-in-out;
 }
 
 .projectTitle span {
@@ -170,16 +177,15 @@
     font-weight: bold;
     position: fixed;
     top: 100px;
-    right: 57.5vw;
+    right: 54vw;
     z-index: 9;
     letter-spacing: .5em;
     font-size: 1.1rem;
     /* border-bottom: 1px solid rgb(0, 0, 0); */
-    border-left: 2px solid rgb(10, 26, 243);
+    border-left: 3px solid rgb(10, 26, 243);
     /* border-right: 2px solid rgb(0, 0, 0); */
     /* padding-bottom: 5px; */
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 12px;
     /* padding: 10px 20px; */
     /* border-radius: 5px; */
     /* background: #3f87a6; */
@@ -216,7 +222,7 @@
 .skyGazerVideo {
     position: absolute;
     /* background: rgb(184, 11, 11); */
-    z-index: 99999999;
+    z-index: 0;
     height: 70vh;
     width: 70vw;
     display: flex;
@@ -226,11 +232,44 @@
     opacity: 0;
 } 
 
-.skyGazerVideo iframe{
+.skyGazerVideo iframe, .videoOneActive iframe {
     position: relative;
-    min-height: 79%;
-    min-width: 81%;
-    min-height: 55vh;
+    min-width: 58vw;
+    height: 59vh;
     outline: none;
     border: none;
+}
+
+.videoOneActive {
+    position: fixed;
+    background: rgba(12, 11, 11, 0.9);
+    /* height: 74vh; */
+    /* width: 76vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    visibility: visible;
+    opacity: 1;
+    z-index: 6;
+}
+
+.skyGazerVideo #closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 254, 254);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.videoOneActive  #closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 254, 254);
+}
+
+.videoOneActive  #closeBtn:hover {
+    transform: scale(1.1);
+    color: rgb(0, 81, 255);
 }

@@ -46,6 +46,7 @@
     color: rgb(44, 40, 40);
     font-weight: bolder;
     letter-spacing: .05rem;
+    font-size: 1.3rem;
 }
 
 #headerLeft span {
@@ -221,13 +222,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 11;
+    z-index: 5;
 }
 
 .menuNinety {
     right: 1vw;
     transform: rotate(270deg);
-    top: 200px;
+    top: 19vh;
+    z-index: 1;
+    transition: .5s ease;
 }
 
 .menu a button {
@@ -237,10 +240,11 @@
     border: 1px solid rgb(77, 114, 214);
     border-radius: 5px;
     font-weight: bolder;
+    z-index: 5;
 } 
 
 .menu a button:hover {
-    background: #3131e9;
+    background: #4545f3;
     color: white;
     transition: .5s ease;
 }
