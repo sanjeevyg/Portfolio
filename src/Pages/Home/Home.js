@@ -93,10 +93,10 @@ export default function Home(props) {
                 </div>
                 <div className="menuContainer">
                     <ul className="menu">
-                        <a href="#"><AiOutlineMenu size={37}/></a>
+                        <a href="#"><button>Let's Talk</button></a>
                     </ul>
                 </div>
-            </section>
+            </section> 
             <section className="socialBar">
                 <div className="coverOne"></div>
                 <div id="socialListContainer"> 

@@ -213,24 +213,30 @@
 .menuContainer {
     position: fixed;
     top: 50px;
-    right: 140px;
+    right: 10.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 11;
 }
 
-.menu a {
-color: #2f6db9;
+.menu a button {
+    color: #000000;
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid rgb(77, 114, 214);
+    border-radius: 5px;
+    font-weight: bolder;
+
 } 
 
 .description {
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: rgba(79, 80, 88, 0.705);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4);
     padding-left: 5px;
     margin-top: 70px;
-    width: 409px;
+    width: 33vw;
     /* margin-bottom: 60px; */
     /* opacity: 0.9; */
 }
@@ -263,7 +269,7 @@ color: #2f6db9;
     width: 100vw;
     min-height: 80px;
     border-top: 1px solid rgba(0,0,0,0.1);
-    right: 118px;
+    right: 39px;
 }
 
 
