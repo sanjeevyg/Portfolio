@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
-import projectOneLogo from '../../svg/astronomy.png';
 import astonomyImg from '../../svg/astronomyImg.png';
+import dogImg from '../../svg/dogScanner.png';
 import { useRef } from 'react';
 import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
@@ -10,9 +10,13 @@ import { AiFillCloseSquare } from 'react-icons/ai';
 
 export default function Project() {
 
-  const imageOne = useRef(null)
-  const imageTwo = useRef(null)
-  const titleOne = useRef(null)
+    const imageOne = useRef(null)
+    const imageTwo = useRef(null)
+    const imageThree = useRef(null)
+
+    const titleOne = useRef(null)
+    const titleTwo = useRef(null)
+    const titleThree = useRef(null)
 
     const sectionOne = useRef(null)
     const sectionTwo = useRef(null)
@@ -65,7 +69,7 @@ export default function Project() {
   
       const handleMouseEnterPthree = () => {
       sectionThree.current.style.transition = 'none'
-      imageOne.current.style.transform = 'translateZ(230px)'
+      imageThree.current.style.transform = 'translateZ(230px)'
       titleOne.current.style.transform = 'translateZ(230px)'
     }
 
@@ -121,17 +125,17 @@ export default function Project() {
               onMouseLeave={handleMouseLeavePone}  
               onMouseEnter={handleMouseEnterPone}  
             >
-              <div class="card cOne" > 
+              <div class="cOne" > 
                 <div className="info infoOne"> 
-                    <h1 className="title" ref={titleOne}>SKY GAZER</h1>
+                    <h1 className="title" ref={titleOne}>Sky Gazer</h1>
                     <h3> 
                       App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
                     <div className="techInfoOne"> 
                       <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
-                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript, CSS</h4>
+                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript, CSS, HTML</h4>
                     </div>
-                    <div className="websiteOne"> 
+                    <div className="websiteBtnOne"> 
                         <button>WEBSITE</button>
                         <button onClick={toggleProjectOne}>VIDEO</button>
                     </div>
@@ -139,7 +143,7 @@ export default function Project() {
                 <div className="skyGazer" ref={imageOne} >
                     <img src={astonomyImg} alt="skyGazer"/>
                 </div>
-              </div>dd 
+              </div>
            </div>
           </section>
           
@@ -154,7 +158,7 @@ export default function Project() {
             >
               <div class="card cTwo" > 
                 <div className="info infoTwo"> 
-                    <h1 className="title" ref={titleOne}>SKY GAZER</h1>
+                    <h1 className="title" ref={titleTwo}>Dog Scanner</h1>
                     <h3> 
                       App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
@@ -162,49 +166,49 @@ export default function Project() {
                       <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
                       <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript</h4>
                     </div>
-                    <div className="websiteTwo"> 
+                    <div className="websiteBtnTwo"> 
                         <button>WEBSITE</button>
-                        <button onClick={toggleProjectOne}>VIDEO</button>
+                        <button>VIDEO</button>
                     </div>
-                    <div className="skyGazer" ref={imageTwo} >
-                      <img src={astonomyImg} alt="skyGazer"/>
-                    </div>
-                   
-                
                 </div>
-                {/* <div className="skyGazer" ref={image}  >
-                    <img src={projectOneLogo} alt="skyGazer" />
-                    
-                </div> */}
+                <div className="dogScanner" ref={imageTwo} >
+                  <img src={dogImg} alt="skyGazer"/>
+                </div>
               </div>
            </div>
           </section>
 
           <section className="sectionContainer three" ref={projectThreeRef}> 
+            <div className="projectTitle">PROJECT THREE</div>
             <div className="subsectionContainer subThree" 
-              ref= {sectionThree}
+              ref={sectionThree}
               onMouseMove={handleMouseMovePthree}
               onMouseLeave={handleMouseLeavePthree}  
-              onMouseEnter={handleMouseEnterPthree}    
+              onMouseEnter={handleMouseEnterPthree}  
             >
               <div class="card cThree" > 
-                <div className="info"> 
-                    <h1 className="title">PROJECT THREE</h1>
-                    <h4> App built for planets</h4>
-                    <button>3</button>
-                    <div className="visitWebsite"> 
-                        <button>Visit Website</button>
+                <div className="info infoThree"> 
+                    <h1 className="title" ref={titleThree}>SKY GAZER</h1>
+                    <h3> 
+                      App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                    </h3>
+                    <div className="techInfoThree"> 
+                      <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
+                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript</h4>
+                    </div>
+                    <div className="websiteBtnTwo"> 
+                        <button>WEBSITE</button>
+                        <button>VIDEO</button>
                     </div>
                 </div>
-                {/* <div className="skyGazer" ref={image}  >
-                    <img src={projectThreeLogo} alt="skyGazer" />
-                    
-                </div> */}
-                
+                <div className="skyGazer" ref={imageThree} >
+                  <img src={dogImg} alt="skyGazer"/>
+                </div>
               </div>
-              
            </div>
           </section>
+
+      
         </div>
     )
 }

@@ -215,7 +215,7 @@
 }
 
 .centralText:nth-child(1) span {
-    color: rgb(24, 28, 207, .9);
+    color: rgba(35, 35, 36, 0.9);
 }
 
 .leftText span {
@@ -272,7 +272,7 @@
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     padding-left: 5px;
-    margin-top: 70px;
+    margin-top: 75px;
     width: 21vw;
     letter-spacing: .06em;
     padding-bottom: 5px;
@@ -284,7 +284,7 @@
 .intro {
     font-size: 1.3vw;
     font-weight: 700;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(84, 120, 199, 0.5);
     /* padding-left: 5px; */
     /* margin-top: 70px; */
     width: 33vw;
@@ -295,26 +295,18 @@
     /* margin-top: 10px; */
     color: rgba(0, 0, 0);
     /* letter-spacing: .03em; */
-    font-size: 3.9vw;
+    font-size: 4.1vw;
     /* padding-bottom: 25px; */
     /* width: 24vw;
     border-bottom: 2px solid rgba(0,0,0,0.1); */
 }
 
 #introTwo {
-    font-size: 2vw;
-    /* font-weight: 500; */
-    /* color: rgb(212, 14, 14); */
-    /* padding-left: 5px; */
-    /* margin-top: 20px; */
+    font-size: 2.2vw;
     width: 40vw;
-    letter-spacing: .04em;
+    letter-spacing: .03em;
     margin-bottom: 3rem;
-    padding-bottom: 31px;
-    /* border-bottom: 1px solid rgba(0,0,0,0.1);  */
-    /* border-left: 1px solid rgba(0,0,0,0.1);  */
-    /* border-right: 1px solid rgba(0,0,0,0.1);  */
-    
+    margin-top: .5rem;
 }
 
 

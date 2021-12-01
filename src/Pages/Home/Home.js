@@ -3,7 +3,6 @@ import './index.css';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
 import { AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaVolleyballBall} from 'react-icons/fa';
-import { GiCarWheel} from 'react-icons/gi';
 import { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
@@ -36,7 +35,7 @@ export default function Home(props) {
     let projectTwoState = useSelector(state => state.projectTwoVisibility)
     let projectThreeState = useSelector(state => state.projectThreeVisibility)
 
-    // console.log("homeState", homeState)
+    console.log("projectTwo", projectTwoState)
 
     if(homeState) {
         linkedinRef.current.style.color = "#2f6db9"
