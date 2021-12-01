@@ -129,7 +129,7 @@ export default function Project() {
                     </h3>
                     <div className="techInfoOne"> 
                       <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
-                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript</h4>
+                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript, CSS</h4>
                     </div>
                     <div className="websiteOne"> 
                         <button>WEBSITE</button>
@@ -139,7 +139,7 @@ export default function Project() {
                 <div className="skyGazer" ref={imageOne} >
                     <img src={astonomyImg} alt="skyGazer"/>
                 </div>
-              </div>
+              </div>dd 
            </div>
           </section>
           

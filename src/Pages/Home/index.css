@@ -139,7 +139,7 @@
 
 .centralContent {
     /* font-size: 61px; */
-    font-size: 3.65vw;
+    font-size: 3.9vw;
     color: rgb(44, 40, 40);
     /* background-color: rgb(224, 64, 104); */
     width: 80vw;
@@ -150,7 +150,7 @@
 }
 
 .centralText {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     position: absolute;
     font-weight: bolder;
     /* background: lawngreen; */
@@ -167,21 +167,39 @@
 }
 
 .projectButton {
-    margin-top: 70px;
-    font-size: 1.2rem;
-    padding: 15px 40px;
+    margin-top: 99px;
+    font-size: 1.3rem;
+    padding: 17px 40px;
     background-color: rgb(29, 80, 219);
     color: white;
-    text-align: center;
-    border-radius: 5px;
+    border-radius: 7px;
     border: none;
-    font-style: arial;
     font-weight: 600;
-    /* box-shadow: 10px 10px  rgba(133, 127, 212, 0.2); */
     box-shadow: 10px 10px 0px -.7px, rgb(10, 65, 216) 10px 10px;
     /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4)); */
-    
 }
+
+#button {
+    position: relative;
+    margin-left: 30px;
+    animation: button 5s linear infinite;
+    transform-origin: center;
+}
+    
+
+ @keyframes button {
+    0% {
+        transform:  translate(-40px) rotate(0deg);
+
+    }
+    50% {
+        transform: translate(42px) rotate(180deg);
+    }
+    100% {
+        transform: translate(-40px) rotate(0deg);
+    }
+}
+    
 
 .centralText button:hover {
     background-color: rgb(61, 4, 195);
@@ -197,7 +215,7 @@
 }
 
 .centralText:nth-child(1) span {
-    color: rgb(29, 80, 219);
+    color: rgb(24, 28, 207, .9);
 }
 
 .leftText span {
@@ -255,9 +273,51 @@
     color: rgba(0, 0, 0, 0.5);
     padding-left: 5px;
     margin-top: 70px;
+    width: 21vw;
+    letter-spacing: .06em;
+    padding-bottom: 5px;
+    border-bottom: .5px solid rgba(0,0,0,0.1); 
+  
+    
+}
+
+.intro {
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .5);
+    /* padding-left: 5px; */
+    /* margin-top: 70px; */
     width: 33vw;
     letter-spacing: .06em;
 }
+
+#name {
+    /* margin-top: 10px; */
+    color: rgba(0, 0, 0);
+    /* letter-spacing: .03em; */
+    font-size: 3.9vw;
+    /* padding-bottom: 25px; */
+    /* width: 24vw;
+    border-bottom: 2px solid rgba(0,0,0,0.1); */
+}
+
+#introTwo {
+    font-size: 2vw;
+    /* font-weight: 500; */
+    /* color: rgb(212, 14, 14); */
+    /* padding-left: 5px; */
+    /* margin-top: 20px; */
+    width: 40vw;
+    letter-spacing: .04em;
+    margin-bottom: 3rem;
+    padding-bottom: 31px;
+    /* border-bottom: 1px solid rgba(0,0,0,0.1);  */
+    /* border-left: 1px solid rgba(0,0,0,0.1);  */
+    /* border-right: 1px solid rgba(0,0,0,0.1);  */
+    
+}
+
+
 
 #Subtract {
     fill: rgb(210, 214, 251, 0.5);

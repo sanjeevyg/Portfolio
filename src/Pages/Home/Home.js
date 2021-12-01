@@ -1,7 +1,9 @@
 import React from 'react';
 import './index.css';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
-import { AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
+import { AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { FaVolleyballBall} from 'react-icons/fa';
+import { GiCarWheel} from 'react-icons/gi';
 import { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
@@ -106,11 +108,12 @@ export default function Home(props) {
             </section>
             <section className="centralContent">
                 <div className="centralText">
-                    <p> Think the Design,</p>
-                    <p> Design the Thinking.</p>
-                    <p className="description">Full stack software engineer. I love art, design & technology.</p>
-                    <button className='projectButton'>See Projects </button>
-                    <button class='buttonShadow'></button>
+                    <p className="intro">Hello, my name is</p>
+                    <p id="name"> Sanjeev Yogi</p>
+                    <p id="introTwo"> <span> I love art, design & technology.</span></p>
+                    <p className="description">| Full Stack Software Engineer |</p>
+                    <button className='projectButton'> See Projects <FaVolleyballBall id="button" size={19}/></button>
+                    {/* <button class='buttonShadow'></button>  */}
                 </div>
                 <div className="svgContainer">
                          <svg id="svg" width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">
