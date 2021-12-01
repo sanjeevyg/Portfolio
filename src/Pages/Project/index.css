@@ -41,16 +41,17 @@
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
+    border-radius: 15px;
 }
 
 .cOne {
     /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c) */
-    background: #dfb07f;
+    background:rgb(253, 182, 27)
 }
 
 
 .cTwo {
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background: rgb(251, 182, 125)
 }
 
 
@@ -69,14 +70,14 @@
 
 .skyGazer img {
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
-    max-width: 23em;
+    max-width: 27em;
     margin-right: 50px;
     z-index: 2;
 }
 
 .dogScanner img {
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
-    max-width: 25em;
+    max-width: 27em;
     margin-right: 50px;
     z-index: 2;
 }
@@ -90,23 +91,33 @@
     /* background-color: blueviolet; */
     height: 50vh;
     width: 25vw;
-    color: rgb(54, 50, 50);
+    color: rgb(255, 255, 255);
     margin-left: 50px;
 }
     
 .info h1 {
     font-size: 2.5rem;
     margin-top: 25px;
+    /* filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.4)); */
+}
+
+.info h1 span {
+    color: rgb(236, 71, 49);
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+#e {
+    color: rgb(81, 155, 224);
 }
 
 .info h3 {
     font-size: 1.2rem;
     padding: 2rem 0rem;
-    font-weight: 350;
+    font-weight: 500;
     overflow-wrap: wrap;
     /* color: white; */
-    color: rgb(73, 65, 65, 0.9);
-    letter-spacing: .03rem;
+    color: rgba(255, 255, 255);
+    letter-spacing: .04rem;
     
     /* background-color: blue; */
 }
@@ -118,14 +129,15 @@
     font-size: 1rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-color: rgb(82, 158, 202);
+    background-color: rgb(255, 202, 88);
     margin-right: 15px;
     letter-spacing: .05rem;
+    filter: drop-shadow(0px .5px .5px rgba(0, 0, 0, 0.4));
 }
 
 .websiteBtnOne button:hover, .websiteBtnTwo button:hover, .websiteBtnThree button:hover{
     transform: scale(1.1);
-    background-color: rgb(78, 72, 72);
+    background-color: rgb(134, 189, 206);
     transition: .7 s ease-in-out;
 }
 
@@ -159,8 +171,8 @@
 }
 
 #frontend, #backend {
-    font-weight:  350;
-    color: rgba(65, 46, 46, 0.9);
+    font-weight:  500;
+    color: rgba(255, 255, 255);
     letter-spacing: .03rem;
     
     /* color: white; */
@@ -168,14 +180,14 @@
 
 #backend span {
     /* color: white; */
-    color: rgb(73, 65, 65);
-    font-weight:  350;
+    color: rgba(255, 255, 255);
+    font-weight:  500;
 }
 
 #frontend span {
     /* color: white; */
-    font-weight:  350;
-    color: rgb(73, 65, 65);
+    color: rgba(255, 255, 255);
+    font-weight:  500;
 }
 
 

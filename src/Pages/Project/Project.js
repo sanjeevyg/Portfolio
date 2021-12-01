@@ -127,7 +127,7 @@ export default function Project() {
             >
               <div class="cOne" > 
                 <div className="info infoOne"> 
-                    <h1 className="title" ref={titleOne}>Sky Gazer</h1>
+                    <h1 className="title" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
                     <h3> 
                       App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
@@ -188,7 +188,7 @@ export default function Project() {
             >
               <div class="card cThree" > 
                 <div className="info infoThree"> 
-                    <h1 className="title" ref={titleThree}>SKY GAZER</h1>
+                    <h1 className="title" ref={titleThree}>SKY G<span>A</span>Z<span>E</span>R</h1>
                     <h3> 
                       App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
