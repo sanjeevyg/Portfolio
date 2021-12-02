@@ -2,12 +2,13 @@ import React from 'react';
 import './index.css';
 import astonomyImg from '../../svg/astronomyImg.png';
 import dogImg from '../../svg/dogScanner.png';
+import phoneImg from '../../svg/phone.png';
 import { useRef } from 'react';
 import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
 import { IoPawSharp } from 'react-icons/io5';
-import { SiRubyonrails, SiReact } from 'react-icons/si';
+// import { SiRubyonrails, SiReact } from 'react-icons/si';
 
 
 export default function Project() {
@@ -59,8 +60,8 @@ export default function Project() {
     }
 
     const handleMouseMovePthree = (e) => {
-      let xAxis = (window.innerWidth /2 - e.pageX)/120;
-      let yAxis = (window.innerWidth /2 - e.pageY)/120;
+      let xAxis = (window.innerWidth /2 - e.pageX)/170;
+      let yAxis = (window.innerWidth /2 - e.pageY)/170;
       sectionThree.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
       }
   
@@ -113,7 +114,7 @@ export default function Project() {
     }
    
     return (
-        <div classNam="projectContainer" >
+        <div className="projectContainer" >
           <section className="sectionContainer one" ref={projectOneRef}> 
             <div className="projectTitle">PROJECT ONE</div>
             <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
@@ -160,7 +161,7 @@ export default function Project() {
             >
               <div class="card cTwo" > 
                 <div className="info infoTwo"> 
-                    <h1 className="title" ref={titleTwo}>Dog <IoPawSharp id="paw" size={35} /> Scanner</h1>
+                    <h1 className="title" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
                     <h3> 
                       App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
                     </h3>
@@ -191,21 +192,21 @@ export default function Project() {
             >
               <div class="card cThree" > 
                 <div className="info infoThree"> 
-                    <h1 className="title" ref={titleThree}>SKY G<span>A</span>Z<span>E</span>R</h1>
+                    <h1 className="title" ref={titleThree}>Watchual</h1>
                     <h3> 
-                      App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                      Shopping app for watches made for ios mobile devices. The watches can be selected, added to the card and payment can be processed. 
                     </h3>
                     <div className="techInfoThree"> 
-                      <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
-                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript</h4>
+                      <h4 id="backend"><span>Backend : </span>Django</h4>
+                      <h4 id="frontend"><span>Frontend : </span>React Native</h4>
                     </div>
-                    <div className="websiteBtnTwo"> 
+                    <div className="websiteBtnThree"> 
                         <button>WEBSITE</button>
                         <button>VIDEO</button>
                     </div>
                 </div>
-                <div className="skyGazer" ref={imageThree} >
-                  <img src={dogImg} alt="skyGazer"/>
+                <div className="watchual" ref={imageThree} >
+                  <img src={phoneImg} alt="skyGazer"/>
                 </div>
               </div>
            </div>

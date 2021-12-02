@@ -54,10 +54,10 @@ export default function Home(props) {
         twitterRef.current.style.color = "rgb(33, 172, 182)"
         instagramRef.current.style.color = "rgb(33, 172, 182)"
     } else if (projectThreeState) {
-        linkedinRef.current.style.color = "black"
-        githubRef.current.style.color = "black"
-        twitterRef.current.style.color = "black"
-        instagramRef.current.style.color = "black"
+        linkedinRef.current.style.color = "rgb(243, 100, 75)"
+        githubRef.current.style.color = "rgb(243, 100, 75)"
+        twitterRef.current.style.color = "rgb(243, 100, 75)"
+        instagramRef.current.style.color = "rgb(243, 100, 75)"
     }
 
     const handleMouseMove = (e) => {
