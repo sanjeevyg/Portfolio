@@ -49,10 +49,10 @@ export default function Home(props) {
         instagramRef.current.style.color = "rgb(253, 182, 27)"
     } 
     else if (projectTwoState) {
-        linkedinRef.current.style.color = "red"
-        githubRef.current.style.color = "red"
-        twitterRef.current.style.color = "red"
-        instagramRef.current.style.color = "red"
+        linkedinRef.current.style.color = "rgb(33, 172, 182)"
+        githubRef.current.style.color = "rgb(33, 172, 182)"
+        twitterRef.current.style.color = "rgb(33, 172, 182)"
+        instagramRef.current.style.color = "rgb(33, 172, 182)"
     } else if (projectThreeState) {
         linkedinRef.current.style.color = "black"
         githubRef.current.style.color = "black"

@@ -6,6 +6,7 @@ import { useRef } from 'react';
 import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
+import { IoPawSharp } from 'react-icons/io5';
 
 
 export default function Project() {
@@ -158,13 +159,13 @@ export default function Project() {
             >
               <div class="card cTwo" > 
                 <div className="info infoTwo"> 
-                    <h1 className="title" ref={titleTwo}>Dog Scanner</h1>
+                    <h1 className="title" ref={titleTwo}>Dog <IoPawSharp id="paw" size={35} /> Scanner</h1>
                     <h3> 
-                      App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                      App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
                     </h3>
                     <div className="techInfoTwo"> 
-                      <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
-                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript</h4>
+                      <h4 id="backend"><span>Backend : </span>Node.js </h4>
+                      <h4 id="frontend"><span>Frontend : </span>React, Tensorflow</h4>
                     </div>
                     <div className="websiteBtnTwo"> 
                         <button>WEBSITE</button>
@@ -174,6 +175,7 @@ export default function Project() {
                 <div className="dogScanner" ref={imageTwo} >
                   <img src={dogImg} alt="skyGazer"/>
                 </div>
+                <div className="circle"></div>
               </div>
            </div>
           </section>
