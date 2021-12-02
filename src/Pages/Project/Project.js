@@ -7,6 +7,7 @@ import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
 import { IoPawSharp } from 'react-icons/io5';
+import { SiRubyonrails, SiReact } from 'react-icons/si';
 
 
 export default function Project() {
@@ -133,7 +134,7 @@ export default function Project() {
                       App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
                     <div className="techInfoOne"> 
-                      <h4 id="backend"><span>Backend : </span>Ruby on Rails </h4>
+                      <h4 id="backend"><span>Backend : </span>Ruby on Rails</h4>
                       <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript, CSS, HTML</h4>
                     </div>
                     <div className="websiteBtnOne"> 
