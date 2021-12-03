@@ -8,6 +8,7 @@ import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
 import { IoPawSharp } from 'react-icons/io5';
+import { MdOutlineWatchLater } from 'react-icons/md';
 // import { SiRubyonrails, SiReact } from 'react-icons/si';
 
 
@@ -45,7 +46,7 @@ export default function Project() {
 
     const handleMouseMovePtwo = (e) => {
       let xAxis = (window.innerWidth /2 - e.pageX)/120;
-      let yAxis = (window.innerWidth /2 - e.pageY)/120;
+      let yAxis = (window.innerWidth /2 - e.pageY)/190;
       sectionTwo.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
     }
 
@@ -61,7 +62,7 @@ export default function Project() {
 
     const handleMouseMovePthree = (e) => {
       let xAxis = (window.innerWidth /2 - e.pageX)/170;
-      let yAxis = (window.innerWidth /2 - e.pageY)/170;
+      let yAxis = (window.innerWidth /2 - e.pageY)/250;
       sectionThree.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
       }
   
@@ -122,23 +123,23 @@ export default function Project() {
               <div id="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
             </div>
           
-            <div className="subsectionContainer subOne" 
+            <div className="subsectionContainer" 
               ref={sectionOne}
               onMouseMove={handleMouseMovePone}
               onMouseLeave={handleMouseLeavePone}  
               onMouseEnter={handleMouseEnterPone}  
             >
-              <div class="cOne" > 
+              <div class="card cOne" > 
                 <div className="info infoOne"> 
                     <h1 className="title" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
                     <h3> 
                       App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
-                    <div className="techInfoOne"> 
-                      <h4 id="backend"><span>Backend : </span>Ruby on Rails</h4>
-                      <h4 id="frontend"><span>Frontend : </span>Vanilla Javascript, CSS, HTML</h4>
+                    <div className="techInfo"> 
+                      <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
+                      <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, CSS, HTML</h4>
                     </div>
-                    <div className="websiteBtnOne"> 
+                    <div id="websiteBtnOne"> 
                         <button>WEBSITE</button>
                         <button onClick={toggleProjectOne}>VIDEO</button>
                     </div>
@@ -153,7 +154,7 @@ export default function Project() {
 
           <section className="sectionContainer two" ref={projectTwoRef}> 
             <div className="projectTitle">PROJECT TWO</div>
-            <div className="subsectionContainer subTwo" 
+            <div className="subsectionContainer" 
               ref={sectionTwo}
               onMouseMove={handleMouseMovePtwo}
               onMouseLeave={handleMouseLeavePtwo}  
@@ -165,11 +166,11 @@ export default function Project() {
                     <h3> 
                       App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
                     </h3>
-                    <div className="techInfoTwo"> 
-                      <h4 id="backend"><span>Backend : </span>Node.js </h4>
-                      <h4 id="frontend"><span>Frontend : </span>React, Tensorflow</h4>
+                    <div className="techInfo"> 
+                      <h4 className="backend"><span>Backend : </span>Node.js </h4>
+                      <h4 className="frontend"><span>Frontend : </span>React, Tensorflow</h4>
                     </div>
-                    <div className="websiteBtnTwo"> 
+                    <div id="websiteBtnTwo"> 
                         <button>WEBSITE</button>
                         <button>VIDEO</button>
                     </div>
@@ -177,14 +178,14 @@ export default function Project() {
                 <div className="dogScanner" ref={imageTwo} >
                   <img src={dogImg} alt="skyGazer"/>
                 </div>
-                <div className="circle"></div>
+                <div id="circle"></div>
               </div>
            </div>
           </section>
 
           <section className="sectionContainer three" ref={projectThreeRef}> 
             <div className="projectTitle">PROJECT THREE</div>
-            <div className="subsectionContainer subThree" 
+            <div className="subsectionContainer" 
               ref={sectionThree}
               onMouseMove={handleMouseMovePthree}
               onMouseLeave={handleMouseLeavePthree}  
@@ -193,14 +194,15 @@ export default function Project() {
               <div class="card cThree" > 
                 <div className="info infoThree"> 
                     <h1 className="title" ref={titleThree}>Watchual</h1>
+                    <div><MdOutlineWatchLater id="watch" size={60}/></div>
                     <h3> 
                       Shopping app for watches made for ios mobile devices. The watches can be selected, added to the card and payment can be processed. 
                     </h3>
-                    <div className="techInfoThree"> 
-                      <h4 id="backend"><span>Backend : </span>Django</h4>
-                      <h4 id="frontend"><span>Frontend : </span>React Native</h4>
+                    <div id="techInfo"> 
+                      <h4 className="backend"><span>Backend : </span>Django</h4>
+                      <h4 className="frontend"><span>Frontend : </span>React Native</h4>
                     </div>
-                    <div className="websiteBtnThree"> 
+                    <div id="websiteBtnThree"> 
                         <button>WEBSITE</button>
                         <button>VIDEO</button>
                     </div>
@@ -208,6 +210,8 @@ export default function Project() {
                 <div className="watchual" ref={imageThree} >
                   <img src={phoneImg} alt="skyGazer"/>
                 </div>
+                <div id="smallCircleOne"></div>
+                <div id="smallCircleTwo"></div>
               </div>
            </div>
           </section>

@@ -35,7 +35,7 @@
 }
 
 
-.cOne, .cTwo, .cThree {
+.card {
     position: relative;
     min-height: 79%;
     min-width: 81%;
@@ -91,10 +91,10 @@
 .watchual img {
     position: absolute;
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
-    width: 15vw;
-    transform: rotate(-30deg) translateY(-14rem) translateX(13rem);
+    width: 13vw;
+    transform: rotate(-25deg) translateY(-12rem) translateX(12rem);
     z-index: 5;
-    filter: drop-shadow(25px 0px 3.5px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(-25px 15px 4px rgba(0, 0, 0, 0.1));
 }
 
 #paw {
@@ -102,7 +102,18 @@
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.4));
 }
 
-.circle {
+#watch {
+    position: absolute;
+    left: 9.3rem;
+    top: 1.2rem;
+    z-index: 1;
+    color: rgb(238, 224, 95);
+    filter: drop-shadow(-7px 7px 1px rgba(0, 0, 0, 0.15));
+    /* filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.4)); */
+
+}
+
+#circle {
     position: absolute;
     /* top: 1rem; */
     right: 0rem;
@@ -114,6 +125,7 @@
     border-bottom-left-radius: 300px;
     filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1));
 }
+
     
 .info {
     /* position: relative; */
@@ -127,6 +139,37 @@
     color: rgb(255, 255, 255);
     margin-left: 50px;
 }
+
+#smallCircleOne {
+    position: absolute;
+    /* top: 1rem; */
+    left: 0rem;
+    top: 7rem;
+    min-width: 10%;
+    min-height: 29%;
+    background-color: rgb(231, 151, 137);
+    z-index: -1;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1));
+}
+
+#smallCircleTwo {
+    position: absolute;
+    /* top: 1rem; */
+    right: 2rem;
+    bottom: 0rem;
+    min-width: 9%;
+    min-height: 9%;
+    background-color: rgba(231, 151, 137);
+    z-index: -1;
+    /* border-radius: 300px; */
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    /* filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1)); */
+
+}
+
     
 .info h1 {
     font-size: 2.5rem;
@@ -148,12 +191,11 @@
     padding: 2rem 0rem;
     font-weight: 500;
     overflow-wrap: wrap;
-    /* color: white; */
     color: rgba(255, 255, 255);
     letter-spacing: .04rem;
 }    
 
-.websiteBtnOne button, .websiteBtnTwo button, .websiteBtnThree button {
+#websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button {
     padding: .5rem 1rem;
     margin-bottom: 50px;
     border: none;
@@ -165,20 +207,20 @@
     filter: drop-shadow(0px .5px .5px rgba(0, 0, 0, 0.4));
 }
 
-.websiteBtnOne button {
+#websiteBtnOne button {
     background-color: rgb(255, 202, 88);
 }
 
-.websiteBtnTwo button {
+#websiteBtnTwo button {
     background-color: rgb(33, 172, 182);
 }
 
-.websiteBtnThree button {
+#websiteBtnThree button {
     background-color: rgb(253, 136, 115);
 }
 
 
-.websiteBtnOne button:hover, .websiteBtnTwo button:hover, .websiteBtnThree button:hover{
+#websiteBtnOne button:hover, #websiteBtnTwo button:hover, #websiteBtnThree button:hover{
     transform: scale(1.1);
     /* background-color: rgb(134, 189, 206); */
     transition: .7 s ease-in-out;
@@ -207,7 +249,7 @@
     padding-left: 12px;
 }
 
-.techInfoOne, .techInfoTwo, .techInfoThree {
+.techInfo, .techInfo, #techInfo {
     display: flex;
     flex-direction: column;
     font-weight:  350;
@@ -224,21 +266,19 @@
     /* background-color: white ; */
 }
 
-#frontend, #backend {
+.frontend, .backend {
     font-weight:  500;
     color: rgba(255, 255, 255);
     letter-spacing: .03rem;
-    
-    /* color: white; */
 }
 
-#backend span {
+.backend span {
     /* color: white; */
     color: rgba(255, 255, 255);
     font-weight:  500;
 }
 
-#frontend span {
+.frontend span {
     /* color: white; */
     color: rgba(255, 255, 255);
     font-weight:  500;
@@ -267,6 +307,7 @@
 
 .videoOneActive {
     position: fixed;
+    left: 6rem;
     background: rgba(12, 11, 11, 0.9);
     /* height: 74vh; */
     /* width: 76vw; */
@@ -297,4 +338,5 @@
 .videoOneActive  #closeBtn:hover {
     transform: scale(1.1);
     color: rgb(0, 81, 255);
+    
 }

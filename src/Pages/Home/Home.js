@@ -81,7 +81,7 @@ export default function Home(props) {
             <div className="box"></div>
             <section className="header">
                 <div id="headerLeft">
-                    <div className="star">
+                    <div id="logo">
                          <SvgHomeBackground className="logo" height="50px" width="50px"/>
                     </div>
                     <div id="titlePortfolio">PORTFOLIO</div>
@@ -105,16 +105,16 @@ export default function Home(props) {
                     <li><a href="#" className="socialBarIcon" ref={el => instagramRef.current = el}><AiFillInstagram size={37}/></a></li>
                 </div>
             </section>
-            <section className="centralContent">
-                <div className="centralText">
-                    <p className="intro">Hello, my name is</p>
+            <section id="centralContent">
+                <div id="centralText">
+                    <p id="intro">Hello, my name is</p>
                     <p id="name"> Sanjeev Yogi</p>
                     <p id="introTwo"> <span> I love art, design & technology.</span></p>
                     <p className="description">| Full Stack Software Engineer |</p>
                     <button className='projectButton'> See Projects <FaVolleyballBall id="button" size={19}/></button>
                     {/* <button class='buttonShadow'></button>  */}
                 </div>
-                <div className="svgContainer">
+                <div id="svgContainer">
                          <svg id="svg" width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="finalLogo">
                                 <g id="geometry" ref={geometry} 
@@ -195,7 +195,7 @@ export default function Home(props) {
                                 </g>
                             </svg>
                 </div>
-                <section className="bottom"></section>
+                <section id="bottom"></section>
             </section>
         </div>
     )

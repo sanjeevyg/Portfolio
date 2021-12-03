@@ -24,15 +24,15 @@ function App() {
       <section className="parent">
         <Project/>
       </section>
-      <section className="parent">
+      {/* <section className="parent">
         <TransitionPage/>
-      </section>
+      </section> */}
       <section className="parent">
         <About />
       </section>
-      <section className="parent">
+      {/* <section className="parent">
         <Contact/>
-      </section>
+      </section> */}
     </div>
   );
   
