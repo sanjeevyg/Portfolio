@@ -223,7 +223,8 @@
 #websiteBtnOne button:hover, #websiteBtnTwo button:hover, #websiteBtnThree button:hover{
     transform: scale(1.1);
     /* background-color: rgb(134, 189, 206); */
-    transition: .7 s ease-in-out;
+    transition: .7s ease-in-out;
+    cursor: pointer;
 }
 
 

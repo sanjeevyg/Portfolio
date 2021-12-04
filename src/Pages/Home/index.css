@@ -11,6 +11,7 @@
     box-sizing: border-box;
 }
 
+
 .box {
     position: absolute;
     /* background: #fafaff; */
@@ -58,6 +59,7 @@
 #headerLeft span:hover {
     color: rgb(61, 4, 195);
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .socialBar{
@@ -111,7 +113,7 @@
     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     transition: 0.5s, z-index 0.5s, tranform 0.5s;
-    transition-delay: 0.5s, 0s, 0s;
+    /* transition-delay: 0.5s, 0s, 0s; */
     overflow: hidden;
 }
 
@@ -190,7 +192,6 @@
  @keyframes button {
     0% {
         transform:  translate(-40px) rotate(0deg);
-
     }
     50% {
         transform: translate(42px) rotate(180deg);
@@ -201,9 +202,10 @@
 }
     
 
-.centralText button:hover {
+#centralText button:hover {
     background-color: rgb(61, 4, 195);
     transition: .5 ease;
+    cursor: pointer;
 }
 
 #svg {
@@ -265,6 +267,7 @@
     background: #4545f3;
     color: white;
     transition: .5s ease;
+    cursor: pointer;
 }
 
 .description {
@@ -277,8 +280,6 @@
     letter-spacing: .06em;
     padding-bottom: 5px;
     border-bottom: .5px solid rgba(0,0,0,0.1); 
-  
-    
 }
 
 #intro {
@@ -308,8 +309,6 @@
     margin-bottom: 3rem;
     margin-top: .5rem;
 }
-
-
 
 #Subtract {
     fill: rgb(210, 214, 251, 0.5);

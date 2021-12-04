@@ -31,6 +31,10 @@
     content: "";
     color: white;
     width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .iconsGroupOne {
@@ -43,7 +47,7 @@
     flex-direction: row;
     height: 100px;
     color: rgb(255, 255, 255);
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .iconsGroupTwo {
@@ -65,7 +69,8 @@
     justify-content: space-evenly;
     border-left: .5px solid rgba(253, 253, 253, 0.1); 
     border-bottom: .5px solid rgba(253, 253, 253, 0.1); 
-    /* border-top: none ; */
+    font-size: 1rem;
+    font-weight: bolder;
 }
 
 .rails {
@@ -75,24 +80,83 @@
 
 .skills {
     position: relative;
-    /* background: orange; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    font-weight: normal;
+    font-weight: bold;
     top: .5rem;
     width: 100vw;
-    /* z-index: 10000000; */
-    font-size: 2rem;
-    letter-spacing: .5rem;
+    font-size: 1.9rem;
+    letter-spacing: .3rem;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 
-
-.icon{
-    align-self: center;
-    /* background-color: red; */
+.icon {
+    position: relative;
+    color: #ffffff;
+    margin: 5px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    filter: drop-shadow(-1px 1px 3px rgba(0, 0, 0, 0.6));
+    overflow: hidden;
+    z-index: 3;
 }
+
+.icon:hover {
+    content: "";
+    color: rgb(114, 166, 250);
+    transition-delay: 0s, 0.5s, 0.5s;
+    z-index: 12;
+    transform: translateY(3px);
+}
+
+.rails {
+    background-color: rgba(255, 255, 255, 0);
+    letter-spacing: .1rem;
+}
+
+.icon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(45deg) translateX(150px);
+    transition: .5s;
+}
+
+.icon:hover:before {
+    transform: skew(45deg) translateX(-150px);
+}
+
+#description {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+
+#box {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10rem;
+    margin-right: 2.5rem;
+    /* background-color: salmon; */
+    border: .5px solid rgba(253, 253, 253, 0.1);
+    z-index: 1;
+}
+
+

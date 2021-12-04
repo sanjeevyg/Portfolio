@@ -18,12 +18,21 @@ export default function About() {
                     </div>
                     <div className="iconsGroupTwo">
                         <div className="htmlic icon" ><SiHtmlacademy size={35} /></div>
-                        <div className="rails icon"> <SiRubyonrails  size={50} /></div>
+                        <div className="rails icon"> Rails </div>
                         <div className=" nodejs icon"> <DiNodejs  size={50} /></div>
                         <div className="django icon" > <SiDjango size={35} /></div>
                     </div>
+                    <div id="box">
+
+                    </div>
                 </section>
-            <section className="innerBackground"></section>
+            <section className="innerBackground">
+                <div id="description">
+                    My name is Sanjeev Yogi. I worked as an architect for few years.
+                                        @copyright : Sanjeev Yogi 
+
+                </div>
+            </section>
             </section>
         </div>
     )

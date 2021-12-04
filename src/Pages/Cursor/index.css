@@ -1,0 +1,74 @@
+body {
+  /* cursor: none; */
+}
+
+.cursor {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid rgb(70, 164, 226);
+  border-radius: 50%;
+  z-index: 100000;
+  animation: cursorAnimationOne .5s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes cursorAnimationOne {
+  from {
+    transform: scale(.3);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.cursor::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border: 9px solid rgb(83, 163, 216);
+  border-radius: 50%;
+  z-index: 100000;
+  top: -1.2rem;
+  left: -1.2rem;
+  opacity: .3;
+  animation: cursorAnimationTwo .5s infinite alternate;
+}
+
+
+@keyframes cursorAnimationTwo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.3);
+  }
+}
+
+.upScale {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid rgb(129, 169, 233);
+  border-radius: 50%;
+  animation: cursorAnimationThree .5s forwards;
+  border: 2px solid red;
+
+  z-index: 10000000;
+}
+
+@keyframes cursorAnimationThree {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
