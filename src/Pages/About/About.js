@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import {FaReact  } from 'react-icons/fa';
+import {AiOutlineCopyrightCircle  } from 'react-icons/ai';
 import {DiNodejs, DiFirebase, DiHeroku } from 'react-icons/di';
 import {SiRubyonrails, SiTensorflow, SiJavascript, SiDjango, SiCsswizardry, SiHtmlacademy} from 'react-icons/si';
 
@@ -32,8 +33,17 @@ export default function About() {
                 </section>
             <section className="innerBackground">
                 <div id="description">
-                    My name is Sanjeev Yogi. I worked as an architect for few years.
-                                        @copyright : Sanjeev Yogi 
+                    <div id="introduction"> 
+                        <div id="aboutMe">About me</div>
+                        <div id="bio"> 
+                           My name is Sanjeev Yogi. Prevously, I have worked as an architect for about five years and construction estimator as two years following my respective Bachelor degree in Architecture and Masters in Construction Management. Coding, which started as 
+                           a hobby, I immediately fell in love with it. So, I decided to join Flatiron School in August 2020 to pursue software engineering as a career. Though after graduation, I could not start a job search because of my military responsiblities. I am starting from where I left a year ago. I am looking
+                           forward to kick off my new career as a software engineer. 
+                        </div>
+                    </div>
+                    <div id="copyright"> 
+                        2021<AiOutlineCopyrightCircle id="copyrightLogo" size={12}/>copyright. All rights reserved.
+                    </div>
 
                 </div>
             </section>

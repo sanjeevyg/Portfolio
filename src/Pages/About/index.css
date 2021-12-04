@@ -3,11 +3,11 @@
     position: relative;
     height: 120vh;
     font-size: 15rem;
-    border-top-right-radius: 9rem;
+    border-top-left-radius: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .iconsContainer {
@@ -26,7 +26,7 @@
     position: relative;
     background-color: rgb(7, 2, 39);
     height: 79vh;
-    border-top-left-radius: 9rem;
+    border-top-right-radius: 5rem;
     position: relative;
     content: "";
     color: white;
@@ -97,7 +97,7 @@
     position: relative;
     color: #ffffff;
     margin: 5px;
-    right: 20px;
+    /* right: 20px; */
     width: 80px;
     height: 80px;
     display: flex;
@@ -148,6 +148,12 @@
 #description {
     font-size: 1.5rem;
     letter-spacing: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    
+    flex-wrap: wrap;
 }
 
 #box {
@@ -174,3 +180,46 @@
     display: block;
 }
 
+#copyright {
+    position: absolute;
+    display: flex;
+    bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255, .5);
+}
+
+#copyrightLogo {
+    position: relative;
+    transform: translateY(.3rem);
+    margin-right: 5px;
+
+}
+
+#introduction {
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 83vw;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: .5px solid rgba(253, 253, 253, 0.1); 
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+#aboutMe {
+    /* color: red; */
+    font-weight: bold;
+}
+
+#bio {
+    position: relative;
+    /* background-color: rgb(69, 53, 216); */
+    transform: translateY(-2rem);
+}
