@@ -36,7 +36,7 @@ export default function About() {
                     <div id="introduction"> 
                         <div id="aboutMe">About me</div>
                         <div id="bio"> 
-                           My name is Sanjeev Yogi. Prevously, I have worked as an architect for about five years and construction estimator as two years following my respective, Bachelor degree in Architecture and Masters in Construction Management. Coding, which started as 
+                           My name is Sanjeev Yogi. Prevously, I have worked as an architect for about five years and construction estimator as two years following the completion of my respective, Bachelor degree in Architecture and Masters in Construction Management. Coding, which started as 
                            a hobby, I immediately fell in love with it. So, I decided to join Flatiron School in Denver, in August 2020 to pursue software engineering as a career. Though after graduation, I could not kick-off my software engineering career because of my military related responsiblities. 
                            Now, when I am back, I am more determined than ever. I am starting from where I left a year ago. I am excited and looking forward to start my new career as a software engineer. 
                         </div>
