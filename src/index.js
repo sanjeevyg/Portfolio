@@ -62,14 +62,25 @@ const contactVisibility  = (state=false, action) => {
 }
 
 
-
-const videoStatus = (state=false, action) => {
+const videoOneStatus = (state=false, action) => {
   switch(action.type) {
     case "PROJECTONEVIDEO":
       return !state
+    default:
+      return state
+    }
+}
+const videoTwoStatus = (state=false, action) => {
+  switch(action.type) {
     case "PROJECTTWOVIDEO":
       return !state
-    case "PROJECTHREEVIDEO":
+    default:
+      return state
+    }
+}
+const videoThreeStatus = (state=false, action) => {
+  switch(action.type) {
+    case "PROJECTTHREEVIDEO":
       return !state
     default:
       return state
@@ -84,7 +95,9 @@ const allReducers = combineReducers({
   projectThreeVisibility: projectThreeVisibility,
   aboutVisibility: aboutVisibility,
   contactVisibility: contactVisibility,
-  videoStatus: videoStatus
+  videoOneStatus: videoOneStatus,
+  videoTwoStatus: videoTwoStatus,
+  videoThreeStatus: videoThreeStatus,
 })
 
 const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())

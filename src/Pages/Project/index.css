@@ -193,6 +193,7 @@
     overflow-wrap: wrap;
     color: rgba(255, 255, 255);
     letter-spacing: .04rem;
+    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif;
 }    
 
 #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button {
@@ -286,7 +287,7 @@
 }
 
 
-.skyGazerVideo {
+.skyGazerVideo, .dogScannerVideo, .watchualVideo {
     position: absolute;
     z-index: 0;
     height: 70vh;
@@ -298,7 +299,7 @@
     opacity: 0;
 } 
 
-.skyGazerVideo iframe, .videoOneActive iframe {
+.skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe,  .videoThreeActive iframe {
     position: relative;
     min-width: 58vw;
     height: 59vh;
@@ -306,7 +307,15 @@
     border: none;
 }
 
-.videoOneActive {
+.videoThreeActive iframe {
+    position: relative;
+    min-width: 61.5vw;
+    height: 62vh;
+    outline: none;
+    border: none;
+}
+
+.videoOneActive, .videoTwoActive, .videoThreeActive {
     position: fixed;
     left: 6rem;
     background: rgba(12, 11, 11, 0.9);
@@ -320,7 +329,7 @@
     z-index: 6;
 }
 
-.skyGazerVideo #closeBtn {
+.skyGazerVideo .closeBtn, .dogScannerVideo .closeBtn, .watchualVideo .closeBtn  {
     position: absolute;
     top: 0;
     right: 0;
@@ -329,14 +338,14 @@
     opacity: 0;
 }
 
-.videoOneActive  #closeBtn {
+.videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive  .closeBtn  {
     position: absolute;
     top: 0;
     right: 0;
     color: rgb(255, 254, 254);
 }
 
-.videoOneActive  #closeBtn:hover {
+.videoOneActive  .closeBtn:hover, .videoTwoActive  .closeBtn:hover, .videoThreeActive .closeBtn:hover {
     transform: scale(1.1);
     color: rgb(0, 81, 255);
     

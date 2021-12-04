@@ -8,7 +8,7 @@ import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
 import { IoPawSharp } from 'react-icons/io5';
-import { MdOutlineWatchLater } from 'react-icons/md';
+import { MdOutlineWatchLater, MdCircle } from 'react-icons/md';
 // import { SiRubyonrails, SiReact } from 'react-icons/si';
 
 
@@ -101,17 +101,37 @@ export default function Project() {
     //video 
 
     let skyGazer = ""
+    let dogScanner = ""
+    let watchual = ""
 
     const toggleProjectOne = () => {
       dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
     }
     
-    const projectOneVideoStatus = useSelector(state => state.videoStatus)
+    const toggleProjectTwo = () => {
+      dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
+    }
 
+    const toggleProjectThree = () => {
+      dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
+    }
+    
+    const projectOneVideoStatus = useSelector(state => state.videoOneStatus)
     projectOneVideoStatus ? skyGazer="https://www.youtube.com/embed/G33j5Qi4rE8?autoplay=1": skyGazer = "https://www.youtube.com/embed/G33j5Qi4rE8" 
-
     const closeVideoOne = () => {
       dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
+    }
+
+    const projectTwoVideoStatus = useSelector(state => state.videoTwoStatus)
+    projectTwoVideoStatus ? dogScanner="https://www.youtube.com/embed/iXCESZ1Wn7Q?autoplay=1" : dogScanner = "https://www.youtube.com/embed/iXCESZ1Wn7Q"
+    const closeVideoTwo = () => {
+      dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
+    }
+    
+    const projectThreeVideoStatus = useSelector(state => state.videoThreeStatus)
+    projectThreeVideoStatus ? watchual="https://www.youtube.com/embed/_yUzFtg201o?autoplay=1" : watchual = "https://www.youtube.com/embed/_yUzFtg201o"
+    const closeVideoThree = () => {
+      dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
     }
    
     return (
@@ -120,7 +140,7 @@ export default function Project() {
             <div className="projectTitle">PROJECT ONE</div>
             <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
                   <iframe width="560" height="315" title="videoOne" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
-              <div id="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
+              <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
             </div>
           
             <div className="subsectionContainer" 
@@ -154,6 +174,10 @@ export default function Project() {
 
           <section className="sectionContainer two" ref={projectTwoRef}> 
             <div className="projectTitle">PROJECT TWO</div>
+            <div className={ projectTwoVideoStatus ? "videoTwoActive" : "dogScannerVideo"} >
+                  <iframe width="560" height="315" title="videoTwo" src={dogScanner} allow="autoplay" allowFullScreen  ></iframe>
+              <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoTwo}/> </div>
+            </div>
             <div className="subsectionContainer" 
               ref={sectionTwo}
               onMouseMove={handleMouseMovePtwo}
@@ -172,7 +196,7 @@ export default function Project() {
                     </div>
                     <div id="websiteBtnTwo"> 
                         <button>WEBSITE</button>
-                        <button>VIDEO</button>
+                        <button onClick={toggleProjectTwo}>VIDEO</button>
                     </div>
                 </div>
                 <div className="dogScanner" ref={imageTwo} >
@@ -185,6 +209,10 @@ export default function Project() {
 
           <section className="sectionContainer three" ref={projectThreeRef}> 
             <div className="projectTitle">PROJECT THREE</div>
+            <div className={ projectThreeVideoStatus ? "videoThreeActive" : "watchualVideo"} >
+                  <iframe width="560" height="315" title="videoThree" src={watchual} allow="autoplay" allowFullScreen  ></iframe>
+              <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoThree}/> </div>
+            </div>
             <div className="subsectionContainer" 
               ref={sectionThree}
               onMouseMove={handleMouseMovePthree}
@@ -204,7 +232,7 @@ export default function Project() {
                     </div>
                     <div id="websiteBtnThree"> 
                         <button>WEBSITE</button>
-                        <button>VIDEO</button>
+                        <button onClick={toggleProjectThree}>VIDEO</button>
                     </div>
                 </div>
                 <div className="watchual" ref={imageThree} >
