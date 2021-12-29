@@ -7,8 +7,6 @@ import { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
 
-// npx @svgr/cli src/svg --out-dir src/icons/Components --icon
-
 export default function Home(props) {
 
     let targetRef = useRef(null)
@@ -112,7 +110,6 @@ export default function Home(props) {
                     <p id="introTwo"> <span> I love art, design & technology.</span></p>
                     <p className="description">| Full Stack Software Engineer |</p>
                     <button className='projectButton'> See Projects <FaVolleyballBall id="button" size={19}/></button>
-                    {/* <button class='buttonShadow'></button>  */}
                 </div>
                 <div id="svgContainer">
                          <svg id="svg" width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">

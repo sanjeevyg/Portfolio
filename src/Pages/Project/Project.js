@@ -2,15 +2,13 @@ import React from 'react';
 import './index.css';
 import astonomyImg from '../../svg/astronomyImg.png';
 import dogImg from '../../svg/dogScanner.png';
-import phoneImg from '../../svg/phone.png';
+import phoneImg from '../../svg/Iphone.png';
 import { useRef } from 'react';
 import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
 import { IoPawSharp } from 'react-icons/io5';
-import { MdOutlineWatchLater, MdCircle } from 'react-icons/md';
-// import { SiRubyonrails, SiReact } from 'react-icons/si';
-
+import { MdOutlineWatchLater } from 'react-icons/md';
 
 export default function Project() {
 
@@ -97,7 +95,6 @@ export default function Project() {
     dispatch({type: "PROJECT_TWO", visibility: isProjectTwoVisible})
     dispatch({type: "PROJECT_THREE", visibility: isProjectThreeVisible})
 
-
     //video 
 
     let skyGazer = ""
@@ -138,7 +135,7 @@ export default function Project() {
         <div className="projectContainer" >
           <section className="sectionContainer one" ref={projectOneRef}> 
             <div className="projectTitle">PROJECT ONE</div>
-            <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
+              <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
                   <iframe width="560" height="315" title="videoOne" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
             </div>
@@ -243,8 +240,6 @@ export default function Project() {
               </div>
            </div>
           </section>
-
-      
         </div>
     )
 }

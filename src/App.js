@@ -4,12 +4,9 @@ import Project from './Pages/Project/Project.js';
 import About from './Pages/About/About.js';
 import Contact from './Pages/Contact/Contact.js';
 import Cursor from './Pages/Cursor/CursorPage';
-import { useRef } from 'react';
 
 
 function App() {
-
-
   return (
     <div id="container">
       <section className="parent"> 
@@ -23,6 +20,9 @@ function App() {
       </section>
       <section className="parent">
         <About />
+      </section>
+      <section className="parent">
+        <Contact />
       </section>
     </div>
   );

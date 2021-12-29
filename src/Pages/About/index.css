@@ -52,7 +52,6 @@
 
 .iconsGroupTwo {
     position: relative;
-    /* background: rgb(37, 143, 192); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -92,12 +91,10 @@
     margin-top: 50px;
 }
 
-
 .icon {
     position: relative;
     color: #ffffff;
     margin: 5px;
-    /* right: 20px; */
     width: 80px;
     height: 80px;
     display: flex;
@@ -151,8 +148,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
-    
     flex-wrap: wrap;
 }
 
@@ -161,13 +156,11 @@
     position: absolute;
     width: 61%;
     height: 10rem;
-    /* background-color: salmon; */
     border: .5px solid rgba(253, 253, 253, 0.1);
     z-index: 1;
 }
 
 .firebase {
-    /* background-color: red; */
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -192,12 +185,10 @@
     position: relative;
     transform: translateY(.3rem);
     margin-right: 5px;
-
 }
 
 #introduction {
     display: flex;
-    /* background-color: red; */
     justify-content: center;
     align-items: center;
     height: 50vh;
@@ -213,13 +204,10 @@
 
 
 #aboutMe {
-    /* color: red; */
     font-weight: bold;
-    /* letter-spacing: .2rem; */
 }
 
 #bio {
     position: relative;
-    /* background-color: rgb(69, 53, 216); */
     transform: translateY(-2rem);
 }

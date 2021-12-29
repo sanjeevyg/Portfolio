@@ -11,10 +11,8 @@
     box-sizing: border-box;
 }
 
-
 .box {
     position: absolute;
-    /* background: #fafaff; */
     min-width: 93vw;
     min-height: 100vh;
     z-index: -1;
@@ -30,7 +28,6 @@
     font-size: 20pt;
     align-self: flex-start;
     align-items: center;
-    /* background: rgb(156, 148, 228); */
 }
 
 #headerLeft {
@@ -113,7 +110,6 @@
     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     transition: 0.5s, z-index 0.5s, tranform 0.5s;
-    /* transition-delay: 0.5s, 0s, 0s; */
     overflow: hidden;
 }
 
@@ -140,10 +136,8 @@
 }
 
 #centralContent {
-    /* font-size: 61px; */
     font-size: 3.9vw;
     color: rgb(44, 40, 40);
-    /* background-color: rgb(224, 64, 104); */
     width: 80vw;
     height: 100vh;
     display: flex;
@@ -152,20 +146,15 @@
 }
 
 #centralText {
-    /* margin-top: 40px; */
     position: absolute;
     font-weight: bolder;
-    /* background: lawngreen; */
-    /* width: 50vw; */
     left: 15vw;
 }
 
 #svgContainer {
     position: absolute;
-    /* width: 40vw; */
     display: flex;
     right: 10vw;
-    /* background: lightcyan; */
 }
 
 .projectButton {
@@ -178,7 +167,6 @@
     border: none;
     font-weight: 600;
     box-shadow: 10px 10px 0px -.7px, rgb(10, 65, 216) 10px 10px;
-    /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4)); */
 }
 
 #button {
@@ -187,7 +175,6 @@
     animation: button 5s linear infinite;
     transform-origin: center;
 }
-    
 
  @keyframes button {
     0% {
@@ -200,7 +187,6 @@
         transform: translate(-40px) rotate(0deg);
     }
 }
-    
 
 #centralText button:hover {
     background-color: rgb(61, 4, 195);
@@ -213,7 +199,6 @@
     justify-content: center;
     align-items: center;
     width: 45vw;
-    /* color: chartreuse; */
 }
 
 #centralText:nth-child(1) span {
@@ -286,20 +271,13 @@
     font-size: 1.3vw;
     font-weight: 700;
     color: rgba(84, 120, 199, 0.5);
-    /* padding-left: 5px; */
-    /* margin-top: 70px; */
     width: 33vw;
     letter-spacing: .06em;
 }
 
 #name {
-    /* margin-top: 10px; */
     color: rgba(0, 0, 0);
-    /* letter-spacing: .03em; */
     font-size: 4.1vw;
-    /* padding-bottom: 25px; */
-    /* width: 24vw;
-    border-bottom: 2px solid rgba(0,0,0,0.1); */
 }
 
 #introTwo {
@@ -328,7 +306,6 @@
     color: rgb(29, 80, 219);
 }
 
-
 #bottom {
     position: absolute;
     content: "";
@@ -339,7 +316,6 @@
     border-top: 1px solid rgba(0,0,0,0.1);
     right: 39px;
 }
-
 
 #boyFace {
     animation: boyface 3s infinite alternate;
@@ -413,22 +389,15 @@
     0%{
         transform: rotate(5deg);
       }
-    
     70%{
         transform: rotate(-1deg);
       }
 }
 
-/* #finalLogo, #girlFace, #girlLeg, #girlBody, #girlArm, #girlhandLeft, #girlhandRight, #laptop, #girlLleg, #girlRleg, #Ellipse15, #Ellipse16, #Vector_10, #Ellipse10, #Ellipse1, #Ellipse14, #Ellipse3{
-    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
-} */
-
-
 @media (max-width: 500px) {
     .box {
         position: absolute;
         background: #020288;
-        /* background: linear-gradient(0.25turn, #dce3e7, #dde4f3, #fafaff); */
         min-width: 93vw;
         min-height: 100vh;
         z-index: -1;
