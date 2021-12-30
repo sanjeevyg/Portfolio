@@ -1,57 +1,62 @@
 import React from 'react';
 import './index.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function Contact() {
 
     const [name, setName] = useState('')
-    const [age, setAge] = useState('')
-    const [weight, setWeight] = useState('')
-    const [heyas, setHeya] = useState([])
-    const [sumos, setSumos] = useState([])
-    const [selectedHeya, setSelectedHeya] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
 
     return (
         <div className="contact">
-               <div>
-            <div className="card-container"></div>
+            <div className="form-container">
 
-            <form className="sumo-form" >
-                <label htmlFor="name">Name:</label>
-                <input 
-                    id="name" 
-                    type="text" 
-                    value={name}
-                    placeholder="name"
-                    onChange={(event) => setName(event.target.value)}
-                />
+            <form className="contact-form" >
+                <div className="userInfo">
+                    <label htmlFor="formName">Name</label>
+                    <input 
+                        id="formName" 
+                        type="text" 
+                        value={name}
+                        placeholder="What's your name?"
+                        onChange={(event) => setName(event.target.value)}
+                    />
+                </div>
 
-             <label htmlFor="weight">Weight:</label>
-                <input 
-                    id="weight" 
-                    type="number" 
-                    value={weight} 
-                    min="0" 
-                    placeholder="weight"
-                    onChange={(event) => setWeight(event.target.value)}
-                />
 
-                <label htmlFor="age">Age:</label>
-                <input 
-                    id="age" 
-                    type="number" 
-                    value={age} 
-                    min="18" 
-                    placeholder="age"
-                    onChange={(event) => setAge(event.target.value)}
-                />
-                <select id="sumo-heya" value={selectedHeya} onChange={(event)=> setSelectedHeya(event.target.value)} >
-                        <option value="">Select the heya!</option>
+                <div className="userInfo">
+                    <label htmlFor="email">Email</label>
+                    <input 
+                        id="email" 
+                        type="text" 
+                        value={email} 
+                        placeholder="What's your email?"
+                        onChange={(event) => setEmail(event.target.value)}
+                    />
+                </div>
 
-                </select>
-                <input type="submit" value="Submit" />
+                <div className="userInfo messageInfo">
+                    <label htmlFor="message">Message</label>
+                    <textarea 
+                        id="message" 
+                        type="text" 
+                        value={message} 
+                        rows="14"
+                         cols="10" 
+                         wrap="soft" 
+                         maxlength="40"
+                         overflow="hidden"
+                        placeholder="Write your message!"
+                        onChange={(event) => setMessage(event.target.value)}
+                    />
+                </div>
+                <div className="btnForm">
+                    <input type="submit" value="SEND" />
+                </div>
             </form>   
+            </div>
         </div>
-        </div>
+
     )
 }
