@@ -1,22 +1,99 @@
 .contact {
     position: fixed;
-    background-color: rgb(251, 248, 248);
+    background-color: rgb(250, 249, 249);
     top: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: -1;
     font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#contactLogo {
+    position: fixed;
+    top: 3.5rem;
+    left: 9rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+#contactLogo div {
+    margin-left: 1rem;
+}
+
+#closeBtn {
+    position: fixed;
+    color: rgb(221, 55, 77);
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid rgb(221, 55, 77);
+    border-radius: 5px;
+    font-weight: bolder;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+#btnIcon {
+    margin-left: .3rem;
+}
+
+.btnContainer {
+    position: fixed;
+    top: 5.9rem;
+    right: 19vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+
+#letsTalk {
+    position: relative;
+    margin-right: 23rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+#chatIcon {
+    margin-right: 1rem;
+}
+
+#messageInstruction {
+    position: absolute;
+    inline-size: 41vw;
+    top: 12rem;
+    margin-left: 2rem;
+    overflow-wrap: break-word;
+    padding-left: 1rem;
+    letter-spacing: .1rem;
+    border-left:3px solid rgb(16, 30, 224);
+    font-size: 1.3rem;
+}
+
+#messageInstruction span {
+    color: rgb(2, 2, 199);
 }
 
 .form-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     /* background-color: violet; */
     height: 100vh;
     width: 50vw;
+    /* background-color: blueviolet; */
+    flex-wrap: wrap;
 }
 
 .contact-form {
@@ -27,7 +104,6 @@
     font-weight: bold;
     color: rgb(10, 10, 10, .7);
     flex-direction: column;
-    
 }
 
 .userInfo {
@@ -38,27 +114,14 @@
 
 .userInfo input {
     height: 4rem;
-    width: 30rem;
+    width: 41rem;
     margin-top: 1rem;
     display: flex;
     text-align: flex-start;
     padding: 1rem;
     font-size: 1rem;
     border: none;
-}
-
-.messageInfo input {
-    height: 15rem;
-    width: 30rem;
-}
-
-input,
-input::-webkit-input-placeholder {
-    font-size: 21px;
-    color: rgba(0, 0, 0);
-    letter-spacing: .1rem;
-    word-wrap: break-word;
-    word-break: break-all;
+    border-radius: 5px;
 }
 
 ::placeholder {
@@ -67,27 +130,26 @@ input::-webkit-input-placeholder {
     letter-spacing: .1rem;
 }
 
-
-
 textarea {
     margin-top: 1rem;
     padding-top: 1rem;
     padding-left: 1rem;
-    height: 15rem;
-    width: 30rem;
+    height: 12rem;
+    width: 41rem;
     font-size: 1rem;
     border: none;
     font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
+    border-radius: 5px;
 }
-
 
 .btnForm input{
     border: none;
     background-color: rgb(2, 2, 199);
-    letter-spacing:.1;
     padding: 1rem 3rem;
-    margin-top: 1.5rem;
     font-size: 1rem;
     font-weight: bolder;
     color: rgb(253, 253, 253);
+    margin-bottom: 5rem;
+    margin-top: 1.3rem;
+     border-radius: 5px;
 }

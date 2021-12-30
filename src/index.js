@@ -87,6 +87,16 @@ const videoThreeStatus = (state=false, action) => {
     }
 }
 
+const chatBoxStatus = (state=false, action) => {
+  switch(action.type) {
+    case "CHATBOXACTIVE":
+      return !state
+    default:
+      return state
+    }
+}
+
+
 
 const allReducers = combineReducers({
   homeVisibility: homeVisibility,
@@ -98,6 +108,7 @@ const allReducers = combineReducers({
   videoOneStatus: videoOneStatus,
   videoTwoStatus: videoTwoStatus,
   videoThreeStatus: videoThreeStatus,
+  chatBoxStatus: chatBoxStatus
 })
 
 const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
