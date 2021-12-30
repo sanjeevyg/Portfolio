@@ -1,23 +1,32 @@
 import React from 'react';
 import './index.css';
 import { useState } from 'react';
-import SvgHomeBackground from '../../icons/Components/HomeBackground';
 import { IoMdChatbubbles} from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { useSelector, useDispatch } from 'react-redux';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Contact() {
 
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
-
+    const form = useRef();
     const dispatch = useDispatch()
 
     const chatBoxStatus = useSelector(state => state.chatBoxStatus)
 
     const closeChatBox = () => {
         dispatch({type: "CHATBOXACTIVE"})
+    }
+    
+    const sendEmail = (e) => {
+        e.preventDefault()
+        emailjs.sendForm('service_bgrg1ca', 'template_i16nmhs', e.target, "user_yGuqTJoej9gFct6xY7zgD").then(
+            res => {
+                console.log(res)
+            }
+        ).catch(err => console.log(err));
+        e.target.reset()
     }
 
     return (
@@ -27,28 +36,25 @@ export default function Contact() {
             </div>
             <div className="form-container">
             <div id="letsTalk"><IoMdChatbubbles color='blue' id="chatIcon" size={50}/>Let's talk !</div>
-            <div id="messageInstruction">Type your message below or send me an email at <span>yogi.sjv@gmail.com</span>.</div>
-            <form className="contact-form" >
+            <div id="messageInstruction">Type your message below or send me an email at <span>syogifse@gmail.com</span>.</div>
+            <form className="contact-form" ref={form} onSubmit={sendEmail} >
                 <div className="userInfo">
                     <label htmlFor="formName">Name</label>
                     <input 
                         id="formName" 
                         type="text" 
-                        value={name}
+                        name="name"
                         placeholder="What's your name?"
-                        onChange={(event) => setName(event.target.value)}
                     />
                 </div>
-
 
                 <div className="userInfo">
                     <label htmlFor="email">Email</label>
                     <input 
                         id="email" 
                         type="text" 
-                        value={email} 
+                        name="email"
                         placeholder="What's your email?"
-                        onChange={(event) => setEmail(event.target.value)}
                     />
                 </div>
 
@@ -57,18 +63,17 @@ export default function Contact() {
                     <textarea 
                         id="message" 
                         type="text" 
-                        value={message} 
+                        name="message"
                         rows="14"
                          cols="10" 
                          wrap="soft" 
                          maxlength="1000"
                          overflow="hidden"
                         placeholder="Write your message!"
-                        onChange={(event) => setMessage(event.target.value)}
                     />
                 </div>
                 <div className="btnForm">
-                    <input type="submit" value="SEND" />
+                    <input type="submit" value="SEND"/>
                 </div>
             </form>   
             </div>
