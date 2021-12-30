@@ -3,7 +3,7 @@ import './index.css';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
 import { AiFillInstagram, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaVolleyballBall} from 'react-icons/fa';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen.js'
 
@@ -75,8 +75,8 @@ export default function Home(props) {
     }
 
     const handleChatBox = () => {
-        console.log("clicked")
-        dispatch({type: "CHATBOXACTIVE", payload: true})
+        console.log("I am clicked")
+        dispatch({type: "CHATBOXACTIVE"})
     }
 
     return (
@@ -95,7 +95,7 @@ export default function Home(props) {
                 </div>
                 <div className={ isVisible ?"menuContainer" : "menuContainer menuNinety" }>
                     <ul className="menu">
-                        <a href="#"><button onClick={handleChatBox()}>Let's Talk </button></a>
+                        <a href="#"><button onClick={handleChatBox}>Let's Talk </button></a>
                     </ul>
                 </div>
             </section> 

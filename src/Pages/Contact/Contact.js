@@ -4,7 +4,7 @@ import { useState } from 'react';
 import SvgHomeBackground from '../../icons/Components/HomeBackground';
 import { IoMdChatbubbles} from "react-icons/io";
 import { IoClose } from "react-icons/io5";
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function Contact() {
 
@@ -12,17 +12,18 @@ export default function Contact() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    // const chatBoxStatus = useSelector(state => state.chatBoxStatus)
-    // console.log(chatBoxStatus)
+    const dispatch = useDispatch()
+
+    const chatBoxStatus = useSelector(state => state.chatBoxStatus)
+
+    const closeChatBox = () => {
+        dispatch({type: "CHATBOXACTIVE"})
+    }
 
     return (
-        <div className="contact">
-             <div id="contactLogo">
-                <SvgHomeBackground className="logo" height="60px" width="60px"/>
-                 <div>PORTFOLIO</div>
-            </div>
+        <div className= {chatBoxStatus ? "contact": "contact openBox"}>
             <div className='btnContainer'>
-                <button id="closeBtn">Close <IoClose id="btnIcon" size={17} /></button>
+                <button id="closeBtn" onClick={closeChatBox}>Close <IoClose id="btnIcon" size={17} /></button>
             </div>
             <div className="form-container">
             <div id="letsTalk"><IoMdChatbubbles color='blue' id="chatIcon" size={50}/>Let's talk !</div>

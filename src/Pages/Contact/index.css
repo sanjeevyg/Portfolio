@@ -12,6 +12,10 @@
     font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
+.openBox {
+    z-index: 9999
+}
+
 #contactLogo {
     position: fixed;
     top: 3.5rem;
@@ -36,6 +40,13 @@
     z-index: 5;
     display: flex;
     align-items: center;
+}
+
+#closeBtn:hover {
+    background: rgb(221, 55, 77);
+    color: white;
+    transition: 1s ease;
+    cursor: pointer;
 }
 
 #btnIcon {
@@ -76,12 +87,12 @@
     overflow-wrap: break-word;
     padding-left: 1rem;
     letter-spacing: .1rem;
-    border-left:3px solid rgb(16, 30, 224);
+    border-left:3px solid rgb(29, 80, 219);
     font-size: 1.3rem;
 }
 
 #messageInstruction span {
-    color: rgb(2, 2, 199);
+    color: rgb(29, 80, 219);
 }
 
 .form-container {
@@ -144,12 +155,16 @@ textarea {
 
 .btnForm input{
     border: none;
-    background-color: rgb(2, 2, 199);
+    background-color: rgb(29, 80, 219);
     padding: 1rem 3rem;
     font-size: 1rem;
     font-weight: bolder;
     color: rgb(253, 253, 253);
     margin-bottom: 5rem;
     margin-top: 1.3rem;
-     border-radius: 5px;
+    border-radius: 5px;
+}
+
+.btnForm input:hover {
+    background: rgb(61, 4, 195);
 }
