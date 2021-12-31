@@ -134,7 +134,7 @@ export default function Project() {
     return (
         <div className="projectContainer" >
           <section className="sectionContainer one" ref={projectOneRef}> 
-            <div className="projectTitle">PROJECT ONE</div>
+            <div className="projectTitle projectTitleOne">PROJECT ONE</div>
               <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
                   <iframe width="560" height="315" title="videoOne" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
@@ -170,7 +170,7 @@ export default function Project() {
           
 
           <section className="sectionContainer two" ref={projectTwoRef}> 
-            <div className="projectTitle">PROJECT TWO</div>
+            <div className="projectTitle projectTitleTwo">PROJECT TWO</div>
             <div className={ projectTwoVideoStatus ? "videoTwoActive" : "dogScannerVideo"} >
                   <iframe width="560" height="315" title="videoTwo" src={dogScanner} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoTwo}/> </div>
@@ -183,7 +183,7 @@ export default function Project() {
             >
               <div class="card cTwo" > 
                 <div className="info infoTwo"> 
-                    <h1 className="title titleDog414" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
+                    <h1 className="title titleDog" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
                     <h3> 
                       App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
                     </h3>
@@ -205,7 +205,7 @@ export default function Project() {
           </section>
 
           <section className="sectionContainer three" ref={projectThreeRef}> 
-            <div className="projectTitle">PROJECT THREE</div>
+            <div className="projectTitle projectTitleThree">PROJECT THREE</div>
             <div className={ projectThreeVideoStatus ? "videoThreeActive" : "watchualVideo"} >
                   <iframe width="560" height="315" title="videoThree" src={watchual} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoThree}/> </div>

@@ -421,6 +421,18 @@
         overflow: hidden;
     }
 
+    .menu button {
+        /* z-index: 99999; */
+        /* position: absolute; */
+        /* min-width: 6rem; */
+    }
+
+    .menu  {
+        /* z-index: 99999; */
+        /* position: absolute; */
+        /* margin-right: 6.5rem; */
+    }
+
     #socialListContainer {
         display: flex;
         flex-direction: row;
@@ -481,14 +493,6 @@
         display: none;
     }
 
-    /* #svg {
-        position: fixed;
-        top: -3rem;
-        left: -21rem;
-        width: 200vw;
-        filter: opacity(5%);
-    } */
-
     #centralText {
         display: flex;
         flex-direction: column;
@@ -524,17 +528,6 @@
     }    
     
 
-    /* .socialBar{
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 60px;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
   }
 
 
