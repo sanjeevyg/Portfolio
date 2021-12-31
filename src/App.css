@@ -26,13 +26,7 @@ html {
 }
 
 #container {
-  /* scroll-snap-type: y mandatory; */
   overflow-y: scroll;
-
-}
-
-.parent {
-  scroll-snap-align: start;
 }
 
 

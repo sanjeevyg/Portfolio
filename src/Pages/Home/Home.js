@@ -88,14 +88,14 @@ export default function Home(props) {
                          <SvgHomeBackground className="logo" height="50px" width="50px"/>
                     </div>
                     <div id="titlePortfolio">PORTFOLIO</div>
-                    <span>PROJECTS</span>
+                    <span><a href="#projectC">PROJECTS</a></span>
                     <span>BLOGS</span>
-                    <span>ABOUT</span>
-                    <span>CONTACT</span>
+                    <span><a href="#aboutC">ABOUT</a></span>
+                    <span><a href="#aboutC">TECH-SKILLS</a></span>
                 </div>
                 <div className={ isVisible ?"menuContainer" : "menuContainer menuNinety" }>
                     <ul className="menu">
-                        <a href="#"><button onClick={handleChatBox}>Let's Talk </button></a>
+                        <a href="#"><button onClick={handleChatBox}> Let's Talk </button></a>
                     </ul>
                 </div>
             </section> 
@@ -114,7 +114,7 @@ export default function Home(props) {
                     <p id="name"> Sanjeev Yogi</p>
                     <p id="introTwo"> <span> I love art, design & technology.</span></p>
                     <p className="description">| Full Stack Software Engineer |</p>
-                    <button className='projectButton'> See Projects <FaVolleyballBall id="button" size={19}/></button>
+                    <button className='projectButton'> <a href="#projectC"> See Projects <FaVolleyballBall id="button" size={19}/></a></button>
                 </div>
                 <div id="svgContainer">
                          <svg id="svg" width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">

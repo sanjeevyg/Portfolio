@@ -132,7 +132,7 @@ export default function Project() {
     }
    
     return (
-        <div className="projectContainer" >
+        <div className="projectContainer" id="projectC">
           <section className="sectionContainer one" ref={projectOneRef}> 
             <div className="projectTitle projectTitleOne">PROJECT ONE</div>
               <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >

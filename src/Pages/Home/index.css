@@ -1,6 +1,6 @@
 .home {
     height: 100vh;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,17 +10,17 @@
     padding: 0;
     box-sizing: border-box;
     background: white;
-    max-width: 100%;
 }
 
-.box {
+/* .box {
     position: absolute;
     min-width: 93vw;
     min-height: 100vh;
     z-index: -1;
     left: 0;
     border-radius: 0px 0px 70px 0px;
-}
+    background: #4545f3;
+} */
 
 .header {
     position: absolute;
@@ -54,6 +54,12 @@
     font-size: 9pt;
     letter-spacing: .05rem;
 }
+
+#headerLeft span a {
+    text-decoration: none;
+    color: rgb(44, 40, 40, .79);
+}
+
 
 #headerLeft span:hover {
     color: rgb(61, 4, 195);
@@ -170,6 +176,13 @@
     font-weight: 600;
     box-shadow: 10px 10px 0px -.7px, rgb(10, 65, 216) 10px 10px;
 }
+
+
+.projectButton a {
+    text-decoration: none;
+    color: white;
+}
+
 
 #button {
     position: relative;

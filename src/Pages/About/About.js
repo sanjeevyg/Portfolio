@@ -8,7 +8,7 @@ import {SiRubyonrails, SiTensorflow, SiJavascript, SiDjango, SiCsswizardry, SiHt
 export default function About() {
     return (
         <div > 
-            <section className="about">
+            <section className="about" id="aboutC">
                 <div className="skills">Tech Skills </div>
                 <section className="iconsContainer">
                     <div className="iconsGroupOne">
