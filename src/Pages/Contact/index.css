@@ -181,7 +181,7 @@ textarea {
         position: fixed;
         background-color: rgb(250, 249, 249);
         top: 0;
-        min-height: 100vh;
+        max-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;

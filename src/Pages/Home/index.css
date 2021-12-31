@@ -422,13 +422,20 @@
     }
 
     #socialListContainer {
-        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: row;
+        margin-right: 70vw;
+        margin-top: 30rem;
+    }
+    
+    .socialBarIcon {
+        max-width: 3rem;
+        max-height: 3rem;
+        margin: .5rem;
     }
 
-    .socialBarIcon {
-        max-width: 2.5rem;
-        max-height: 3rem;
-        margin-right: 170vw;
+    .socialBar {
+        position: absolute;
     }
 
     .coverOne {
