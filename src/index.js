@@ -87,7 +87,7 @@ const videoThreeStatus = (state=false, action) => {
     }
 }
 
-const chatBoxStatus = (state=false, action) => {
+const chatBoxStatus = (state=true, action) => {
   switch(action.type) {
     case "CHATBOXACTIVE":
       return !state

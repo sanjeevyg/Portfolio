@@ -12,17 +12,8 @@ html body {
   overflow-y: scroll;
 }
 
-img {
-  max-width: 100%;
-}
-
 .text-center {
   text-align: center;
-}
-
-.container {
-  padding: 0 1em;
-  max-width: 100%;
 }
 
 html {

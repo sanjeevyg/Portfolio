@@ -218,12 +218,12 @@ export default function Project() {
             >
               <div class="card cThree" > 
                 <div className="info infoThree"> 
-                    <h1 className="title" ref={titleThree}>Watchual</h1>
-                    <div><MdOutlineWatchLater id="watch" size={60}/></div>
+                    <h1 className="title titleWatchual" ref={titleThree}>Watchual</h1>
+                    <div id="watchDiv"><MdOutlineWatchLater id="watch" size={60}/></div>
                     <h3> 
                       Shopping app for watches made for ios mobile devices. The watches can be selected, added to the card and payment can be processed. 
                     </h3>
-                    <div id="techInfo"> 
+                    <div className="techInfo techInfoThree"> 
                       <h4 className="backend"><span>Backend : </span>Django</h4>
                       <h4 className="frontend"><span>Frontend : </span>React Native</h4>
                     </div>

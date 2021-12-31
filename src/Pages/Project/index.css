@@ -329,8 +329,14 @@
 .videoOneActive  .closeBtn:hover, .videoTwoActive  .closeBtn:hover, .videoThreeActive .closeBtn:hover {
     transform: scale(1.1);
     color: rgb(0, 81, 255);
-    
 }
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
    
@@ -346,7 +352,7 @@
     }
 
     .card {
-        max-height: 85vh;;
+        min-height: 90vh;;
         /* width: 100vw; */
         min-width: 92vw;
         display: flex;
@@ -359,28 +365,45 @@
         padding-bottom: 2rem;
     }
 
+    .cThree {
+        min-height: 90vh;;
+        min-width: 92vw;
+        display: flex;
+        font-size: small;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10rem;
+        border-radius: 0px;
+        padding-top: 3rem;
+    }
+
     .cOne {
         padding-top: 12vh;
     }
 
-   .titleSkyGazer,  .titleDog {
+   .titleSkyGazer, .titleDog  {
         position: absolute !important;
         width: fit-content !important;
         font-size: 2.5rem !important;
-        margin-bottom: 55rem !important;
+        margin-bottom: 70rem !important;
     }
-/* 
-    .titleSkyGazer {
+
+    .titleWatchual {
         position: absolute !important;
         width: fit-content !important;
         font-size: 2.5rem !important;
-        margin-bottom: 55rem !important;
+        margin-bottom: 45rem !important;
+    } 
+
+    #watchDiv {
+        position: absolute;
         background: chartreuse;
-    } */
+        margin-bottom: 50rem;
+        margin-right: 10rem;
+    }
 
-
-    .infoOne, .infoTwo  {
-        /* background: chartreuse; */
+    .infoOne, .infoTwo, .infoThree  {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -389,9 +412,15 @@
         width: 100%;
     }
 
-    .infoOne h3, .infoTwo h3 {
+    .infoOne h3, .infoTwo h3, .infoThree h3 {
         text-align: center;
         margin-top: -1rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .infoThree h3 {
+        text-align: center;
+        margin-top: 35vh;
         font-family: 'Times New Roman', Times, serif;
     }
     
@@ -410,11 +439,15 @@
         margin-top: 5vh !important;
         margin-left: 23vw!important;
     }
-    
-    /* #websiteBtnTwo {
-        margin-bottom: 1rem;
-        font-family: 'Times New Roman', Times, serif;
-    } */
+
+    .watchual img{
+        position: relative;
+        margin-bottom: 35vh;
+        min-width: 40vw;
+        height: auto;
+        transform: rotate(330deg);
+        z-index: 50;
+    }
 
     #websiteBtnTwo button {
         font-family: 'Times New Roman', Times, serif;
@@ -429,37 +462,15 @@
         margin-top: 1rem;
         font-style: italic;
         font-family: 'Times New Roman', Times, serif;
+        text-align: center;
     }
 
-    .projectTitleOne, .projectTitleTwo {
+    .projectTitleOne, .projectTitleTwo, .projectTitleThree {
         position: relative;
         min-width: 8rem !important;
         font-size: large;
-        margin-bottom: 59rem;
+        margin-bottom: 71rem;
         margin-left: -16rem !important;
-        /* background-color: blue; */
     }
-/* 
-    .titleSkyGazer {
-        position: relative;
-        width: fit-content;
-        font-size: medium;
-        background: blue;
-        margin-bottom: 5rem;
-        margin-left: 4rem;
-    } */
 
-    /* .skyGazer img {
-        position: relative;
-        height: 50vh;
-        width: 62vw;
-    } */
-
-    .watchual img{
-        position: relative;
-        margin-left: 9rem;
-        width: 30vh;
-        height: auto;
-        transform: rotate(0deg);
-    }
 }
