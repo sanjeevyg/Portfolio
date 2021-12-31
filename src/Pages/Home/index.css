@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     background: white;
+    max-width: 100%;
 }
 
 .box {
@@ -397,27 +398,46 @@
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     body {
         width: 480px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        max-width: 100%;
+        overflow: hidden;
     }
-
+    
     .home {
+        position: relative;
         height: 100vh;
-        width: 480px;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: white;
+        background-attachment: fixed;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    #socialListContainer {
+        margin-bottom: 3rem;
+    }
+
+    .socialBarIcon {
+        max-width: 2.5rem;
+        max-height: 3rem;
+        margin-right: 170vw;
+    }
+
+    .coverOne {
+        display: none;
     }
 
     #logo {
-        position: fixed;
-        top: 2rem;
+        position: absolute;
+        margin-bottom: 40rem;
         left: 2rem;
         filter: opacity(50%)
     }
@@ -425,11 +445,12 @@
     .menu {
         position: fixed;
         right: 3rem;
+        top: 2.7rem;
     }
 
     #titlePortfolio {
-        position: fixed;
-        top: 3rem;
+        position: absolute;
+        margin-bottom: 40rem;
         left: 2rem;
     }
 
@@ -442,23 +463,24 @@
         flex-direction: column;
         align-items: center;
         margin-top: 12rem;
+        
     }
 
     .socialBarIcon {
-        width: xx-small;
+        size: xx-small;
     }
 
     #svgContainer {
-        /* display: none; */
+        display: none;
     }
 
-    #svg {
+    /* #svg {
         position: fixed;
         top: -3rem;
         left: -21rem;
         width: 200vw;
         filter: opacity(5%);
-    }
+    } */
 
     #centralText {
         display: flex;
@@ -490,8 +512,22 @@
         width: 70vw;
     }
 
+    #bottom {
+        display: none;
+    }    
     
 
+    /* .socialBar{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 60px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
   }
 
 

@@ -331,3 +331,99 @@
     color: rgb(0, 81, 255);
     
 }
+
+@media (max-width: 600px) {
+   
+    .projectContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    .cOne, .cTwo, .cThree {
+        max-height: 85vh;;
+        width: 100vw;
+        min-width: 85vw;
+        display: flex;
+        font-size: small;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+    }
+
+    .titleDog414 {
+        position: absolute !important;
+        width: fit-content !important;
+        font-size: 3rem !important;
+        margin-bottom: 62rem !important;
+    }
+
+    .infoTwo  {
+        /* background: chartreuse; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .dogScanner img {
+        position: relative !important;
+        width: 40vh !important;
+        height: auto;
+        /* margin-bottom: 10rem; */
+        margin-top: 7rem !important;
+        margin-left: 5rem !important;
+    }
+
+    .backendDogScanner .frontendDogScanner{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        font-size: medium !important;
+        background: chocolate;
+    }
+
+    .projectTitle {
+        position: relative;
+        width: fit-content;
+        font-size: large;
+        margin-bottom: 62rem;
+        margin-right: 5rem !important;
+        /* background-color: blue; */
+    }
+
+    .titleSkyGazer {
+        position: relative;
+        width: fit-content;
+        font-size: medium;
+        /* background: blue; */
+        margin-bottom: 5rem;
+        margin-left: 4rem;
+    }
+
+ 
+
+    .skyGazer img {
+        position: relative;
+        /* height: 50vh; */
+        width: 62vw;
+    }
+
+
+    .watchual img{
+        position: relative;
+        margin-left: 9rem;
+        width: 30vh;
+        height: auto;
+        transform: rotate(0deg);
+    }
+}

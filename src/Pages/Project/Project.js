@@ -148,7 +148,7 @@ export default function Project() {
             >
               <div class="card cOne" > 
                 <div className="info infoOne"> 
-                    <h1 className="title" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
+                    <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
                     <h3> 
                       App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
                     </h3>
@@ -183,13 +183,13 @@ export default function Project() {
             >
               <div class="card cTwo" > 
                 <div className="info infoTwo"> 
-                    <h1 className="title" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
+                    <h1 className="title titleDog414" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
                     <h3> 
                       App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
                     </h3>
                     <div className="techInfo"> 
-                      <h4 className="backend"><span>Backend : </span>Node.js </h4>
-                      <h4 className="frontend"><span>Frontend : </span>React, Tensorflow</h4>
+                      <h4 className="backend backendDogScanner"><span>Backend : </span>Node.js </h4>
+                      <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React, Tensorflow</h4>
                     </div>
                     <div id="websiteBtnTwo"> 
                         <button>WEBSITE</button>
@@ -197,7 +197,7 @@ export default function Project() {
                     </div>
                 </div>
                 <div className="dogScanner" ref={imageTwo} >
-                  <img src={dogImg} alt="skyGazer"/>
+                  <img src={dogImg} alt="dogScanner"/>
                 </div>
                 <div id="circle"></div>
               </div>
@@ -233,7 +233,7 @@ export default function Project() {
                     </div>
                 </div>
                 <div className="watchual" ref={imageThree} >
-                  <img src={phoneImg} alt="skyGazer"/>
+                  <img src={phoneImg} alt="watchual"/>
                 </div>
                 <div id="smallCircleOne"></div>
                 <div id="smallCircleTwo"></div>

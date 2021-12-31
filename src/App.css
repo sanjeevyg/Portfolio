@@ -9,6 +9,20 @@ html body {
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
   height: 100vh;
   background: white;
+  overflow-y: scroll;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  padding: 0 1em;
+  max-width: 100%;
 }
 
 html {
@@ -17,10 +31,11 @@ html {
 
 .site-wrap {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #container {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   overflow-y: scroll;
 
 }
