@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-import { useState } from 'react';
 import { IoMdChatbubbles} from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { useSelector, useDispatch } from 'react-redux';
