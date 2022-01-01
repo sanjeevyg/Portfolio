@@ -12,16 +12,6 @@
     background: white;
 }
 
-/* .box {
-    position: absolute;
-    min-width: 93vw;
-    min-height: 100vh;
-    z-index: -1;
-    left: 0;
-    border-radius: 0px 0px 70px 0px;
-    background: #4545f3;
-} */
-
 .header {
     position: absolute;
     display: flex;
@@ -549,8 +539,6 @@
         top: 19vh;
         z-index: 999;
         transition: .5s ease;
-       
-       
     }
 
     .menuNinety a button{

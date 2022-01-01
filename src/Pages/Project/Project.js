@@ -84,7 +84,7 @@ export default function Project() {
     const options =  {
         root: null,
         rootMargin: '0px',
-        threshold: .25
+        threshold: .40
     }
    
     let isProjectOneVisible = useElementOnScreen(projectOneRef, options)
@@ -135,7 +135,6 @@ export default function Project() {
     return (
         <div className="projectContainer" id="projectC">
           <section className="sectionContainer one" ref={projectOneRef}> 
-            <div className="projectTitle projectTitleOne">PROJECT ONE</div>
               <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
                   <iframe width="560" height="315" title="videoOne" content="width=device-width" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
@@ -147,31 +146,31 @@ export default function Project() {
               onMouseLeave={handleMouseLeavePone}  
               onMouseEnter={handleMouseEnterPone}  
             >
+              <div className="projectTitle projectTitleOne">PROJECT ONE</div>
               <div class="card cOne" > 
-                <div className="info infoOne"> 
-                    <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
-                    <h3> 
-                      App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
-                    </h3>
-                    <div className="techInfo"> 
-                      <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
-                      <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, CSS, HTML</h4>
+                    <div className="skyGazer" ref={imageOne} >
+                        <img src={astonomyImg} alt="skyGazer"/>
                     </div>
-                    <div id="websiteBtnOne"> 
-                        <button>WEBSITE</button>
-                        <button onClick={toggleProjectOne}>VIDEO</button>
+                    <div className="appInfo">
+                        <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
+                        <h3> 
+                          App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                        </h3>
+                        <div className="techInfo"> 
+                          <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
+                          <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, CSS, HTML</h4>
+                        </div>
+                        <div id="websiteBtnOne"> 
+                            <button>WEBSITE</button>
+                            <button onClick={toggleProjectOne}>VIDEO</button>
+                        </div>
                     </div>
-                </div>
-                <div className="skyGazer" ref={imageOne} >
-                    <img src={astonomyImg} alt="skyGazer"/>
-                </div>
               </div>
            </div>
           </section>
           
 
           <section className="sectionContainer two" ref={projectTwoRef}> 
-            <div className="projectTitle projectTitleTwo">PROJECT TWO</div>
             <div className={ projectTwoVideoStatus ? "videoTwoActive" : "dogScannerVideo"} >
                   <iframe width="560" height="315" title="videoTwo" src={dogScanner} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoTwo}/> </div>
@@ -182,31 +181,31 @@ export default function Project() {
               onMouseLeave={handleMouseLeavePtwo}  
               onMouseEnter={handleMouseEnterPtwo}  
             >
+              <div className="projectTitle projectTitleTwo">PROJECT TWO</div>
               <div class="card cTwo" > 
-                <div className="info infoTwo"> 
-                    <h1 className="title titleDog" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
-                    <h3> 
-                      App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
-                    </h3>
-                    <div className="techInfo"> 
-                      <h4 className="backend backendDogScanner"><span>Backend : </span>Node.js </h4>
-                      <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React, Tensorflow</h4>
+                    <div className="dogScanner" ref={imageTwo} >
+                      <img src={dogImg} alt="dogScanner"/>
                     </div>
-                    <div id="websiteBtnTwo"> 
-                        <button>WEBSITE</button>
-                        <button onClick={toggleProjectTwo}>VIDEO</button>
+                    <div className="appInfo">
+                      <h1 className="title titleDog" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
+                      <h3> 
+                        App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
+                      </h3>
+                      <div className="techInfo"> 
+                        <h4 className="backend backendDogScanner"><span>Backend : </span>Node.js </h4>
+                        <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React, Tensorflow</h4>
+                      </div>
+                      <div id="websiteBtnTwo"> 
+                          <button>WEBSITE</button>
+                          <button onClick={toggleProjectTwo}>VIDEO</button>
+                      </div>
                     </div>
-                </div>
-                <div className="dogScanner" ref={imageTwo} >
-                  <img src={dogImg} alt="dogScanner"/>
-                </div>
                 <div id="circle"></div>
               </div>
            </div>
           </section>
 
           <section className="sectionContainer three" ref={projectThreeRef}> 
-            <div className="projectTitle projectTitleThree">PROJECT THREE</div>
             <div className={ projectThreeVideoStatus ? "videoThreeActive" : "watchualVideo"} >
                   <iframe width="560" height="315" title="videoThree" src={watchual} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoThree}/> </div>
@@ -217,11 +216,15 @@ export default function Project() {
               onMouseLeave={handleMouseLeavePthree}  
               onMouseEnter={handleMouseEnterPthree}  
             >
+              <div className="projectTitle projectTitleThree">PROJECT THREE</div>
               <div class="card cThree" > 
-                <div className="info infoThree"> 
+                <div className="watchual" ref={imageThree} >
+                  <img src={phoneImg} alt="watchual"/>
+                </div>
+                <div className="appInfo"> 
                     <h1 className="title titleWatchual" ref={titleThree}>Watchual</h1>
                     <div id="watchDiv"><MdOutlineWatchLater id="watch" size={60}/></div>
-                    <h3> 
+                    <h3 id="projectThreeInfo"> 
                       Shopping app for watches made for ios mobile devices. The watches can be selected, added to the card and payment can be processed. 
                     </h3>
                     <div className="techInfo techInfoThree"> 
@@ -232,9 +235,6 @@ export default function Project() {
                         <button>WEBSITE</button>
                         <button onClick={toggleProjectThree} >VIDEO</button>
                     </div>
-                </div>
-                <div className="watchual" ref={imageThree} >
-                  <img src={phoneImg} alt="watchual"/>
                 </div>
                 <div id="smallCircleOne"></div>
                 <div id="smallCircleTwo"></div>
