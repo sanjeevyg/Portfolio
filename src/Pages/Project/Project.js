@@ -151,14 +151,15 @@ export default function Project() {
                     <div className="skyGazer" ref={imageOne} >
                         <img src={astonomyImg} alt="skyGazer"/>
                     </div>
-                    <div className="appInfo">
+                    <div className="appInfo skyGazerInfo">
                         <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
                         <h3> 
-                          App uses the NASA api to find the general information about the planets in solar system and other planetary systems. 
+                          App shows the solar system animation and allows user to interact with planets. User can fetch information about different planets through search or simply clicking the planets. 
+                          NASA API has been used to fetch data about the solar system.
                         </h3>
-                        <div className="techInfo"> 
+                        <div className="techInfo skyGazerTechInfo"> 
                           <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
-                          <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, CSS, HTML</h4>
+                          <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, Vanilla CSS, HTML</h4>
                         </div>
                         <div id="websiteBtnOne"> 
                             <button>WEBSITE</button>
@@ -189,11 +190,11 @@ export default function Project() {
                     <div className="appInfo">
                       <h1 className="title titleDog" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
                       <h3> 
-                        App uses the tensorflow to identify the breed of dog based on uploaded photo or captured photo of different types of dog.
+                        App uses the tensorflow to identify the different breeds of dog based on uploaded photo or captured photo.
                       </h3>
                       <div className="techInfo"> 
-                        <h4 className="backend backendDogScanner"><span>Backend : </span>Node.js </h4>
-                        <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React, Tensorflow</h4>
+                        <h4 className="backend backendDogScanner"><span>Backend : </span>Node.js, TensorFlow</h4>
+                        <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React </h4>
                       </div>
                       <div id="websiteBtnTwo"> 
                           <button>WEBSITE</button>
@@ -222,13 +223,15 @@ export default function Project() {
                   <img src={phoneImg} alt="watchual"/>
                 </div>
                 <div className="appInfo"> 
-                    <h1 className="title titleWatchual" ref={titleThree}>Watchual</h1>
-                    <div id="watchDiv"><MdOutlineWatchLater id="watch" size={60}/></div>
+                    <div id="titleWatchualS">
+                        <h1 className="title titleWatchual" ref={titleThree}>Watchual</h1>
+                        <div id="watchDiv"><MdOutlineWatchLater id="watch" size={60}/></div>
+                    </div>
                     <h3 id="projectThreeInfo"> 
-                      Shopping app for watches made for ios mobile devices. The watches can be selected, added to the card and payment can be processed. 
+                        This is a shopping app for watches. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
                     </h3>
                     <div className="techInfo techInfoThree"> 
-                      <h4 className="backend"><span>Backend : </span>Django</h4>
+                      <h4 className="backend"><span>Backend : </span>Node.js</h4>
                       <h4 className="frontend"><span>Frontend : </span>React Native</h4>
                     </div>
                     <div id="websiteBtnThree" > 

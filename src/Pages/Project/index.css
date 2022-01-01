@@ -57,29 +57,40 @@
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
-    font-size: large;
-    margin-top: 5rem;
-    font-style: italic;
-    text-align: center;
+    margin-top: 7vh;
+    font-weight: lighter;
     color: rgb(246, 246, 246);
     font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: .05rem;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.skyGazerTechInfo {
+    margin-top: 3vh;
 }
 
 .appInfo h3 {
     position: relative;
     text-align: start;
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     letter-spacing: .05rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #projectThreeInfo {
-    margin-right: 9rem;
+    margin-right: 10rem;
 }
 
 .title {
     margin-bottom: 5vh;
     font-size: 2.9rem;
+}
+
+.titleSkyGazer {
+    margin-top: 5vh;
 }
 
 .titleSkyGazer span {
@@ -131,10 +142,13 @@
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.4));
 }
 
+#titleWatchualS {
+    display: flex;
+}
+
 #watch {
     position: relative;
-    left: 11.7rem;
-    bottom: 7rem;
+    left: -1rem;
     z-index: 1;
     color: rgb(238, 224, 95);
     filter: drop-shadow(-7px 7px 1px rgba(0, 0, 0, 0.15));
@@ -319,9 +333,11 @@
         padding-top: 1rem;
     }
 
-    .backend{
+    .techInfo {
+        display: flex;
+        align-items: center;
         text-align: center;
-        margin-left: 20%;
+        background-color: chartreuse;
     }
 
     .appInfo h3 {
@@ -343,6 +359,8 @@
         align-items: center;
     }
 
+    
+
     .dogScanner {
         margin-top: 5rem;
         margin-bottom: 3rem;
@@ -357,9 +375,20 @@
         margin-bottom: 3vh;
     }
 
-    #projectThreeInfo {
+    /* #projectThreeInfo {
         padding-left: auto;
+    } */
+
+    #titleWatchualS {
+        display: flex;
     }
+
+    #watch {
+        position: relative;
+        bottom: 7vh;
+        left: 57vw;
+    }
+
 
     .watchual img {
         position: absolute;
@@ -414,6 +443,9 @@
         visibility: hidden;
         opacity: 0;
     } 
+
+    
+    
    
     /*
 
