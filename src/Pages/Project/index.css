@@ -297,8 +297,6 @@
     position: fixed;
     left: 6rem;
     background: rgba(12, 11, 11, 0.9);
-    /* height: 74vh; */
-    /* width: 76vw; */
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -307,14 +305,6 @@
     z-index: 6;
 }
 
-/* .skyGazerVideo .closeBtn, .dogScannerVideo .closeBtn, .watchualVideo .closeBtn  {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: rgb(255, 254, 254);
-    visibility: hidden;
-    opacity: 0;
-} */
 
 .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive  .closeBtn  {
     position: absolute;
@@ -349,7 +339,7 @@
     }
 
     .card {
-        min-height: 85vh;;
+        max-height: 95vh;;
         min-width: 92vw;
         display: flex;
         font-size: small;
@@ -363,7 +353,7 @@
     }
 
     .cThree {
-        min-height: 100vh;;
+        height: 95vh;;
         min-width: 92vw;
         display: flex;
         font-size: small;
@@ -500,8 +490,8 @@
     .skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe,  .videoThreeActive iframe {
         position: absolute;
         max-width: 100vw;
-        min-height: 105vh;
-        margin-right: 1rem;
+        min-height: 95vh;
+        margin-right: 5rem;
         align-self: center;
     }
 
@@ -515,7 +505,7 @@
 
     .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive  .closeBtn  {
         position: fixed;
-        top: 9rem;
+        top: 12rem;
         right: 4rem;
         color: rgb(255, 255, 255);
     }

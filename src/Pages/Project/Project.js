@@ -59,8 +59,8 @@ export default function Project() {
     }
 
     const handleMouseMovePthree = (e) => {
-      let xAxis = (window.innerWidth /2 - e.pageX)/170;
-      let yAxis = (window.innerWidth /2 - e.pageY)/250;
+      let xAxis = (window.innerWidth /2 - e.pageX)/200;
+      let yAxis = (window.innerWidth /2 - e.pageY)/300;
       sectionThree.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
       }
   
