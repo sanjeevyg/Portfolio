@@ -21,7 +21,6 @@
     justify-content: center;
 }
 
-   
 .innerBackground {
     position: relative;
     background-color: rgb(7, 2, 39);
@@ -34,7 +33,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .iconsGroupOne {
@@ -135,7 +133,6 @@
     background: rgba(255, 255, 255, 0.2);
     transform: skewX(45deg) translateX(150px);
     transition: .5s;
-    
 }
 
 .icon:hover:before {
@@ -202,7 +199,6 @@
     text-align: left;
 }
 
-
 #aboutMe {
     font-weight: bold;
 }
@@ -210,4 +206,66 @@
 #bio {
     position: relative;
     transform: translateY(-2rem);
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+
+    #box {
+        width: 89%;
+    }
+    .about {
+        border-top-left-radius: 0rem;
+    }
+
+    .icon {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 2px;
+    }
+
+    .rails {
+        font-size: xx-small;
+        padding: 1rem;
+    }
+
+    .iconsGroupOne, .iconsGroupTwo {
+        width: 85%;
+    }
+
+    .innerBackground {
+        height: 79vh;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        position: relative;
+        content: "";
+        color: white;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    #aboutMe {
+        font-weight: bold;
+        transform: translateY(-3.5rem);
+    }
+
+    #bio {
+        font-size: medium;
+        width: fit-content;
+    }
+
+    #introduction {
+        display: flex;
+        padding: 0.5rem;
+        text-align: center;
+        height: 61vh;
+        margin-top: 2rem;
+    }
+
+    #copyright {
+        font-size: x-small;
+    }
 }

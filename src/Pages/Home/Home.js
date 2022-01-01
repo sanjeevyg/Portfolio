@@ -114,7 +114,7 @@ export default function Home(props) {
                     <p id="name"> Sanjeev Yogi</p>
                     <p id="introTwo"> <span> I love art, design & technology.</span></p>
                     <p className="description">| Full Stack Software Engineer |</p>
-                    <button className='projectButton'> <a href="#projectC"> See Projects <FaVolleyballBall id="button" size={19}/></a></button>
+                    <a href="#projectC"> <button className='projectButton'> See Projects <FaVolleyballBall id="button" size={19}/></button></a>
                 </div>
                 <div id="svgContainer">
                          <svg id="svg" width="886" height="607" viewBox="0 0 886 607" fill="none" xmlns="http://www.w3.org/2000/svg">

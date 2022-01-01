@@ -12,7 +12,7 @@ export default function About() {
                 <div className="skills">Tech Skills </div>
                 <section className="iconsContainer">
                     <div className="iconsGroupOne">
-                        <div className="tensorFlow icon" ><SiTensorflow size={35}/></div>
+                        <div className="tensorFlow icon" ><SiTensorflow id="Tensor" size={35}/></div>
                         <div className="javascript icon" ><SiJavascript  size={35} /></div>
                         <div className="react icon"><FaReact  size={35} /></div>
                         <div className="css icon"><SiCsswizardry  size={35} /></div>

@@ -111,6 +111,7 @@ export default function Project() {
 
     const toggleProjectThree = () => {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
+      console.log("I am clicked")
     }
     
     const projectOneVideoStatus = useSelector(state => state.videoOneStatus)
@@ -136,7 +137,7 @@ export default function Project() {
           <section className="sectionContainer one" ref={projectOneRef}> 
             <div className="projectTitle projectTitleOne">PROJECT ONE</div>
               <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
-                  <iframe width="560" height="315" title="videoOne" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
+                  <iframe width="560" height="315" title="videoOne" content="width=device-width" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
               <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
             </div>
           
@@ -227,9 +228,9 @@ export default function Project() {
                       <h4 className="backend"><span>Backend : </span>Django</h4>
                       <h4 className="frontend"><span>Frontend : </span>React Native</h4>
                     </div>
-                    <div id="websiteBtnThree"> 
+                    <div id="websiteBtnThree" > 
                         <button>WEBSITE</button>
-                        <button onClick={toggleProjectThree}>VIDEO</button>
+                        <button onClick={toggleProjectThree} >VIDEO</button>
                     </div>
                 </div>
                 <div className="watchual" ref={imageThree} >
