@@ -102,10 +102,10 @@ export default function Home(props) {
             <section className="socialBar">
                 <div className="coverOne"></div>
                 <div id="socialListContainer"> 
-                    <li ><a href="#" className="socialBarIcon" ref={el => linkedinRef.current = el}><AiFillLinkedin size={37}/></a></li>
-                    <li><a href="#" className="socialBarIcon" ref={el => githubRef.current = el}><AiFillGithub size={37}/></a></li>
-                    <li><a href="#" className="socialBarIcon" ref={el => twitterRef.current = el}><AiFillTwitterCircle size={37}/></a></li>
-                    <li><a href="#" className="socialBarIcon" ref={el => instagramRef.current = el}><AiFillInstagram size={37}/></a></li>
+                    <li ><a href="https://www.linkedin.com/in/sanjeevyogi" className="socialBarIcon" target="_blank" rel="noopener noreferrer" ref={el => linkedinRef.current = el}><AiFillLinkedin size={37}/></a></li>
+                    <li><a href="https://github.com/sanjeevyg" className="socialBarIcon" target="_blank" rel="noopener noreferrer"  ref={el => githubRef.current = el}><AiFillGithub size={37}/></a></li>
+                    <li><a href="https://twitter.com/syogifse" className="socialBarIcon" target="_blank" rel="noopener noreferrer"  ref={el => twitterRef.current = el}><AiFillTwitterCircle size={37}/></a></li>
+                    <li><a href="https://www.instagram.com/ygsjv001/" className="socialBarIcon" target="_blank" rel="noopener noreferrer"  ref={el => instagramRef.current = el}><AiFillInstagram size={37}/></a></li>
                 </div>
             </section>
             <section id="centralContent">
