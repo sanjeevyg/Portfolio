@@ -154,7 +154,7 @@ export default function Project() {
                     <div className="appInfo skyGazerInfo">
                         <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
                         <h3> 
-                          App shows the solar system animation and allows user to interact with planets. User can fetch information about different planets through search or simply clicking the planets. 
+                          SkyGazer exhibits solar system through animation and allows user to interact with planets. User can fetch information about different planets using search feature or simply clicking the planets. 
                           NASA API has been used to fetch data about the solar system.
                         </h3>
                         <div className="techInfo skyGazerTechInfo"> 
