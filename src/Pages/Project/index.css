@@ -25,6 +25,7 @@
     width: 80vw;
     transform-style: preserve-3d;
     padding-left: 12rem;
+   
 }
 
 .projectTitle {
@@ -90,7 +91,9 @@
 }
 
 .titleSkyGazer {
-    margin-top: 5vh;
+    display: absolute;
+    margin-top: -1vh;
+    /* margin-bottom: 5rem; */
 }
 
 .titleSkyGazer span {
@@ -142,8 +145,10 @@
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.4));
 }
 
-#titleWatchualS {
+.titleWatchualS{
     display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
 }
 
 #watch {
@@ -236,21 +241,13 @@
     opacity: 0;
 } 
 
-.skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe,  .videoThreeActive iframe {
+.skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe, .watchualVideo iframe, .videoThreeActive iframe {
     position: relative;
     min-width: 58vw;
     height: 59vh;
     outline: none;
     border: none;
 }
-
-/* .videoThreeActive iframe {
-    position: relative;
-    min-width: 61.5vw;
-    height: 62vh;
-    outline: none;
-    border: none;
-} */
 
 .videoOneActive, .videoTwoActive, .videoThreeActive {
     position: fixed;
@@ -265,11 +262,12 @@
     z-index: 6;
 }
 
-.videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive  .closeBtn  {
+.videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
     position: absolute;
     top: 0;
     right: 0;
     color: rgb(255, 254, 254);
+    z-index: 6;
 }
 
 .videoOneActive  .closeBtn:hover, .videoTwoActive  .closeBtn:hover, .videoThreeActive .closeBtn:hover {
@@ -294,17 +292,14 @@
         padding: auto;
         max-width: 100%;
         overflow: hidden;
-        background: white;
     }
-
+    
     .sectionContainer {
         max-height: 100vh;
         min-width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
-        padding: auto;
     }
     
     .subsectionContainer {
@@ -315,7 +310,8 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        padding-right: 45vw;
+        padding-right: auto;
+        padding-left: 0rem;
     }
 
     .card {
@@ -337,17 +333,31 @@
         display: flex;
         align-items: center;
         text-align: center;
-        background-color: chartreuse;
     }
 
     .appInfo h3 {
         text-align: center;
+        font-size: large;
     }
 
     .title {
         position: absolute;
-        left: 21vw;
         top: 1rem;
+        left: 2vw;
+        right: 2vw;
+    }
+
+    .titleWatchual  {
+        /* background: darkmagenta; */
+    } 
+
+    #projectThreeInfo {
+        margin-top: 15vh;
+        text-align: left;
+    }
+
+    #websiteBtnOne {
+        margin-bottom: 5vh;
     }
 
     .skyGazer {
@@ -359,8 +369,6 @@
         align-items: center;
     }
 
-    
-
     .dogScanner {
         margin-top: 5rem;
         margin-bottom: 3rem;
@@ -371,30 +379,37 @@
     }
 
     .projectTitle {
-        width: 60vw;
+        width: 70vw;
+        margin-bottom: 3vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .techInfo {
+        font-size: medium;
+        margin-bottom: 5vh;
+    }
+
+    .techInfoThree {
+        margin-top: 5vh;
         margin-bottom: 3vh;
     }
 
-    /* #projectThreeInfo {
-        padding-left: auto;
-    } */
-
-    #titleWatchualS {
-        display: flex;
+    .skyGazer img {
+        height: 20vh;
+        width: auto;
+        margin-top: 5vh;
     }
 
-    #watch {
-        position: relative;
-        bottom: 7vh;
-        left: 57vw;
+    #watchDiv {
+        display: none;
     }
-
 
     .watchual img {
         position: absolute;
-        margin-top: 9vh;
+        margin-top: 17vh;
         transform: none;
-        width: 40vw;
+        width: 42vw;
         margin-left: 5vw;
         z-index: 0;
     }
@@ -418,23 +433,7 @@
         border-top-left-radius: 60px;
     }
 
-    .skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe,  .videoThreeActive iframe {
-        position: absolute;
-        max-width: 100vw;
-        min-height: 85vh;
-        margin-left: 5rem;
-        margin-bottom: 35rem;
-    }
-
-    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive  .closeBtn  {
-        position: fixed;
-        z-index: 15;
-        top: 0rem;
-        color: rgb(112, 23, 23);
-        
-    }
-
-    .skyGazerVideo, .dogScannerVideo, .watchualVideo {
+    /* .skyGazerVideo, .dogScannerVideo, .watchualVideo {
         position: absolute;
         z-index: -1;
         display: flex;
@@ -442,150 +441,37 @@
         align-items: center;
         visibility: hidden;
         opacity: 0;
-    } 
-
-    
-    
-   
-    /*
-
-    .cThree {
-        height: 95vh;;
-        min-width: 92vw;
-        display: flex;
-        font-size: small;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10rem;
-        border-radius: 0px;
-        padding-top: 3rem;
-        border-radius: 1rem;
-    }
-
-    .cOne {
-        padding-top: 12vh;
-    }
-
-   .titleSkyGazer, .titleDog, .titleWatchual {
-        position: relative;
-        width: fit-content;
-        font-size: 2.5rem;
-        margin-bottom: 67rem;
-    }
+    }  */
 
   
-    #watchDiv {
-        position: absolute;
-        background: chartreuse;
-        margin-bottom: 50rem;
-        margin-right: 10rem;
-    }
-    
-    .dogScanner img {
-        position: relative ;
-        width: 40vh;
-        height: auto;
-        margin-top: 10rem;
-        margin-left: 23vw;
-    }
-
-    .skyGazer img {
-        position: relative;
-        width: 35vh;
-        height: auto;
-        margin-top: 5vh;
-        margin-left: 23vw;
-    }
-
-    .watchual img{
-        position: relative;
-        margin-bottom: 30vh;
-        min-width: 18vh;
-        height: auto;
-        margin-right: 1rem;
-        transform: translateX(4rem) translateY(1rem) rotateZ(15deg);
-    }
-
-    #websiteBtnTwo button {
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-    .techInfo {
-        position: relative;
-        display: flex;
-        align-items: center;
-        padding-bottom: 1rem;
-        font-size: large;
-        margin-bottom: 5rem;
-        margin-top: 5rem;
-        font-style: italic;
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        color: tomato;
-        z-index: 99;
-    }
-
-
-    .projectTitleOne, .projectTitleTwo, .projectTitleThree {
-        position: relative;
-        min-width: 8rem;
-        font-size: large;
-        margin-bottom: 71rem;
-        margin-left: -16rem;
-    }
-
-    #circle {
-        min-height: 45%;
-        min-width: 57%;
-    }
-
-    #smallCircleOne {
-        min-width: 25%;
-        min-height: 25%;
-        border-top-right-radius: 150px;
-        border-bottom-right-radius: 150px;
-    }
-
-    #smallCircleTwo {
-        min-width: 35%;
-        min-height: 7%;
-        border-top-right-radius: 60px;
-        border-top-left-radius: 60px;
-    }
-
-    .sectionContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-
-    .skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe,  .videoThreeActive iframe {
-        position: absolute;
-        max-width: 100vw;
-        min-height: 95vh;
-        margin-right: 5rem;
-        align-self: center;
-    }
-
-    .videoThreeActive {
+    .skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe, .watchualVideo iframe, .videoThreeActive iframe {
         position: fixed;
         max-width: 100vw;
-        min-height: 105vh;
-        margin-right: 10rem;
+        min-height: 91vh;
         align-self: center;
+        left: 0rem;
+        top: 0rem;
     }
-
-    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive  .closeBtn  {
+    
+    .videoOneActive, .videoTwoActive, .videoThreeActive {
         position: fixed;
-        top: 12rem;
-        right: 4rem;
-        color: rgb(255, 255, 255);
+        left: 11rem;
+        bottom: 17vh;
+        background: rgba(12, 11, 11, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
     }
-
-    #websiteBtnThree button{
-        padding: 1rem;
-    } */
+    
+    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
+        position: fixed;
+        top: 88vh;
+        right: 0;
+        z-index: 15;
+        color: darkred;
+    }
 
 }

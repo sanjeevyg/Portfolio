@@ -223,12 +223,12 @@ export default function Project() {
                   <img src={phoneImg} alt="watchual"/>
                 </div>
                 <div className="appInfo"> 
-                    <div id="titleWatchualS">
+                    <div class="titleWatchualS">
                         <h1 className="title titleWatchual" ref={titleThree}>Watchual</h1>
                         <div id="watchDiv"><MdOutlineWatchLater id="watch" size={60}/></div>
                     </div>
                     <h3 id="projectThreeInfo"> 
-                        This is a shopping app for watches. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
+                        Watchual is a shopping app for watches. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
                     </h3>
                     <div className="techInfo techInfoThree"> 
                       <h4 className="backend"><span>Backend : </span>Node.js</h4>
