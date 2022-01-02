@@ -2,7 +2,7 @@
     position: fixed;
     background-color: rgb(250, 249, 249);
     top: 0;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
     display: flex;
     flex-direction: column;
@@ -100,6 +100,7 @@
     align-items: center;
     max-height: 90vh;
     max-width: 35vw;
+    background: darkred;
 }
 
 .contact-form {
