@@ -40,8 +40,8 @@
     
 .card {
     position: relative;
-    height: 55vh;
-    width: 57vw;
+    max-height: 55vh;
+    max-width: 57vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
     color: rgb(255, 255, 255);
     padding: 2.5rem;
     /* white-space: nowrap; */
-  	overflow: hidden;
+  	/* overflow: auto; */
   	text-overflow: ellipsis;
 }
 
@@ -69,6 +69,7 @@
     letter-spacing: .05rem;
     text-align: start;
     font-family: 'Times New Roman', Times, serif;
+    max-height: 5rem;
 }
 
 .skyGazerTechInfo {
@@ -110,7 +111,7 @@
 
 .skyGazer img {
     filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.7));
-    max-width: 27em;
+    max-width: 45vh;
     margin-right: 50px;
     z-index: 2;
 }
