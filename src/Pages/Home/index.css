@@ -453,7 +453,7 @@
     }
 
     #logo {
-        position: absolute;
+        position: relative;
         margin-bottom: 85vh;
         left: 12vw;
         filter: opacity(50%)
@@ -468,7 +468,7 @@
     #titlePortfolio {
         position: relative;
         margin-bottom: 85vh;
-        left: 12vw;
+        left: -5vw;
     }
 
     #headerLeft span {
