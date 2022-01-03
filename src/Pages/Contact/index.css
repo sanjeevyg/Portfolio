@@ -17,8 +17,9 @@
 }
 
 .contactContainer {
-    max-height: 100%;
-    /* background-color: deeppink; */
+    position: absolute;
+    max-height: 80%;
+    background-color: deeppink;
 }
 
 #contactLogo {
