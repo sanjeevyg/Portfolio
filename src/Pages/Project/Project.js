@@ -3,13 +3,12 @@ import './index.css';
 import astonomyImg from '../../svg/astronomyImg.png';
 import dogImg from '../../svg/dogScanner.png';
 import phoneImg from '../../svg/Iphone.png';
-import { useRef, useEffect} from 'react';
+import { useRef } from 'react';
 import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
 import { IoPawSharp } from 'react-icons/io5';
 import { MdOutlineWatchLater } from 'react-icons/md';
-
 
 export default function Project() {
 
@@ -138,28 +137,26 @@ export default function Project() {
 
     //cardResize Algo
 
-    let card = cardRef,
-    wrapper = wrapperRef
+    // let card = cardRef,
+    // wrapper = wrapperRef,
+    // maxWidth  = card.current.clientWidth,
+    // maxHeight = card.current.clientHeight;
 
-    useEffect(() => {
-      let maxWidth  = card.current.clientWidth
-      let maxHeight = card.current.clientHeight;
+    // const resize = () => {
+    //   let scale,
+    //   width = window.innerWidth,
+    //   height = window.innerHeight,
+    //   isMax = width >= maxWidth && height >= maxHeight;
 
-      const resize = () => {
-        let scale,
-        width = window.innerWidth,
-        height = window.innerHeight,
-        isMax = width >= maxWidth && height >= maxHeight;
-  
-        scale = Math.min(width/maxWidth, height/maxHeight);
-        wrapper.current.style.transform = isMax?'':'scale(' + scale + ')';
-        card.current.style.width = isMax?'':maxWidth * scale;
-        card.current.style.height = isMax?'':maxHeight * scale;
-      }
-      window.addEventListener("resize", resize);
-      resize();
-    }, [card, wrapper])
+    //   scale = Math.min(width/maxWidth, height/maxHeight);
+    //   wrapper.current.style.transform = isMax?'':'scale(' + scale + ')';
+    //   card.current.style.width = isMax?'':maxWidth * scale;
+    //   card.current.style.height = isMax?'':maxHeight * scale;
+    // }
+    
    
+    // window.addEventListener("resize", resize);
+    // resize();
    
     return (
         <div className="projectContainer" id="projectC">
@@ -176,7 +173,6 @@ export default function Project() {
               onMouseEnter={handleMouseEnterPone}  
             >
               <div className="projectTitle projectTitleOne">PROJECT ONE</div>
-              <div className="wrapper" ref={wrapperRef}>
                 <div class="card cOne" ref={cardRef} > 
                       <div className="skyGazer" ref={imageOne} >
                           <img src={astonomyImg} alt="skyGazer"/>
@@ -196,7 +192,6 @@ export default function Project() {
                               <button onClick={toggleProjectOne}>VIDEO</button>
                           </div>
                       </div>
-                </div>
               </div>
            </div>
           </section>
