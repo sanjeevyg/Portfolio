@@ -46,7 +46,7 @@
     top: 0;
     left: 10vw;
     width: min(57vw, 70%);
-    height: 51vh;
+    height: max(51vh, 60%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -491,6 +491,10 @@
         top: 0;
         right: 0;
         z-index: 15;
+    }
+
+    #websiteBtnOne, #websiteBtnTwo, #websiteBtnThree{
+        justify-content: center;
     }
 
 }
