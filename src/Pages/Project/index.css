@@ -390,13 +390,24 @@
 
     .projectTitle {
         position: relative;
-        width: 70vw;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        /* align-items: flex-end; */
         height: 40vh;
         z-index: 9;
         width: 100%;
+        height: 100%;
+        margin-top: 3rem;
+    }
+
+    .projectTitleOne {
+        transform: translateZ(9rem);
+        margin-top: 6rem;
+        /* margin-bottom: 5rem; */
+    }
+    
+    .cOne {
+        margin-top: 2rem;
     }
 
     .techInfo {
@@ -483,4 +494,4 @@
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 640px)
+/* @media screen and (min-width: 320px) and (max-width: 640px) */
