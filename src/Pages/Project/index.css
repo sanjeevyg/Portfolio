@@ -55,8 +55,8 @@
     border-radius: 15px;
     color: rgb(255, 255, 255);
     z-index: 0;
-    padding: min(2.5rem, 10vh), min(2.5rem, 10vh);
-    border: 2px solid red;
+    padding: min(2.5rem, 10vh);
+    /* border: 2px solid red; */
     
 }
 
