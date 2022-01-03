@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     align-items: center;
     z-index: -2;
     font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 

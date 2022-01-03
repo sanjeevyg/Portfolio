@@ -93,8 +93,8 @@
     position: relative;
     color: #ffffff;
     margin: 5px;
-    width: 80px;
-    height: 80px;
+    width: 5vw;
+    height: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,18 +195,19 @@
     padding-right: 3rem;
     border: .5px solid rgba(253, 253, 253, 0.1); 
     font-weight: 200;
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 1.5vw;
+    text-align: center;
+    
 }
 
 #aboutMe {
     font-weight: bold;
 }
 
-#bio {
+/* #bio {
     position: relative;
     transform: translateY(-2rem);
-}
+} */
 
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
@@ -218,11 +219,11 @@
         border-top-left-radius: 0rem;
     }
 
-    .icon {
-        height: 3rem;
+    /* .icon {
+        height: 1.5vw;
         width: 3rem;
         border-radius: 2px;
-    }
+    } */
 
     .rails {
         font-size: xx-small;
@@ -250,19 +251,6 @@
     #aboutMe {
         font-weight: bold;
         transform: translateY(-3.5rem);
-    }
-
-    #bio {
-        font-size: medium;
-        width: fit-content;
-    }
-
-    #introduction {
-        display: flex;
-        padding: 0.5rem;
-        text-align: center;
-        height: 61vh;
-        margin-top: 2rem;
     }
 
     #copyright {
