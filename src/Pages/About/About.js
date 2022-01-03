@@ -3,7 +3,7 @@ import './index.css';
 import {FaReact  } from 'react-icons/fa';
 import {AiOutlineCopyrightCircle  } from 'react-icons/ai';
 import {DiNodejs, DiFirebase, DiHeroku } from 'react-icons/di';
-import {SiRubyonrails, SiTensorflow, SiJavascript, SiDjango, SiCsswizardry, SiHtmlacademy} from 'react-icons/si';
+import { SiTensorflow, SiJavascript, SiDjango, SiCsswizardry, SiHtmlacademy} from 'react-icons/si';
 
 export default function About() {
     return (

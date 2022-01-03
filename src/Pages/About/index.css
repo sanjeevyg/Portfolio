@@ -244,21 +244,16 @@
 
     #aboutMe {
         font-weight: bold;
-        font-size: small;
-        transform: translateY(-2rem);
+        font-size: medium;
+        transform: translateY(-3rem);
     }
     
     #bio {
-        font-size: xx-small;
+        font-size: x-small;
         padding-bottom: 1rem;
     }
 
     #copyright {
         font-size: x-small;
     }
-/* 
-    .about {
-        min-height: 150vh;
-    } */
-
 }

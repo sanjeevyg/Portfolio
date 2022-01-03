@@ -294,8 +294,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
-        padding: auto;
         max-width: 100%;
         overflow: hidden;
     }
@@ -316,7 +314,6 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        padding-right: auto;
         padding-left: 0rem;
     }
 
@@ -333,7 +330,8 @@
         overflow: hidden;
         text-align: center;
         padding-top: 2rem;
-        margin-right: 5rem;
+        left: 0;
+        margin-bottom: 20vh;
     }
 
     .techInfo {
@@ -391,12 +389,14 @@
     }
 
     .projectTitle {
+        position: relative;
         width: 70vw;
-        margin-bottom: 152vw;
         display: flex;
         justify-content: center;
-        align-self: flex-start;
+        align-items: flex-end;
+        height: 40vh;
         z-index: 9;
+        width: 100%;
     }
 
     .techInfo {
