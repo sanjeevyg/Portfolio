@@ -212,7 +212,7 @@
     .about {
         border-top-left-radius: 0rem;
     }
-
+    
     .icon {
         height: 9.9vw;
         width: 9.9vw;
@@ -260,4 +260,5 @@
     .about {
         min-height: 150vh;
     }
+
 }
