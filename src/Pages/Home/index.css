@@ -785,7 +785,7 @@
     
     .menuContainer {
         position: fixed;
-        top: 50px;
+        top: 2rem;
         right: 10.5vw;
         display: flex;
         align-items: center;

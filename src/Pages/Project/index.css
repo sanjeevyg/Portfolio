@@ -30,7 +30,7 @@
 }
 
 .projectTitle {
-    position: absolute;
+    position: relative;
     font-family: Avertastd,sans-serif;
     font-weight: bold;
     z-index: 0;
@@ -38,7 +38,7 @@
     font-size: 1.1rem;
     border-left: 3px solid rgb(10, 26, 243);
     padding-left: 1rem;
-    transform: translateY(-4rem) translateX(-1rem);
+    transform: translateY(-4rem) translateX(-3rem);
 }
 
 .card {
