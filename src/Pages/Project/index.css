@@ -390,9 +390,10 @@
 
     .projectTitle {
         width: 70vw;
-        margin-bottom: 75vh;
+        margin-bottom: 152vw;
         display: flex;
         justify-content: center;
+        align-self: flex-start;
         z-index: 9;
     }
 
