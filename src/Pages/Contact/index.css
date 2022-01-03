@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     align-items: center;
     z-index: -2;
     font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -15,6 +14,11 @@
 
 .openBox {
     z-index: 9999
+}
+
+.contactContainer {
+    max-height: 100%;
+    /* background-color: deeppink; */
 }
 
 #contactLogo {
@@ -101,7 +105,6 @@
     align-items: center;
     max-height: 90vh;
     max-width: 35vw;
-    background: darkred;
 }
 
 .contact-form {
