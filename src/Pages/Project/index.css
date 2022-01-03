@@ -232,6 +232,10 @@
     cursor: pointer;
 }
 
+#websiteBtnOne, #websiteBtnTwo, #websiteBtnThree{
+    display: flex;
+}
+
 .projectTitle span {
     color: blue;
     font-size: 1.3rem;
@@ -334,11 +338,7 @@
         margin-bottom: 20vh;
     }
 
-    .techInfo {
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
+
 
     .appInfo h3 {
         text-align: center;
@@ -413,6 +413,8 @@
     .techInfo {
         font-size: medium;
         margin-bottom: 5vh;
+        align-items: center;
+        text-align: center;
     }
 
     .watchualTinfo {
