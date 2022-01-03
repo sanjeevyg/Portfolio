@@ -3,12 +3,13 @@ import './index.css';
 import astonomyImg from '../../svg/astronomyImg.png';
 import dogImg from '../../svg/dogScanner.png';
 import phoneImg from '../../svg/Iphone.png';
-import { useRef } from 'react';
+import { useRef, useEffect} from 'react';
 import { useDispatch, useSelector} from 'react-redux';
 import useElementOnScreen from '../../CustomHook/useElementOnScreen';
 import { AiFillCloseSquare } from 'react-icons/ai';
 import { IoPawSharp } from 'react-icons/io5';
 import { MdOutlineWatchLater } from 'react-icons/md';
+
 
 export default function Project() {
 
@@ -23,6 +24,9 @@ export default function Project() {
     const sectionOne = useRef(null)
     const sectionTwo = useRef(null)
     const sectionThree = useRef(null)
+
+    const cardRef = useRef(null)
+    const wrapperRef = useRef(null)
     
 
     const handleMouseMovePone = (e) => {
@@ -131,6 +135,31 @@ export default function Project() {
     const closeVideoThree = () => {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
     }
+
+    //cardResize Algo
+
+    let card = cardRef,
+    wrapper = wrapperRef
+
+    useEffect(() => {
+      let maxWidth  = card.current.clientWidth
+      let maxHeight = card.current.clientHeight;
+
+      const resize = () => {
+        let scale,
+        width = window.innerWidth,
+        height = window.innerHeight,
+        isMax = width >= maxWidth && height >= maxHeight;
+  
+        scale = Math.min(width/maxWidth, height/maxHeight);
+        wrapper.current.style.transform = isMax?'':'scale(' + scale + ')';
+        card.current.style.width = isMax?'':maxWidth * scale;
+        card.current.style.height = isMax?'':maxHeight * scale;
+      }
+      window.addEventListener("resize", resize);
+      resize();
+    }, [card, wrapper])
+   
    
     return (
         <div className="projectContainer" id="projectC">
@@ -147,25 +176,27 @@ export default function Project() {
               onMouseEnter={handleMouseEnterPone}  
             >
               <div className="projectTitle projectTitleOne">PROJECT ONE</div>
-              <div class="card cOne" > 
-                    <div className="skyGazer" ref={imageOne} >
-                        <img src={astonomyImg} alt="skyGazer"/>
-                    </div>
-                    <div className="appInfo skyGazerInfo">
-                        <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
-                        <h3> 
-                          SkyGazer exhibits solar system through animation and allows user to interact with planets. User can fetch information about different planets using search feature or simply clicking the planets. 
-                          NASA API has been used to fetch data about the solar system.
-                        </h3>
-                        <div className="techInfo skyGazerTechInfo"> 
-                          <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
-                          <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, Vanilla CSS, HTML</h4>
-                        </div>
-                        <div id="websiteBtnOne"> 
-                            <button>WEBSITE</button>
-                            <button onClick={toggleProjectOne}>VIDEO</button>
-                        </div>
-                    </div>
+              <div className="wrapper" ref={wrapperRef}>
+                <div class="card cOne" ref={cardRef} > 
+                      <div className="skyGazer" ref={imageOne} >
+                          <img src={astonomyImg} alt="skyGazer"/>
+                      </div>
+                      <div className="appInfo skyGazerInfo">
+                          <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
+                          <h3> 
+                            SkyGazer exhibits solar system through animation and allows user to interact with planets. User can fetch information about different planets using search feature or simply clicking the planets. 
+                            NASA API has been used to fetch data about the solar system.
+                          </h3>
+                          <div className="techInfo skyGazerTechInfo"> 
+                            <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
+                            <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, Vanilla CSS, HTML</h4>
+                          </div>
+                          <div id="websiteBtnOne"> 
+                              <button>WEBSITE</button>
+                              <button onClick={toggleProjectOne}>VIDEO</button>
+                          </div>
+                      </div>
+                </div>
               </div>
            </div>
           </section>
