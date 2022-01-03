@@ -11,7 +11,7 @@
 }
 
 .sectionContainer {
-    min-height: 100vh;
+    height: 100vh;
     width: 80vw;
     display: flex;
     justify-content: flex-start;
@@ -20,33 +20,33 @@
 }
 
 .subsectionContainer {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    height: 70vh;
-    width: 80vw;
+    height: 75vh;
+    width: 90vw;
     transform-style: preserve-3d;
     padding-left: 12rem;
-   
 }
 
 .projectTitle {
+    position: absolute;
     font-family: Avertastd,sans-serif;
     font-weight: bold;
-    z-index: 9;
+    z-index: 0;
     letter-spacing: .3em;
     font-size: 1.1rem;
     border-left: 3px solid rgb(10, 26, 243);
-    padding-left: 12px;
+    padding-left: 1rem;
+    transform: translateY(-4rem) translateX(-1rem);
 }
-    
+
 .card {
-    position: relative;
-    max-height: 30vw;
-    min-height: 25vw;
-    max-width: 60vw;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    width: 70%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@
     border-radius: 15px;
     color: rgb(255, 255, 255);
     padding: 2.5em;
-    /* overflow: hidden; */
+    z-index: auto;
 }
 
 .techInfo {
@@ -76,10 +76,6 @@
     max-width: fit-content;
 }
 
-.skyGazerTechInfo {
-    margin-top: 3vh;
-}
-
 .appInfo h3 {
     position: relative;
     text-align: start;
@@ -90,21 +86,9 @@
      word-wrap: break-word;
 }
 
-#projectThreeInfo {
-    margin-right: 10rem;
-}
-
 .title {
     margin-bottom: 5vh;
     font-size: 2.7vw;
-}
-
-.titleSkyGazer {
-    display: flex;
-    margin-top: 3vh;
-    margin-right: 20rem;
-    min-width: 15rem;
-    /* margin-bottom: 5rem; */
 }
 
 .titleSkyGazer span {
@@ -117,10 +101,9 @@
 }
 
 .skyGazer img {
-    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.7));
-    max-width: 17vw;
-    z-index: 2;
-    margin-right: 50px;
+    max-width: 100%;
+    z-index: 5;
+    filter: drop-shadow(25px 0px 3.5px rgba(0, 0, 0, 0.1));
 }
 
 .cOne {
@@ -144,11 +127,10 @@
 
 .watchual img {
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
-    width: 13vw;
-    transform: rotate(-25deg) translateY(-6rem) translateX(-5rem);
+    max-width: 80%;
+    transform: rotate(-25deg) translateY(-1rem) translateX(3rem);
     z-index: 5;
     filter: drop-shadow(-25px 15px 4px rgba(0, 0, 0, 0.1));
-    margin-right: 50px;
 }
 
 #paw {
