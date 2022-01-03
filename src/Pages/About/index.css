@@ -204,12 +204,6 @@
     font-weight: bold;
 }
 
-/* #bio {
-    position: relative;
-    transform: translateY(-2rem);
-} */
-
-
 @media screen and (min-width: 320px) and (max-width: 640px) {
 
     #box {
@@ -219,11 +213,12 @@
         border-top-left-radius: 0rem;
     }
 
-    /* .icon {
-        height: 1.5vw;
-        width: 3rem;
+    .icon {
+        height: 9.9vw;
+        width: 9.9vw;
         border-radius: 2px;
-    } */
+        padding: .3rem;
+    }
 
     .rails {
         font-size: xx-small;
@@ -245,12 +240,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* background-color: red; */
     }
 
     #aboutMe {
         font-weight: bold;
-        transform: translateY(-3.5rem);
+        font-size: small;
+        transform: translateY(-2rem);
+    }
+    
+    #bio {
+        font-size: xx-small;
+        padding-bottom: 1rem;
     }
 
     #copyright {
@@ -259,9 +259,5 @@
 
     .about {
         min-height: 150vh;
-    }
-
-    .innerBackground  {
-        min-height: 100vh;
     }
 }

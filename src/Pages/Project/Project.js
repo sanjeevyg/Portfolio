@@ -192,7 +192,7 @@ export default function Project() {
                       <h3> 
                         App uses the tensorflow to identify the different breeds of dog based on uploaded photo or captured photo.
                       </h3>
-                      <div className="techInfo"> 
+                      <div className="techInfo dogScannerTinfo"> 
                         <h4 className="backend backendDogScanner"><span>Backend : </span>Node.js, TensorFlow</h4>
                         <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React </h4>
                       </div>
@@ -230,7 +230,7 @@ export default function Project() {
                     <h3 id="projectThreeInfo"> 
                         Watchual is a shopping app for watches. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
                     </h3>
-                    <div className="techInfo techInfoThree"> 
+                    <div className="techInfo watchualTinfo"> 
                       <h4 className="backend"><span>Backend : </span>Node.js</h4>
                       <h4 className="frontend"><span>Frontend : </span>React Native</h4>
                     </div>

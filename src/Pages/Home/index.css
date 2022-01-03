@@ -109,6 +109,7 @@
     text-decoration: none;
     transition: 0.5s, z-index 0.5s, tranform 0.5s;
     overflow: hidden;
+    transform: translateZ(200px);
 }
 
 #socialListContainer li a:before {
@@ -441,6 +442,12 @@
         position: absolute;
     }
 
+    .socialBarIcon {
+        height: 5rem;
+        width: 5rem;
+        transform: none;
+    }
+
     .coverOne {
         display: none;
     }
@@ -459,7 +466,7 @@
     }
 
     #titlePortfolio {
-        position: absolute;
+        position: relative;
         margin-bottom: 85vh;
         left: 12vw;
     }
@@ -489,7 +496,6 @@
         flex-direction: column;
         align-items: center;
         left: auto;
-        
     }
 
     #intro {
@@ -497,7 +503,7 @@
         width: fit-content;
     }
     #name {
-        font-size: xxx-large;
+        font-size: 12vw;
         letter-spacing: .1rem;
     }
 
@@ -520,7 +526,6 @@
         display: none;
     }    
     
-
     .menuContainer {
         position: fixed;
         top: 50px;
@@ -547,11 +552,6 @@
         color: white;
        
     }
-    
-    
-
-    
-
   }
 
 
