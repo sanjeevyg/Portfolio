@@ -2,12 +2,14 @@
     background: rgb(69, 53, 216);
     position: relative;
     height: 120vh;
+    max-width: 100%;
     font-size: 15rem;
     border-top-left-radius: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    overflow-x: hidden;
 }
 
 .iconsContainer {

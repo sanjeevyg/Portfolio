@@ -8,8 +8,10 @@
 html body {
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, Arial, "Lucida Grande", sans-serif; 
   height: 100vh;
+  width: 100vw;
   background: white;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .text-center {
@@ -20,10 +22,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.site-wrap {
+/* .site-wrap {
   overflow-x: hidden;
   overflow-y: hidden;
-}
+} */
 
 #container {
   overflow-y: scroll;
