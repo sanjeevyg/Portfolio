@@ -22,10 +22,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* .site-wrap {
+.site-wrap {
   overflow-x: hidden;
   overflow-y: hidden;
-} */
+}
 
 #container {
   overflow-y: scroll;
