@@ -184,7 +184,7 @@ export default function Project() {
                             NASA API has been used to fetch data about the solar system.
                           </h3>
                           <div className="techInfo skyGazerTechInfo"> 
-                            <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
+                            <h4 className="backend"><span>Backend : </span>Node.js</h4>
                             <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, Vanilla CSS, HTML</h4>
                           </div>
                           <div id="websiteBtnOne"> 
@@ -257,7 +257,7 @@ export default function Project() {
                         Watchual is a shopping app for watches. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
                     </h3>
                     <div className="techInfo watchualTinfo"> 
-                      <h4 className="backend"><span>Backend : </span>Node.js</h4>
+                      <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
                       <h4 className="frontend"><span>Frontend : </span>React Native</h4>
                     </div>
                     <div id="websiteBtnThree" > 
