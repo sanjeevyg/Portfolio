@@ -254,7 +254,7 @@ export default function Project() {
                         <div id="watchDiv"><MdOutlineWatchLater id="watch" size={60}/></div>
                     </div>
                     <h3 id="projectThreeInfo"> 
-                        Watchual is a shopping app for watches for mobile devices. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
+                        Watchual is a watch shopping app for mobile devices. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
                     </h3>
                     <div className="techInfo watchualTinfo"> 
                       <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
