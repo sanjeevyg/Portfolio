@@ -180,8 +180,8 @@ export default function Project() {
                       <div className="appInfo skyGazerInfo">
                           <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
                           <h3> 
-                            SkyGazer exhibits solar system through animation and allows user to interact with planets. User can fetch information about different planets using search feature or simply clicking the planets. 
-                            NASA API has been used to fetch data about the solar system.
+                            SkyGazer exhibits solar system through animation and allows user to interact with planets. User can fetch information about different planets using search tool or simply clicking the planets. 
+                            Two third party NASA APIs have been used to feed data.
                           </h3>
                           <div className="techInfo skyGazerTechInfo"> 
                             <h4 className="backend"><span>Backend : </span>Node.js</h4>
