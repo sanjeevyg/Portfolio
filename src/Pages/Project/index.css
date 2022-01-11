@@ -519,6 +519,10 @@
         left: 0;
     }
 
+    .appInfo {
+        background: aquamarine;
+    }
+
     #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button{
         font-size: 3vh;
         max-width: 14vw;
