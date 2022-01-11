@@ -36,11 +36,13 @@ export default function About() {
                     <div id="introduction"> 
                         <div id="aboutMe">About me</div>
                         <div id="bio"> 
-                           Welcome to my website! My name is Sanjeev Yogi. Before I started coding, I worked as an architect for a few years and construction estimator for a couple of years after my undergraduate and graduate school. 
-                           I started coding as a hobby. As I started getting my feet wet, I stumbled across several youtube videos and articles on software engineering. There is so much resources on the internet that sometimes it is confusing and overwhelming. The learning process can be
-                        slow and painful without proper guidance. So, after much thought and planning, I joined the Flatiron School in Denver in 2020 and graduated at the end of the year. I throughly enjoyed my time at Flatiron and learned 
-                        a lot. I was very eager to begin my new career but had to be away to fulfill my military duties. Now, when I am back, I am more motivated than ever and ready to kickoff my software engineering journey.
-       
+                        My name is Sanjeev Yogi. Before I started coding, I worked as an architect for a few years and construction estimator for a couple of years 
+                        after my undergraduate and graduate school. I started coding as a hobby. As I started getting my feet wet, I stumbled across several youtube 
+                        videos and articles on software engineering. There are so many resources on the internet that sometimes it is confusing and overwhelming. The 
+                        learning process can be slow and painful without proper guidance. So, after much thought and planning, I joined the Flatiron School in Denver 
+                        in 2020 and graduated at the end of the year. I thoroughly enjoyed my time at Flatiron and learned a lot. I was very eager to begin my new career
+                         but had to be a way to fulfill my military duties. Now, when I am back, I am more motivated than ever and ready to kickoff my software engineering
+                          journey.an ever and ready to kickoff my software engineering journey.
                         </div>
                     </div>
                     <div id="copyright"> 

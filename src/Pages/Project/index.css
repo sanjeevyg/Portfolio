@@ -417,15 +417,19 @@
         text-align: center;
     }
 
+    .skyGazerTechInfo {
+        margin-right: 3vw;
+    }
+
     .watchualTinfo {
         margin-top: 5vh;
         margin-bottom: 3vh;
-        margin-left: 19vw;
+        margin-left: 14vw;
        
     }
 
     .dogScannerTinfo {
-        margin-left: 12vw;
+        margin-left: 7vw;
     }
 
     .skyGazer img {
