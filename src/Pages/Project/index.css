@@ -521,7 +521,7 @@
     }
 
     #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button{
-        font-size: small;
+        font-size: .7rem;
         max-width: 14vw;
         max-height: 5vw;
     }
