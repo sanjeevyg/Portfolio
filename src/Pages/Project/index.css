@@ -500,7 +500,7 @@
 }
 
 
-@media screen and (orientation:landscape) {
+@media screen and (orientation:landscape) and (max-device-width: 844px)  {
 
     .subsectionContainer {
         position: relative;
@@ -520,14 +520,12 @@
         left: 0;
     }
 
-    .cOne {
-        /* margin-top: 5rem; */
+    #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button{
+        font-size: small;
+        max-width: 14vw;
+        max-height: 5vw;
     }
-
-    .cTwo {
-        /* margin-top: 5rem; */
-    }
-
+        
 
 
 }
