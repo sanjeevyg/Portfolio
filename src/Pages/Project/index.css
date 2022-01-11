@@ -338,8 +338,6 @@
         margin-bottom: 20vh;
     }
 
-
-
     .appInfo h3 {
         text-align: center;
         font-size: large;
@@ -392,7 +390,6 @@
         position: relative;
         display: flex;
         justify-content: center;
-        /* align-items: flex-end; */
         height: 40vh;
         z-index: 9;
         width: 100%;
@@ -403,7 +400,6 @@
     .projectTitleOne {
         transform: translateZ(9rem);
         margin-top: 6rem;
-        /* margin-bottom: 5rem; */
     }
     
     .cOne {
@@ -504,4 +500,34 @@
 }
 
 
-/* @media screen and (min-width: 320px) and (max-width: 640px) */
+@media screen and (orientation:landscape) {
+
+    .subsectionContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 5vh;
+    }
+
+
+    .card {
+        width: 70vw;
+        height: 70vh;
+        left: 0;
+    }
+
+    .cOne {
+        /* margin-top: 5rem; */
+    }
+
+    .cTwo {
+        /* margin-top: 5rem; */
+    }
+
+
+
+}
