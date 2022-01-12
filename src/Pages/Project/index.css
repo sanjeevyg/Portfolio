@@ -539,6 +539,11 @@
         letter-spacing: normal;
     }
 
+
+    #websiteBtnOne , #websiteBtnTwo , #websiteBtnThree {
+        padding-left: min(55px, 9%);
+    }
+
     .watchual img {
         max-width: 60%;
     }

@@ -306,7 +306,6 @@
     }
 
     #bio {
-        /* background: cornflowerblue; */
         position: absolute;
         width: 90vw;
     }
@@ -319,10 +318,11 @@
     #introduction {
         width: 94vw;
         border-radius: 3.7rem;
+        font-size: .5rem;
     }
 
     #copyright {
         bottom: .5rem;
-        font-size: .5rem;
+        font-size: .4rem;
     }
 }

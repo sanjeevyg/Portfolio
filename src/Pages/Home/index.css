@@ -972,13 +972,14 @@
     }
 
     #bottom {
-        position: absolute;
+        display: none;
+        /* position: absolute;
         content: "";
         color: white;
         bottom: 0;
         width: 100vw;
         min-height: 3rem;
-        border-top: 1px solid rgba(0,0,0,0.1);
+        border-top: 1px solid rgba(0,0,0,0.1); */
     }
     
     .description {
@@ -1072,9 +1073,5 @@
     #centralText a button svg {
         width: 1rem;
     }
-
-
-    
-
 }
 
