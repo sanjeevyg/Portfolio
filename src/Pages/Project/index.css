@@ -588,7 +588,7 @@
     .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn{
         position: fixed;
         top: 3.7rem;
-        right: 0rem;
+        left: 38rem;
         z-index: 300;
         color: red;
         transform: translateZ(52px);
