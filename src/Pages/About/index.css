@@ -259,3 +259,70 @@
         font-size: x-small;
     }
 }
+
+@media screen and (orientation:landscape) and (max-device-width: 844px)  {
+    .about {
+        background: rgb(69, 53, 216);
+        position: relative;
+        height: 120vh;
+        max-width: 100%;
+        border-top-left-radius: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        overflow-x: hidden;
+    }
+    
+    .innerBackground {
+        position: relative;
+        height: 120vh;
+        margin-bottom: none;
+        padding-bottom: 0;
+    }
+ 
+    .iconsGroupTwo {
+        margin-bottom: 5rem;
+    }
+
+    #box {
+        height: 30vh;
+        margin-bottom: 4.7rem;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .rails {
+        padding: 1rem 1rem;
+    }
+
+    .skills {
+        font-size: 1rem;
+        top: 2.5rem;
+        font-weight: bolder;
+    }
+
+    #bio {
+        /* background: cornflowerblue; */
+        position: absolute;
+        width: 90vw;
+    }
+
+    #aboutMe {
+        position: absolute;
+        top: .1rem;
+    }
+
+    #introduction {
+        width: 94vw;
+        border-radius: 3.7rem;
+    }
+
+    #copyright {
+        bottom: .5rem;
+        font-size: .5rem;
+    }
+}
