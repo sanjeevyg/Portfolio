@@ -516,11 +516,11 @@
     .card {
         width: 70vw;
         min-height: 70vh;
-        left: 0;
+        /* left: 0; */
     }
 
     .appInfo {
-        background: aquamarine;
+        /* background: aquamarine; */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -538,7 +538,7 @@
         align-items: flex-start;
         justify-content: flex-start;
         position: relative;
-        background: rgb(226, 43, 89);
+        /* background: rgb(226, 43, 89); */
         max-height: 5vw;
     }
 
