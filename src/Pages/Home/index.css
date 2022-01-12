@@ -1023,7 +1023,7 @@
     }
 
     .menuNinety {
-        right: 0vw;
+        right: -2.5vw;
         transform: rotate(270deg);
         top: 7.5vh;
         z-index: 1;
