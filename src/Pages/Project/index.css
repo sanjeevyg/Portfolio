@@ -483,6 +483,7 @@
         visibility: visible;
         opacity: 1;
         z-index: 99;
+        transform: scaleZ(50px);
     }
     
     .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
@@ -490,6 +491,8 @@
         top: 0;
         right: 0;
         z-index: 15;
+        transform: scaleZ(51px);
+        
     }
 
     #websiteBtnOne, #websiteBtnTwo, #websiteBtnThree{
@@ -556,6 +559,37 @@
     #watchDiv svg {
         width: 2rem;
         bottom: 1.5rem;
+    }
+
+    .skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe, .watchualVideo iframe, .videoThreeActive iframe {
+        position: fixed;
+        min-width: 75vw;
+        min-height: 90vh;
+        align-self: center;
+        left: 0rem;
+        top: 4rem;
+    }
+
+    .videoOneActive, .videoTwoActive, .videoThreeActive {
+        position: fixed;
+        bottom: 17vh;
+        background: rgba(12, 11, 11, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        visibility: visible;
+        opacity: 1;
+        z-index: 99;
+        transform: scaleZ(50px);
+    }
+
+        
+    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
+        position: fixed;
+        top: 15vh;
+        right: 4vw;
+        z-index: 15;
+        transform: scaleZ(50px);
     }
         
 }
