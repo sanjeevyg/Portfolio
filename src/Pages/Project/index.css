@@ -535,9 +535,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3vh;
-        width: 9vw;
-        height: 7vh;
+        font-size: 2vh;
+        width: 7vw;
+        height: 5vh;
         letter-spacing: normal;
     }
 
