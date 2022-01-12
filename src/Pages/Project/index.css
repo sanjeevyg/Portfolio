@@ -526,6 +526,7 @@
         min-height: 75vh;
         min-width: 70vw;
         left: 5vw;
+        z-index: -1;
     }
 
     .appInfo {
@@ -568,28 +569,29 @@
         align-self: center;
         left: 0rem;
         top: 4rem;
+        transform: translateZ(50px);
     }
 
     .videoOneActive, .videoTwoActive, .videoThreeActive {
         position: fixed;
-        bottom: 17vh;
+        top: 0;
         background: rgba(12, 11, 11, 0.9);
         display: flex;
         justify-content: center;
         align-items: center;  
         visibility: visible;
         opacity: 1;
-        z-index: 99;
-        transform: scaleZ(50px);
+        z-index: 999;
     }
 
         
-    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
+    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn{
         position: fixed;
-        top: 15vh;
-        right: 4vw;
-        z-index: 15;
-        transform: scaleZ(50px);
+        top: 3.7rem;
+        right: 0rem;
+        z-index: 300;
+        color: red;
+        transform: translateZ(52px);
     }
         
 }
