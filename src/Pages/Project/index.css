@@ -541,9 +541,12 @@
         letter-spacing: normal;
     }
 
-
     #websiteBtnOne , #websiteBtnTwo , #websiteBtnThree {
-        padding-left: min(55px, 15%);
+        padding-left: 15%
+    }
+
+    #websiteBtnOne button {
+        margin-top:  -2vh;
     }
 
     .watchual img {
