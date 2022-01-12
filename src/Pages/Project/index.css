@@ -505,18 +505,28 @@
     .subsectionContainer {
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-        justify-content: center;
+        justify-content:flex-end;
         height: 100vh;
         width: 100vw;
-        margin-top: 5vh;
+        left: 0vw;
+        top: 20vh;
+        background: chartreuse;
+
+    }
+
+    .projectTitle {
+        position: relative;
+        margin-right: 7rem;
+        background: chocolate;
     }
 
     .card {
-        width: 70vw;
+        /* position: relative; */
+        /* width: 100%; */
+        /* margin-right: 80vw; */
         min-height: 70vh;
-        /* left: 0; */
     }
 
     .appInfo {
