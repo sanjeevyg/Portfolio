@@ -532,16 +532,18 @@
     }
 
     #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 3vh;
-        max-width: 14vw;
-        max-height: 5vw;
-        padding: .3rem .5rem;
+        width: 9vw;
+        height: 7vh;
         letter-spacing: normal;
     }
 
 
     #websiteBtnOne , #websiteBtnTwo , #websiteBtnThree {
-        padding-left: min(55px, 9%);
+        padding-left: min(55px, 15%);
     }
 
     .watchual img {
