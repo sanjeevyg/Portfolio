@@ -524,7 +524,7 @@
     }
 
     #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button{
-      
+        position: relative;
         font-size: 3vh;
         max-width: 14vw;
         max-height: 5vw;
@@ -532,8 +532,12 @@
     }
         
     #websiteBtnOne {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
         position: relative;
         background: blueviolet;
+        max-height: 5vw;
     }
 
 }
