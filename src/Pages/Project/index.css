@@ -520,7 +520,10 @@
     }
 
     .appInfo {
-        /* background: aquamarine; */
+        background: aquamarine;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button{
@@ -531,12 +534,11 @@
     }
         
     #websiteBtnOne {
-        left: 10vw;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         position: relative;
-        background: blueviolet;
+        background: rgb(226, 43, 89);
         max-height: 5vw;
     }
 
