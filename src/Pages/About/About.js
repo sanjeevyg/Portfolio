@@ -42,7 +42,7 @@ export default function About() {
                         learning process can be slow and painful without proper guidance. So, after much thought and planning, I joined the Flatiron School in Denver 
                         in 2020 and graduated at the end of the year. I thoroughly enjoyed my time at Flatiron and learned a lot. I was very eager to begin my new career
                          but had to be a way to fulfill my military duties. Now, when I am back, I am more motivated than ever and ready to kickoff my software engineering
-                          journey.an ever and ready to kickoff my software engineering journey.
+                          journey.
                         </div>
                     </div>
                     <div id="copyright"> 
