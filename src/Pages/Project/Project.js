@@ -25,7 +25,6 @@ export default function Project() {
     const sectionThree = useRef(null)
 
     const cardRef = useRef(null)
-    const wrapperRef = useRef(null)
     
 
     const handleMouseMovePone = (e) => {

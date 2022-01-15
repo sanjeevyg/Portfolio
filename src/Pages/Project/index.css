@@ -54,7 +54,6 @@
     transform-style: preserve-3d;
     border-radius: 15px;
     color: rgb(255, 255, 255);
-    z-index: 0;
     padding: min(2.5rem, 10vh);
     margin: auto;
 }
@@ -125,14 +124,12 @@
 
 .skyGazer img {
     max-width: 120%;
-    z-index: 0;
     filter: drop-shadow(25px 0px 3.5px rgba(0, 0, 0, 0.1));
 }
 
 .dogScanner img {
     max-width: 100%;
     margin-right: 50px;
-    z-index: 0;
     filter: drop-shadow(25px 0px 3.5px rgba(0, 0, 0, 0.1));
 }
 
@@ -140,7 +137,6 @@
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
     max-width: 80%;
     transform: rotate(-25deg) translateY(-1rem) translateX(3rem);
-    z-index: 0;
     filter: drop-shadow(-25px 15px 4px rgba(0, 0, 0, 0.1));
 }
 
@@ -242,7 +238,6 @@
 
 .skyGazerVideo, .dogScannerVideo, .watchualVideo {
     position: absolute;
-    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +254,7 @@
 }
 
 .videoOneActive, .videoTwoActive, .videoThreeActive {
-    position: fixed;
+    position: absolute;
     left: 9vw;
     bottom: 29vh;
     background: rgba(12, 11, 11, 0.9);
@@ -283,10 +278,6 @@
     transform: scale(1.1);
     color: rgb(0, 81, 255);
 }
-
-
-
-
 
 
 
@@ -572,8 +563,8 @@
     }
     
     .videoOneActive iframe, .videoTwoActive iframe, .videoThreeActive iframe {
-        position: fixed;
-        /* transform: translateZ(9rem); */
+        position: absolute;
+        transform: translateZ(9rem);
     }
 
     .videoOneActive, .videoTwoActive, .videoThreeActive {
@@ -586,7 +577,7 @@
         /* visibility: visible; */
         opacity: 1;
         /* z-index: 999; */
-        /* transform: translateZ(9rem); */
+        transform: translateZ(9rem);
     }
 
         
@@ -596,7 +587,7 @@
         /* left: 38rem; */
         /* z-index: 300; */
         color: red;
-        /* transform: translateZ(9rem); */
+        transform: translateZ(9rem);
         visibility: visible;
     }
         

@@ -1,3 +1,5 @@
+
+@media screen and (max-device-width: 2700px)  {
 .home {
     height: 100vh;
     max-width: 100%;
@@ -397,6 +399,7 @@
         transform: rotate(-1deg);
       }
 }
+}
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
     body {
@@ -428,20 +431,17 @@
         margin-right: 70vw;
         margin-top: 30rem;
     }
-    
-    .socialBarIcon {
-        max-width: 3rem;
-        max-height: 3rem;
-        margin: .5rem;
-    }
 
     .socialBar {
         position: absolute;
     }
 
     .socialBarIcon {
-        height: 5rem;
-        width: 5rem;
+        max-width: 3rem;
+        max-height: 3rem;
+        height: 6rem;
+        width: 6rem;
+        margin: .5rem;
         transform: none;
     }
 
