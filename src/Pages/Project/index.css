@@ -554,7 +554,7 @@
     }
 
     .skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe, .watchualVideo iframe, .videoThreeActive iframe {
-        position: fixed;
+        position: absolute;
         min-width: 75vw;
         min-height: 90vh;
         align-self: center;
@@ -568,15 +568,15 @@
     }
 
     .videoOneActive, .videoTwoActive, .videoThreeActive {
-        position: fixed;
+        position: absolute;
         top: 0;
         background: rgba(12, 11, 11, 0.9);
         display: flex;
         justify-content: center;
         align-items: center;  
-        /* visibility: visible; */
+        visibility: visible;
         opacity: 1;
-        /* z-index: 999; */
+        z-index: 999;
         transform: translateZ(9rem);
     }
 
