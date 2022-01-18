@@ -491,6 +491,7 @@
     }
 
 }
+
 @media screen and (orientation:landscape) and (max-device-width: 844px)  {
 
     .subsectionContainer {
@@ -583,7 +584,7 @@
         position: fixed;
         /* top: 3.7rem; */
         /* left: 38rem; */
-        /* z-index: 300; */
+        z-index: 300;
         color: red;
         transform: translateZ(9rem);
         visibility: visible;
