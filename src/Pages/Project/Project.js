@@ -117,19 +117,19 @@ export default function Project() {
     }
     
     const projectOneVideoStatus = useSelector(state => state.videoOneStatus)
-    projectOneVideoStatus ? skyGazer="https://www.youtube.com/embed/G33j5Qi4rE8?autoplay=1": skyGazer = "https://www.youtube.com/embed/G33j5Qi4rE8" 
+    projectOneVideoStatus ? skyGazer="https://www.youtube.com/embed/vdHOyWorXpM?autoplay=1": skyGazer = "https://www.youtube.com/embed/vdHOyWorXpM" 
     const closeVideoOne = () => {
       dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
     }
 
     const projectTwoVideoStatus = useSelector(state => state.videoTwoStatus)
-    projectTwoVideoStatus ? dogScanner="https://www.youtube.com/embed/iXCESZ1Wn7Q?autoplay=1" : dogScanner = "https://www.youtube.com/embed/iXCESZ1Wn7Q"
+    projectTwoVideoStatus ? dogScanner="https://www.youtube.com/embed/Dj1ZdGydUjk?autoplay=1" : dogScanner = "https://www.youtube.com/embed/Dj1ZdGydUjk"
     const closeVideoTwo = () => {
       dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
     }
     
     const projectThreeVideoStatus = useSelector(state => state.videoThreeStatus)
-    projectThreeVideoStatus ? watchual="https://www.youtube.com/embed/_yUzFtg201o?autoplay=1" : watchual = "https://www.youtube.com/embed/_yUzFtg201o"
+    projectThreeVideoStatus ? watchual="https://www.youtube.com/embed/towA8OYUeVs?autoplay=1" : watchual = "https://www.youtube.com/embed/towA8OYUeVs"
     const closeVideoThree = () => {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
     }
