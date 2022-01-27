@@ -134,28 +134,6 @@ export default function Project() {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
     }
 
-    //cardResize Algo
-
-    // let card = cardRef,
-    // wrapper = wrapperRef,
-    // maxWidth  = card.current.clientWidth,
-    // maxHeight = card.current.clientHeight;
-
-    // const resize = () => {
-    //   let scale,
-    //   width = window.innerWidth,
-    //   height = window.innerHeight,
-    //   isMax = width >= maxWidth && height >= maxHeight;
-
-    //   scale = Math.min(width/maxWidth, height/maxHeight);
-    //   wrapper.current.style.transform = isMax?'':'scale(' + scale + ')';
-    //   card.current.style.width = isMax?'':maxWidth * scale;
-    //   card.current.style.height = isMax?'':maxHeight * scale;
-    // }
-    
-   
-    // window.addEventListener("resize", resize);
-    // resize();
    
     return (
         <div className="projectContainer" id="projectC">
@@ -187,7 +165,7 @@ export default function Project() {
                             <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, Vanilla CSS, HTML</h4>
                           </div>
                           <div id="websiteBtnOne"> 
-                              <button>WEBSITE</button>
+                              <a href="https://skygazeryg.web.app/" target="_blank" rel="noopener noreferrer"><button>WEBSITE</button></a> 
                               <button onClick={toggleProjectOne}>VIDEO</button>
                           </div>
                       </div>
@@ -222,7 +200,7 @@ export default function Project() {
                         <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React </h4>
                       </div>
                       <div id="websiteBtnTwo"> 
-                          <button>WEBSITE</button>
+                          <a href="https://dogscanneryg.web.app/" target="_blank" rel="noopener noreferrer"><button>WEBSITE</button></a> 
                           <button onClick={toggleProjectTwo}>VIDEO</button>
                       </div>
                     </div>
@@ -260,7 +238,7 @@ export default function Project() {
                       <h4 className="frontend"><span>Frontend : </span>React Native</h4>
                     </div>
                     <div id="websiteBtnThree" > 
-                        <button>WEBSITE</button>
+                        <a href="https://github.com/sanjeevyg/WathualV2" target="_blank" rel="noopener noreferrer"><button>GITHUB</button></a> 
                         <button onClick={toggleProjectThree} >VIDEO</button>
                     </div>
                 </div>
