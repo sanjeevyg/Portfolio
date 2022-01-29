@@ -17,6 +17,7 @@
     justify-content: flex-start;
     align-items: center;
     perspective: 3000px;
+    /* background: chartreuse; */
 }
 
 .subsectionContainer {
@@ -27,26 +28,24 @@
     width: 90vw;
     padding-left: 12rem;
     transform-style: preserve-3d;
+    /* background: brown; */
 }
 
 .projectTitle {
     position: relative;
     font-family: Avertastd,sans-serif;
-    font-weight: bold;
-    z-index: 0;
     letter-spacing: .3em;
     font-size: 1.1rem;
     border-left: 3px solid rgb(10, 26, 243);
     padding-left: 1rem;
-    transform: translateY(-4rem) translateX(-3rem);
+    /* transform: translateY(-4rem) translateX(-3rem); */
+    margin-block-end: 4rem;
+    z-index: 5;
 }
 
 .card {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 10vw;
-    width: min(57vw, 70%);
-    height: max(51vh, 60%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +54,8 @@
     border-radius: 15px;
     color: rgb(255, 255, 255);
     padding: min(2.5rem, 10vh);
-    margin: auto;
+    width: min(70vw, 90%);
+    height: max(50vh, 60%);
 }
 
 .techInfo {
@@ -104,7 +104,6 @@
     color: rgb(81, 155, 224);
 }
 
-
 .cOne {
     background:rgb(253, 182, 27)
 }
@@ -117,12 +116,29 @@
     background: rgb(243, 100, 75);
 } 
 
+.techContainer {
+    transform: translateZ(1rem);
+}
+
+.backend a {
+    text-decoration-color: white;
+    cursor: pointer;
+    color: white;
+}
+
+.frontend a {
+    text-decoration-color: white;
+    cursor: pointer;
+    color: white;
+}
+
 .skyGazer {
     position: relative;
     margin-right: 4rem;
 }
 
 .skyGazer img {
+    display: block;
     max-width: 120%;
     filter: drop-shadow(25px 0px 3.5px rgba(0, 0, 0, 0.1));
 }
@@ -206,7 +222,7 @@
     margin-right: 15px;
     letter-spacing: .05rem;
     filter: drop-shadow(0px .5px .5px rgba(0, 0, 0, 0.4));
-    transform: translateZ(400px);
+    /* transform: translateZ(400px); */
 }
 
 #websiteBtnOne button {
@@ -237,41 +253,45 @@
 }
 
 .skyGazerVideo, .dogScannerVideo, .watchualVideo {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    opacity: 0;
+    z-index: -10;
 } 
 
-.skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe, .watchualVideo iframe, .videoThreeActive iframe {
-    position: relative;
-    min-width: 58vw;
-    height: 59vh;
+.videoOneActive iframe, .videoTwoActive iframe, .videoThreeActive iframe {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     outline: none;
     border: none;
 }
 
 .videoOneActive, .videoTwoActive, .videoThreeActive {
-    position: absolute;
-    left: 9vw;
-    bottom: 29vh;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    /* bottom: 29vh; */
     background: rgba(12, 11, 11, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;  
     visibility: visible;
-    opacity: 1;
-    z-index: 6;
+    z-index: 99;
+    transform: translateZ(1rem)
 }
 
 .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
-    position: absolute;
-    top: 0;
-    right: 0;
+    /* position: fixed; */
+    /* top: 0;
+    right: 0; */
     color: rgb(255, 254, 254);
-    z-index: 6;
+    z-index: 999;
+    transform: translateZ(1rem);
+    overflow-y: hidden;
 }
 
 .videoOneActive  .closeBtn:hover, .videoTwoActive  .closeBtn:hover, .videoThreeActive .closeBtn:hover {

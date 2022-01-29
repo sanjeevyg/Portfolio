@@ -149,7 +149,7 @@ export default function Project() {
               onMouseLeave={handleMouseLeavePone}  
               onMouseEnter={handleMouseEnterPone}  
             >
-              <div className="projectTitle projectTitleOne">PROJECT ONE</div>
+              <h1 className="projectTitle projectTitleOne">PROJECT ONE</h1>
                 <div class="card cOne" ref={cardRef} > 
                       <div className="skyGazer" ref={imageOne} >
                           <img src={astonomyImg} alt="skyGazer"/>
@@ -160,13 +160,15 @@ export default function Project() {
                             SkyGazer exhibits solar system through animation and allows user to interact with planets. User can fetch information about different planets using search tool or simply clicking the planets. 
                             Two third party NASA APIs have been used to feed data.
                           </h3>
-                          <div className="techInfo skyGazerTechInfo"> 
-                            <h4 className="backend"><span>Backend : </span>Node.js</h4>
-                            <h4 className="frontend"><span>Frontend : </span>Vanilla Javascript, Vanilla CSS, HTML</h4>
-                          </div>
-                          <div id="websiteBtnOne"> 
-                              <a href="https://skygazeryg.web.app/" target="_blank" rel="noopener noreferrer"><button>WEBSITE</button></a> 
-                              <button onClick={toggleProjectOne}>VIDEO</button>
+                          <div className="techContainer">
+                            <div className="techInfo skyGazerTechInfo">
+                              <h4 className="backend"><a href="https://github.com/sanjeevyg/SkyGazer-Backend-Nodejs" target="_blank" rel="noopener noreferrer"><span>Backend</span></a> - Node.js</h4>
+                              <h4 className="frontend"><a href="https://github.com/sanjeevyg/SkyGazerV2" target="_blank" rel="noopener noreferrer"><span>Frontend</span></a> - Vanilla Javascript, Vanilla CSS, HTML</h4>
+                            </div>
+                            <div id="websiteBtnOne">
+                                <a href="https://skygazeryg.web.app/" target="_blank" rel="noopener noreferrer"><button>WEBSITE</button></a>
+                                <button onClick={toggleProjectOne}>VIDEO</button>
+                            </div>
                           </div>
                       </div>
               </div>
@@ -185,7 +187,7 @@ export default function Project() {
               onMouseLeave={handleMouseLeavePtwo}  
               onMouseEnter={handleMouseEnterPtwo}  
             >
-              <div className="projectTitle projectTitleTwo">PROJECT TWO</div>
+              <h1 className="projectTitle projectTitleTwo">PROJECT TWO</h1>
               <div class="card cTwo" > 
                     <div className="dogScanner" ref={imageTwo} >
                       <img src={dogImg} alt="dogScanner"/>
@@ -195,13 +197,15 @@ export default function Project() {
                       <h3> 
                         App uses the tensorflow to identify the different breeds of dog based on uploaded photo or captured photo.
                       </h3>
-                      <div className="techInfo dogScannerTinfo"> 
-                        <h4 className="backend backendDogScanner"><span>Backend : </span>Node.js, TensorFlow</h4>
-                        <h4 className="frontend frontendDogScanner"><span>Frontend : </span>React </h4>
-                      </div>
-                      <div id="websiteBtnTwo"> 
-                          <a href="https://dogscanneryg.web.app/" target="_blank" rel="noopener noreferrer"><button>WEBSITE</button></a> 
-                          <button onClick={toggleProjectTwo}>VIDEO</button>
+                      <div className="techContainer">
+                        <div className="techInfo dogScannerTinfo">
+                          <h4 className="backend backendDogScanner"><a href="https://github.com/sanjeevyg/Watchual-Backend-Rails" target="_blank" rel="noopener noreferrer"><span>Backend</span> </a>- Node.js, TensorFlow</h4>
+                          <h4 className="frontend frontendDogScanner"><a href="https://github.com/sanjeevyg/Dog-Scanner" target="_blank" rel="noopener noreferrer"><span>Frontend</span></a> - React </h4>
+                        </div>
+                        <div id="websiteBtnTwo">
+                            <a href="https://dogscanneryg.web.app/" target="_blank" rel="noopener noreferrer"><button>WEBSITE</button></a>
+                            <button onClick={toggleProjectTwo}>VIDEO</button>
+                        </div>
                       </div>
                     </div>
                 <div id="circle"></div>
@@ -220,7 +224,7 @@ export default function Project() {
               onMouseLeave={handleMouseLeavePthree}  
               onMouseEnter={handleMouseEnterPthree}  
             >
-              <div className="projectTitle projectTitleThree">PROJECT THREE</div>
+              <h1 className="projectTitle projectTitleThree">PROJECT THREE</h1>
               <div class="card cThree" > 
                 <div className="watchual" ref={imageThree} >
                   <img src={phoneImg} alt="watchual"/>
@@ -233,13 +237,15 @@ export default function Project() {
                     <h3 id="projectThreeInfo"> 
                         Watchual is a mobile shopping app for watches. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
                     </h3>
-                    <div className="techInfo watchualTinfo"> 
-                      <h4 className="backend"><span>Backend : </span>Ruby on Rails</h4>
-                      <h4 className="frontend"><span>Frontend : </span>React Native</h4>
-                    </div>
-                    <div id="websiteBtnThree" > 
-                        <a href="https://github.com/sanjeevyg/WathualV2" target="_blank" rel="noopener noreferrer"><button>GITHUB</button></a> 
-                        <button onClick={toggleProjectThree} >VIDEO</button>
+                    <div className="techContainer">
+                      <div className="techInfo watchualTinfo">
+                        <h4 className="backend"><a href="https://github.com/sanjeevyg/Watchual-Backend-Rails" target="_blank" rel="noopener noreferrer"><span>Backend</span></a>- Ruby on Rails</h4>
+                        <h4 className="frontend"><a href="https://github.com/sanjeevyg/WathualV2" target="_blank" rel="noopener noreferrer"><span>Frontend</span></a> - React Native</h4>
+                      </div>
+                      <div id="websiteBtnThree" >
+                          <a href="https://github.com/sanjeevyg/WathualV2" target="_blank" rel="noopener noreferrer"><button>GITHUB</button></a>
+                          <button onClick={toggleProjectThree} >VIDEO</button>
+                      </div>
                     </div>
                 </div>
                 <div id="smallCircleOne"></div>
