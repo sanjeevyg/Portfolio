@@ -40,9 +40,7 @@ export default function About() {
                         after my undergraduate and graduate school. I started coding as a hobby. As I started getting my feet wet, I stumbled across several youtube 
                         videos and articles on software engineering. There are so many resources on the internet that sometimes it is confusing and overwhelming. The 
                         learning process can be slow and painful without proper guidance. So, after much thought and planning, I joined the Flatiron School in Denver 
-                        in 2020 and graduated at the end of the year. I thoroughly enjoyed my time at Flatiron and learned a lot. I was very eager to begin my new career
-                         but had to be a way to fulfill my military duties. Now, when I am back, I am more motivated than ever and ready to kickoff my software engineering
-                          journey.
+                        in 2020 and graduated at the end of the year. 
                         </div>
                     </div>
                     <div id="copyright"> 
