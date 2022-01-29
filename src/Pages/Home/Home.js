@@ -89,7 +89,7 @@ export default function Home(props) {
                     </div>
                     <div id="titlePortfolio">PORTFOLIO</div>
                     <span><a href="#projectC">PROJECTS</a></span>
-                    <span><a href="https://dev.to/syogifse"  target="_blank" rel="noopener noreferrer">BLOGS</a></span>
+                    <span><a href="https://medium.com/@syogifse"  target="_blank" rel="noopener noreferrer">BLOGS</a></span>
                     <span><a href="#aboutC">ABOUT</a></span>
                     <span><a href="#aboutC">TECH-SKILLS</a></span>
                 </div>
