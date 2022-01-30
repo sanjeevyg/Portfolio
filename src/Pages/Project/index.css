@@ -268,7 +268,7 @@ img {
     min-height: 60vh;
     outline: none;
     border: none;
-    transform: translateX(12%) translateY(-50%) translateZ(2rem);
+    transform: translateX(-100%) translateY(-50%) translateZ(2rem);
     z-index: 999;
     overflow-y: hidden;
 }
@@ -456,7 +456,8 @@ img {
     }
 
     .videoOneActive, .videoTwoActive, .videoThreeActive {
-        transform: translateX(-3rem) translateY(1rem) translateZ(9rem);
+        position: relative;
+        transform: translateY(1rem) translateZ(9rem);
         z-index: 99;
     }
     
@@ -465,7 +466,7 @@ img {
         top: 0;
         right: 0;
         color: red;
-        transform: translateX(25rem) translateY(-23rem);
+        transform: translateY(-23rem) translateZ(9rem);
     }
 
     #websiteBtnOne, #websiteBtnTwo, #websiteBtnThree{
@@ -477,7 +478,7 @@ img {
 @media screen and (orientation:landscape) and (max-device-width: 844px)  {
 
     .subsectionContainer {
-        position: static;
+        position: relative;
         z-index: 0;
         margin-bottom: 9rem;   
     }
@@ -533,13 +534,13 @@ img {
 
     .videoOneActive, .videoTwoActive, .videoThreeActive {
         position: relative;
-        transform: translateX(-1rem) translateY(1rem) translateZ(9rem);
+        transform: translateX(-7rem) translateY(1rem) translateZ(9rem);
         z-index: 300;
     }
         
     .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn{
         position: absolute;
-        transform: translateX(34.5rem) translateY(-10rem) translateZ(9rem);
+        transform: translateX(-5rem) translateY(-10rem) translateZ(9rem);
     }
 
     #websiteBtnOne a, #websiteBtnTwo a, #websiteBtnThree a {
