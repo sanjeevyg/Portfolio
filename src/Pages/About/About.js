@@ -36,11 +36,11 @@ export default function About() {
                     <div id="introduction"> 
                         <div id="aboutMe">About me</div>
                         <div id="bio"> 
-                        My name is Sanjeev Yogi. Before I started coding, I worked as an architect for a few years and construction estimator for a couple of years 
-                        after my undergraduate and graduate school. I started coding as a hobby. As I started getting my feet wet, I stumbled across several youtube 
-                        videos and articles on software engineering. There are so many resources on the internet that sometimes it is confusing and overwhelming. The 
-                        learning process can be slow and painful without proper guidance. So, after much thought and planning, I joined the Flatiron School in Denver 
-                        in 2020 and graduated at the end of the year. 
+                        Motivated Full Stack Software Engineer with experience using backend and frontend technologies like Node.js, Rails, React and React Native. Construction and architecture background
+                        with an eye for art, design and technology. <br></br> 
+                        Creative and logical problem solver. Committed and responsible team player with 
+                        a get-it-done, on-time, and high-quality product spirit. Able to quickly learn, adapt and master new technologies, languages, and frameworks.<br></br>
+                        A nature photography enthusiast, a proud US sailor, and a hiker. 
                         </div>
                     </div>
                     <div id="copyright"> 

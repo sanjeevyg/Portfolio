@@ -117,7 +117,7 @@
 } 
 
 .techContainer {
-    transform: translateZ(1rem);
+    transform: translateZ(3rem);
 }
 
 .backend a {
@@ -281,13 +281,13 @@
     align-items: center;  
     visibility: visible;
     z-index: 99;
-    transform: translateZ(1rem)
+    transform: translateZ(2rem)
 }
 
 .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
-    /* position: fixed; */
-    /* top: 0;
-    right: 0; */
+    position: fixed;
+    top: 0;
+    right: 0;
     color: rgb(255, 254, 254);
     z-index: 999;
     transform: translateZ(1rem);
@@ -494,7 +494,7 @@
         visibility: visible;
         opacity: 1;
         z-index: 99;
-        transform: scaleZ(50px);
+        transform: scaleZ(5rem);
     }
     
     .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
