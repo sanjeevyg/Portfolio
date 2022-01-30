@@ -499,6 +499,10 @@ img {
         align-items: flex-start;
     }
 
+    .title {
+        transform: none;
+    }
+
     #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button{
         display: flex;
         justify-content: center;
@@ -515,7 +519,7 @@ img {
     
     img {
         z-index: 0;
-        transform: translateZ(-1rem);
+        transform: none;
     }
 
     #watchDiv svg {
