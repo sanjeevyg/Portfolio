@@ -135,10 +135,6 @@
     margin-right: 4rem;
 }
 
-img {
-    z-index: 0;
-}
-
 .skyGazer img {
     display: block;
     max-width: 120%;
@@ -156,6 +152,10 @@ img {
     max-width: 80%;
     transform: rotate(-25deg) translateY(-1rem) translateX(3rem);
     filter: drop-shadow(-25px 15px 4px rgba(0, 0, 0, 0.1));
+}
+
+img {
+    z-index: 0;
 }
 
 #paw {
@@ -379,7 +379,7 @@ img {
 
     .projectTitleOne {
         transform: translateZ(10rem);
-        margin-top: 9rem;
+        margin-top: 7rem;
         margin-bottom: 1rem;
     }
 
@@ -426,7 +426,6 @@ img {
         margin-bottom: -9rem;
         margin-top: 3rem;
         width: 42vw;
-        z-index: 0;
     }
 
     #circle {
@@ -449,36 +448,23 @@ img {
     }
 
     .skyGazerVideo iframe, .videoOneActive iframe, .dogScanner iframe, .videoTwoActive iframe, .watchualVideo iframe, .videoThreeActive iframe {
-        position: fixed;
+        position: absolute;
         max-width: 100vw;
         min-height: 91vh;
-        align-self: center;
-        left: 0rem;
-        top: 0rem;
+        margin-right: 3rem;
     }
-    
+
     .videoOneActive, .videoTwoActive, .videoThreeActive {
-        position: fixed;
-        top: 5rem;
-        width: 100%;
-        min-height: 100%;
-        bottom: 17vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;  
-        visibility: visible;
-        opacity: 1;
+        transform: translateX(-3rem) translateY(1rem) translateZ(9rem);
         z-index: 99;
-        transform: translateZ(4rem);
-        overflow-y: hidden;
     }
     
-    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn  {
-        position: fixed;
+    .videoOneActive .closeBtn, .videoTwoActive .closeBtn, .videoThreeActive .closeBtn  {
+        position: absolute;
         top: 0;
         right: 0;
-        z-index: 99;
-        transform: translateZ(5rem);
+        color: red;
+        transform: translateX(25rem) translateY(-23rem);
     }
 
     #websiteBtnOne, #websiteBtnTwo, #websiteBtnThree{
@@ -490,19 +476,18 @@ img {
 @media screen and (orientation:landscape) and (max-device-width: 844px)  {
 
     .subsectionContainer {
-        margin-bottom: 9rem;
-       
+        margin-bottom: 9rem;   
     }
 
     .projectTitle {
         margin-top: 2rem;
         margin-bottom: 3rem;
-        right: 7rem;
+        right: 9rem;
     }
 
     .card {
         position: relative;
-        right: 7rem;
+        right: 9rem;
         min-height: 75vh;
         min-width: 70vw;
         margin-bottom: 5rem;
@@ -530,6 +515,7 @@ img {
     
     img {
         z-index: 0;
+        transform: translateZ(-1rem);
     }
 
     #watchDiv svg {
@@ -538,13 +524,18 @@ img {
     }
 
     .videoOneActive, .videoTwoActive, .videoThreeActive {
-        transform: translateX(1rem) translateZ(9rem);
+        position: relative;
+        transform: translateX(-1rem) translateY(1rem) translateZ(9rem);
         z-index: 300;
     }
         
     .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn{
         position: absolute;
-        transform: translateX(35rem) translateY(-10rem) translateZ(9rem);
+        transform: translateX(34.5rem) translateY(-10rem) translateZ(9rem);
+    }
+
+    #websiteBtnOne a, #websiteBtnTwo a, #websiteBtnThree a{
+        text-decoration: none;
     }
         
 }
