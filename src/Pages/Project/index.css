@@ -135,6 +135,10 @@
     margin-right: 4rem;
 }
 
+img {
+    z-index: 0;
+}
+
 .skyGazer img {
     display: block;
     max-width: 120%;
@@ -373,17 +377,6 @@
         align-items: center;
     }
 
-    /* .projectTitle {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        height: 40vh;
-        z-index: 9;
-        width: 100%;
-        height: 100%;
-        margin-top: 3rem;
-    } */
-
     .projectTitleOne {
         transform: translateZ(10rem);
         margin-top: 9rem;
@@ -503,7 +496,7 @@
 
     .projectTitle {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         right: 7rem;
     }
 
@@ -513,7 +506,6 @@
         min-height: 75vh;
         min-width: 70vw;
         margin-bottom: 5rem;
-        /* z-index: -1; */
     }
 
     .appInfo {
@@ -532,16 +524,12 @@
         letter-spacing: normal;
     }
 
-    /* #websiteBtnOne , #websiteBtnTwo , #websiteBtnThree {
-        padding-left: 15%
-    } */
-
-    /* #websiteBtnOne button {
-        margin-top:  -2vh;
-    } */
-
     .watchual img {
         max-width: 60%;
+    }
+    
+    img {
+        z-index: 0;
     }
 
     #watchDiv svg {
@@ -553,11 +541,10 @@
         transform: translateX(1rem) translateZ(9rem);
         z-index: 300;
     }
-
         
     .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn{
         position: absolute;
-        transform: translateX(35rem) translateY(-10rem);
+        transform: translateX(35rem) translateY(-10rem) translateZ(9rem);
     }
         
 }
