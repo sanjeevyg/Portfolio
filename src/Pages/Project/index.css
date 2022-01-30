@@ -477,7 +477,18 @@ img {
 @media screen and (orientation:landscape) and (max-device-width: 844px)  {
 
     .subsectionContainer {
+        position: static;
+        z-index: 0;
         margin-bottom: 9rem;   
+    }
+
+    .watchual img {
+        max-width: 60%;
+        z-index: 0;
+    }
+    
+    .skyGazer img {
+        position: relative;
         transform: none;
     }
 
@@ -513,18 +524,6 @@ img {
         width: 7vw;
         height: 5vh;
         letter-spacing: normal;
-    }
-
-    .watchual img {
-        max-width: 60%;
-        transform: none;
-        z-index: 0;
-    }
-    
-    .skyGazer img {
-        position: relative;
-        transform: none;
-        z-index: 0;
     }
 
     #watchDiv svg {

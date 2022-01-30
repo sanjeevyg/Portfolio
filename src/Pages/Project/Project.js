@@ -138,11 +138,6 @@ export default function Project() {
     return (
         <div className="projectContainer" id="projectC">
           <section className="sectionContainer one" ref={projectOneRef}> 
-              <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
-                  <iframe width="560" height="315" title="videoOne" content="width=device-width" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
-                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
-            </div>
-          
             <div className="subsectionContainer" 
               ref={sectionOne}
               onMouseMove={handleMouseMovePone}
@@ -173,14 +168,15 @@ export default function Project() {
                       </div>
               </div>
            </div>
+           <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
+                  <iframe width="560" height="315" title="videoOne" content="width=device-width" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
+                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
+           </div>
           </section>
           
 
           <section className="sectionContainer two" ref={projectTwoRef}> 
-            <div className={ projectTwoVideoStatus ? "videoTwoActive" : "dogScannerVideo"} >
-                  <iframe width="560" height="315" title="videoTwo" src={dogScanner} allow="autoplay" allowFullScreen  ></iframe>
-                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoTwo}/> </div>
-            </div>
+            
             <div className="subsectionContainer" 
               ref={sectionTwo}
               onMouseMove={handleMouseMovePtwo}
@@ -211,13 +207,13 @@ export default function Project() {
                 <div id="circle"></div>
               </div>
            </div>
+           <div className={ projectTwoVideoStatus ? "videoTwoActive" : "dogScannerVideo"} >
+                  <iframe width="560" height="315" title="videoTwo" src={dogScanner} allow="autoplay" allowFullScreen  ></iframe>
+                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoTwo}/> </div>
+            </div>
           </section>
 
-          <section className="sectionContainer three" ref={projectThreeRef}> 
-            <div className={ projectThreeVideoStatus ? "videoThreeActive" : "watchualVideo"} >
-                  <iframe width="560" height="315" title="videoThree" src={watchual} allow="autoplay" allowFullScreen  ></iframe>
-                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoThree}/> </div>
-            </div>
+          <section className="sectionContainer three" ref={projectThreeRef}>
             <div className="subsectionContainer" 
               ref={sectionThree}
               onMouseMove={handleMouseMovePthree}
@@ -252,6 +248,10 @@ export default function Project() {
                 <div id="smallCircleTwo"></div>
               </div>
            </div>
+           <div className={ projectThreeVideoStatus ? "videoThreeActive" : "watchualVideo"} >
+                  <iframe width="560" height="315" title="videoThree" src={watchual} allow="autoplay" allowFullScreen  ></iframe>
+                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoThree}/> </div>
+            </div>
           </section>
         </div>
     )
