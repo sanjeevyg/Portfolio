@@ -466,7 +466,7 @@ img {
         top: 0;
         right: 0;
         color: red;
-        transform: translateY(-23rem) translateZ(9rem);
+        transform: translateY(-21rem) translateZ(9rem);
     }
 
     #websiteBtnOne, #websiteBtnTwo, #websiteBtnThree{

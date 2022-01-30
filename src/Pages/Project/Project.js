@@ -110,7 +110,7 @@ export default function Project() {
     const toggleProjectTwo = () => {
       dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
       dispatch({type: "VISIBLE" })
-      imageThree.current.style.visibility = "hidden"
+      imageTwo.current.style.visibility = "hidden"
     }
 
     const toggleProjectThree = () => {
@@ -162,7 +162,7 @@ export default function Project() {
                           </h3>
                           <div className="techContainer">
                             <div className="techInfo skyGazerTechInfo">
-                              <h4 className="backend"><a href="https://github.com/sanjeevyg/SkyGazer-Backend-Nodejs" target="_blank" rel="noopener noreferrer"><span>Backend</span></a> - Node.js</h4>
+                              <h4 className="backend"><a href="https://github.com/sanjeevyg/SkyGazer-Backend-Nodejs" target="_blank" rel="noopener noreferrer"><span>Backend</span></a> - Node.js, Express, Postgres</h4>
                               <h4 className="frontend"><a href="https://github.com/sanjeevyg/SkyGazerV2" target="_blank" rel="noopener noreferrer"><span>Frontend</span></a> - Vanilla Javascript, Vanilla CSS, HTML</h4>
                             </div>
                             <div id="websiteBtnOne">
@@ -200,7 +200,7 @@ export default function Project() {
                       </h3>
                       <div className="techContainer">
                         <div className="techInfo dogScannerTinfo">
-                          <h4 className="backend backendDogScanner"><a href="https://github.com/sanjeevyg/Watchual-Backend-Rails" target="_blank" rel="noopener noreferrer"><span>Backend</span> </a>- Node.js, TensorFlow</h4>
+                          <h4 className="backend backendDogScanner"><a href="https://github.com/sanjeevyg/Watchual-Backend-Rails" target="_blank" rel="noopener noreferrer"><span>Backend</span> </a>- Node.js, Express, Postgres, TensorFlow</h4>
                           <h4 className="frontend frontendDogScanner"><a href="https://github.com/sanjeevyg/Dog-Scanner" target="_blank" rel="noopener noreferrer"><span>Frontend</span></a> - React </h4>
                         </div>
                         <div id="websiteBtnTwo">
@@ -240,7 +240,7 @@ export default function Project() {
                     </h3>
                     <div className="techContainer">
                       <div className="techInfo watchualTinfo">
-                        <h4 className="backend"><a href="https://github.com/sanjeevyg/Watchual-Backend-Rails" target="_blank" rel="noopener noreferrer"><span>Backend</span></a>- Ruby on Rails</h4>
+                        <h4 className="backend"><a href="https://github.com/sanjeevyg/Watchual-Backend-Rails" target="_blank" rel="noopener noreferrer"><span>Backend</span></a>- Ruby on Rails, ActiveRecord, Postgres</h4>
                         <h4 className="frontend"><a href="https://github.com/sanjeevyg/WathualV2" target="_blank" rel="noopener noreferrer"><span>Frontend</span></a> - React Native</h4>
                       </div>
                       <div id="websiteBtnThree" >
