@@ -277,7 +277,7 @@ img {
     position: absolute;
     color: rgb(69, 16, 216);
     z-index: 999;
-    transform: translateX(72vw) translateY(-30vh) translateZ(2rem);
+    transform: translateX(72vw) translateY(-30vh) translateZ(3rem);
     cursor: pointer;
 }
 
@@ -298,6 +298,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: none;
     }
     
     .subsectionContainer {
@@ -477,6 +478,7 @@ img {
 
     .subsectionContainer {
         margin-bottom: 9rem;   
+        transform: none;
     }
 
     .projectTitle {
@@ -515,6 +517,10 @@ img {
 
     .watchual img {
         max-width: 60%;
+    }
+
+    .card {
+        transform: none;
     }
     
     img {
