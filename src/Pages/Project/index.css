@@ -517,15 +517,14 @@ img {
 
     .watchual img {
         max-width: 60%;
-    }
-
-    .card {
         transform: none;
+        z-index: 0;
     }
     
-    img {
-        z-index: 0;
+    .skyGazer img {
+        position: relative;
         transform: none;
+        z-index: 0;
     }
 
     #watchDiv svg {
@@ -544,7 +543,7 @@ img {
         transform: translateX(34.5rem) translateY(-10rem) translateZ(9rem);
     }
 
-    #websiteBtnOne a, #websiteBtnTwo a, #websiteBtnThree a{
+    #websiteBtnOne a, #websiteBtnTwo a, #websiteBtnThree a {
         text-decoration: none;
     }
         
