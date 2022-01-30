@@ -25,7 +25,6 @@ export default function Project() {
     const sectionThree = useRef(null)
 
     const cardRef = useRef(null)
-    
 
     const handleMouseMovePone = (e) => {
       let xAxis = (window.innerWidth /2 - e.pageX)/120;
@@ -109,6 +108,7 @@ export default function Project() {
     
     const toggleProjectTwo = () => {
       dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
+      dispatch({type: "VISIBLE" })
     }
 
     const toggleProjectThree = () => {
@@ -140,7 +140,7 @@ export default function Project() {
           <section className="sectionContainer one" ref={projectOneRef}> 
               <div className={ projectOneVideoStatus ? "videoOneActive" : "skyGazerVideo"} >
                   <iframe width="560" height="315" title="videoOne" content="width=device-width" src={skyGazer} allow="autoplay" allowFullScreen  ></iframe>
-              <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
+                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoOne}/> </div>
             </div>
           
             <div className="subsectionContainer" 
@@ -179,7 +179,7 @@ export default function Project() {
           <section className="sectionContainer two" ref={projectTwoRef}> 
             <div className={ projectTwoVideoStatus ? "videoTwoActive" : "dogScannerVideo"} >
                   <iframe width="560" height="315" title="videoTwo" src={dogScanner} allow="autoplay" allowFullScreen  ></iframe>
-              <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoTwo}/> </div>
+                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoTwo}/> </div>
             </div>
             <div className="subsectionContainer" 
               ref={sectionTwo}
@@ -216,7 +216,7 @@ export default function Project() {
           <section className="sectionContainer three" ref={projectThreeRef}> 
             <div className={ projectThreeVideoStatus ? "videoThreeActive" : "watchualVideo"} >
                   <iframe width="560" height="315" title="videoThree" src={watchual} allow="autoplay" allowFullScreen  ></iframe>
-              <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoThree}/> </div>
+                  <div className="closeBtn"> <AiFillCloseSquare size={79} onClick={closeVideoThree}/> </div>
             </div>
             <div className="subsectionContainer" 
               ref={sectionThree}
