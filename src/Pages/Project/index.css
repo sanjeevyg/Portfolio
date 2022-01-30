@@ -277,7 +277,7 @@ img {
     position: absolute;
     color: rgb(69, 16, 216);
     z-index: 999;
-    transform: translateX(72vw) translateY(-30vh) translateZ(3rem);
+    transform: translateX(-5.5vw) translateY(-30vh) translateZ(3rem);
     cursor: pointer;
 }
 
@@ -478,21 +478,13 @@ img {
 @media screen and (orientation:landscape) and (max-device-width: 844px)  {
 
     .subsectionContainer {
-        position: relative;
-        z-index: 0;
         margin-bottom: 9rem;   
     }
 
     .watchual img {
         max-width: 60%;
-        z-index: 0;
     }
     
-    .skyGazer img {
-        position: relative;
-        transform: none;
-    }
-
     .projectTitle {
         margin-top: 2rem;
         margin-bottom: 3rem;

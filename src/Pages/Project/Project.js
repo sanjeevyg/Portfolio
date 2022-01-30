@@ -104,34 +104,39 @@ export default function Project() {
 
     const toggleProjectOne = () => {
       dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
+      imageOne.current.style.visibility = "hidden"
     }
     
     const toggleProjectTwo = () => {
       dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
       dispatch({type: "VISIBLE" })
+      imageThree.current.style.visibility = "hidden"
     }
 
     const toggleProjectThree = () => {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
-      console.log("I am clicked")
+      imageThree.current.style.visibility = "hidden"
     }
     
     const projectOneVideoStatus = useSelector(state => state.videoOneStatus)
     projectOneVideoStatus ? skyGazer="https://www.youtube.com/embed/vdHOyWorXpM?autoplay=1": skyGazer = "https://www.youtube.com/embed/vdHOyWorXpM" 
     const closeVideoOne = () => {
       dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
+      imageOne.current.style.visibility = "visible"
     }
 
     const projectTwoVideoStatus = useSelector(state => state.videoTwoStatus)
     projectTwoVideoStatus ? dogScanner="https://www.youtube.com/embed/Dj1ZdGydUjk?autoplay=1" : dogScanner = "https://www.youtube.com/embed/Dj1ZdGydUjk"
     const closeVideoTwo = () => {
       dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
+      imageTwo.current.style.visibility = "visible"
     }
     
     const projectThreeVideoStatus = useSelector(state => state.videoThreeStatus)
     projectThreeVideoStatus ? watchual="https://www.youtube.com/embed/towA8OYUeVs?autoplay=1" : watchual = "https://www.youtube.com/embed/towA8OYUeVs"
     const closeVideoThree = () => {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
+      imageThree.current.style.visibility = "visible"
     }
 
    
