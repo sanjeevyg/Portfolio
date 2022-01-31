@@ -24,7 +24,9 @@ export default function Project() {
     const sectionTwo = useRef(null)
     const sectionThree = useRef(null)
 
-    const cardRef = useRef(null)
+    const cardOneRef = useRef(null)
+    const cardTwoRef = useRef(null)
+    const cardThreeRef = useRef(null)
 
     const handleMouseMovePone = (e) => {
       let xAxis = (window.innerWidth /2 - e.pageX)/120;
@@ -104,45 +106,45 @@ export default function Project() {
 
     const toggleProjectOne = () => {
       dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
-      imageOne.current.style.visibility = "hidden"
+      cardOneRef.current.style.visibility = "hidden"
     }
     
     const toggleProjectTwo = () => {
       dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
       dispatch({type: "VISIBLE" })
-      imageTwo.current.style.visibility = "hidden"
+      cardTwoRef.current.style.visibility = "hidden"
     }
 
     const toggleProjectThree = () => {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
-      imageThree.current.style.visibility = "hidden"
+      cardThreeRef.current.style.visibility = "hidden"
     }
     
     const projectOneVideoStatus = useSelector(state => state.videoOneStatus)
     projectOneVideoStatus ? skyGazer="https://www.youtube.com/embed/vdHOyWorXpM?autoplay=1": skyGazer = "https://www.youtube.com/embed/vdHOyWorXpM" 
     const closeVideoOne = () => {
       dispatch({type: "PROJECTONEVIDEO", visibility: isProjectOneVisible})
-      imageOne.current.style.visibility = "visible"
+      cardOneRef.current.style.visibility = "visible"
     }
 
     const projectTwoVideoStatus = useSelector(state => state.videoTwoStatus)
     projectTwoVideoStatus ? dogScanner="https://www.youtube.com/embed/Dj1ZdGydUjk?autoplay=1" : dogScanner = "https://www.youtube.com/embed/Dj1ZdGydUjk"
     const closeVideoTwo = () => {
       dispatch({type: "PROJECTTWOVIDEO", visibility: isProjectTwoVisible})
-      imageTwo.current.style.visibility = "visible"
+      cardTwoRef.current.style.visibility = "visible"
     }
     
     const projectThreeVideoStatus = useSelector(state => state.videoThreeStatus)
     projectThreeVideoStatus ? watchual="https://www.youtube.com/embed/towA8OYUeVs?autoplay=1" : watchual = "https://www.youtube.com/embed/towA8OYUeVs"
     const closeVideoThree = () => {
       dispatch({type: "PROJECTTHREEVIDEO", visibility: isProjectThreeVisible})
-      imageThree.current.style.visibility = "visible"
+      cardThreeRef.current.style.visibility = "visible"
     }
 
    
     return (
         <div className="projectContainer" id="projectC">
-          <section className="sectionContainer one" ref={projectOneRef}> 
+          <section className="sectionContainer one" ref={projectOneRef} > 
             <div className="subsectionContainer" 
               ref={sectionOne}
               onMouseMove={handleMouseMovePone}
@@ -150,7 +152,7 @@ export default function Project() {
               onMouseEnter={handleMouseEnterPone}  
             >
               <h1 className="projectTitle projectTitleOne">PROJECT ONE</h1>
-                <div class="card cOne" ref={cardRef} > 
+                <div class="card cOne" ref={cardOneRef} > 
                       <div className="skyGazer" ref={imageOne} >
                           <img src={astonomyImg} alt="skyGazer"/>
                       </div>
@@ -189,7 +191,7 @@ export default function Project() {
               onMouseEnter={handleMouseEnterPtwo}  
             >
               <h1 className="projectTitle projectTitleTwo">PROJECT TWO</h1>
-              <div class="card cTwo" > 
+              <div class="card cTwo" ref={cardTwoRef} > 
                     <div className="dogScanner" ref={imageTwo} >
                       <img src={dogImg} alt="dogScanner"/>
                     </div>
@@ -226,7 +228,7 @@ export default function Project() {
               onMouseEnter={handleMouseEnterPthree}  
             >
               <h1 className="projectTitle projectTitleThree">PROJECT THREE</h1>
-              <div class="card cThree" > 
+              <div class="card cThree"ref={cardThreeRef}  > 
                 <div className="watchual" ref={imageThree} >
                   <img src={phoneImg} alt="watchual"/>
                 </div>
