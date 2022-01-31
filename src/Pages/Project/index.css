@@ -360,7 +360,7 @@ img {
         margin-top: 2rem;
     }
 
-    #websiteBtnOne button {
+    #websiteBtnOne button, #websiteBtnTwo button, #websiteBtnThree button {
         width: 9rem;
         height: 3.5rem;
         font-size: 1.5rem;
