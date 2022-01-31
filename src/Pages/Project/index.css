@@ -402,7 +402,6 @@ img {
         position: absolute;
         transform: translateX(3rem) translateY(-31rem) translateZ(9rem);
     }
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
@@ -529,11 +528,7 @@ img {
     .watchualTinfo {
         margin-top: 5vh;
         margin-bottom: 7vh;
-        text-align: center;
-    }
-
-    .dogScannerTinfo {
-        margin-left: 7vw;
+        margin-right: .9rem;
     }
 
     .skyGazer img {
