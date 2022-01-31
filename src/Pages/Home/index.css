@@ -448,6 +448,11 @@
         transform: none;
     }
 
+    .socialBarIcon svg {
+        height: 3rem;
+        width: 3rem;
+    }
+
     .coverOne {
         display: none;
     }
