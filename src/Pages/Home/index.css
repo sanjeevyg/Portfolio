@@ -113,6 +113,12 @@
     transform: translateZ(200px);
 }
 
+.socialBarIcon svg {
+    height: 2.7vw;
+    width: 2.7vw;
+}
+
+
 #socialListContainer li a:before {
     content: "";
     position: absolute;
@@ -436,10 +442,8 @@
     }
 
     .socialBarIcon {
-        max-width: 3rem;
-        max-height: 3rem;
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         margin: .5rem;
         transform: none;
     }
