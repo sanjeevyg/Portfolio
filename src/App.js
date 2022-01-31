@@ -4,10 +4,7 @@ import Project from './Pages/Project/Project.js';
 import About from './Pages/About/About.js';
 import Contact from './Pages/Contact/Contact.js';
 
-
-
 function App() {
-
   return (
     <div id="container">
         <Home />

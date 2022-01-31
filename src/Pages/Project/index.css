@@ -282,6 +282,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
     body {
         overflow: hidden;
     }
@@ -343,6 +344,7 @@ img {
         align-items: center;
         min-width: 40rem;
         margin-top: 20rem;
+        margin-left: 5rem;
         transform: translateZ(15rem);
     }
 
@@ -590,7 +592,6 @@ img {
     #websiteBtnOne, #websiteBtnTwo, #websiteBtnThree{
         justify-content: center;
     }
-
 }
 
 @media screen and (orientation:landscape) and (max-device-width: 844px)  {
