@@ -344,7 +344,6 @@ img {
         align-items: center;
         min-width: 40rem;
         margin-top: 20rem;
-        margin-left: 5rem;
         transform: translateZ(15rem);
     }
 
@@ -656,6 +655,10 @@ img {
 
     #websiteBtnOne a, #websiteBtnTwo a, #websiteBtnThree a {
         text-decoration: none;
+    }
+
+    .techContainer {
+        margin-left: 5rem;
     }
         
 }
