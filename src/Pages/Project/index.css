@@ -115,7 +115,7 @@
 } 
 
 .techContainer {
-    transform: translateZ(3rem);
+    transform: translateZ(15rem);
 }
 
 .backend a {
@@ -343,6 +343,7 @@ img {
         align-items: center;
         min-width: 40rem;
         margin-top: 20rem;
+        transform: translateZ(15rem);
     }
 
     .techInfo {
@@ -403,7 +404,6 @@ img {
     }
 
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
     
@@ -528,8 +528,8 @@ img {
 
     .watchualTinfo {
         margin-top: 5vh;
-        margin-bottom: 3vh;
-        margin-left: 14vw;
+        margin-bottom: 7vh;
+        text-align: center;
     }
 
     .dogScannerTinfo {
