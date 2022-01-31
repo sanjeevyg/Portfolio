@@ -285,16 +285,11 @@ img {
     body {
         overflow: hidden;
     }
-
-    .projectContainer {
-        background: rgb(151, 47, 47);
-    }
     
     .sectionContainer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgb(57, 47, 151);
     }
     
     .subsectionContainer {
@@ -305,42 +300,109 @@ img {
         align-items: center;
         height: 75vh;
         width: 90vw;
-        /* background: rgb(135, 151, 47); */
     }
 
     .projectTitle {
-       /* background: chartreuse; */
+        font-size: 2rem;
+        right: 5rem;
     }
     
     .card {
         position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100vw;
+        flex-direction: column-reverse;
         width: 90vw;
-        padding: min(2.5rem, 10vh);
+        min-height: 85vh;
+        padding: 5rem; 
+        justify-content: center;
+        align-items: flex-end;
+        right: 6rem;
     }
 
-    
-    .card {
-        position: relative;
-        top: 0;
+    img {
+        width: 50vw;
+    }
+
+    .appInfo h3 {
+        font-size: 3.3vw;
+        text-align: center;
+    }
+
+    .appInfo {
+        position: absolute;
+        top: 2rem;
+        left: 5rem;
+        width: 37rem;
+    }
+
+     .techContainer {
+        position: absolute;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: row-reverse;
-        transform-style: preserve-3d;
-        border-radius: 15px;
-        color: rgb(255, 255, 255);
+        min-width: 40rem;
+        margin-top: 20rem;
+    }
+
+    .techInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frontend, .backend {
+        font-size: 1.5rem;
+    }
+
+    #websiteBtnOne, #websiteBtnTwo, #websiteBtnThree {
+        margin-top: 2rem;
+    }
+
+    #websiteBtnOne button {
+        width: 9rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .watchual img {
+        width: 45vw;
+        transform: rotate(-90deg) translateY(-4rem);
+    }
     
-        width: min(70vw, 90%);
-        height: max(50vh, 60%);
-        z-index: 0;
+    .titleWatchualS {
+        transform: translateX(12rem);
+    }
+
+    .videoOneActive iframe, .videoTwoActive iframe, .videoThreeActive iframe {
+        position: absolute;
+        min-width: 100vw;
+        min-height: 85vh;
+        outline: none;
+        border: none;
+        transform: translateX(-80%) translateY(-50%) translateZ(2rem);
+        z-index: 999;
+        overflow-y: hidden;
+    }
+
+    .videoOneActive, .videoTwoActive, .videoThreeActive {
+        position: relative;
+        transform: translateX(-7rem) translateY(1rem) translateZ(9rem);
+        z-index: 300;
+    }
+        
+    .videoOneActive  .closeBtn, .videoTwoActive  .closeBtn, .videoThreeActive .closeBtn{
+        position: absolute;
+        transform: translateX(3rem) translateY(-31rem) translateZ(9rem);
     }
 
 }
-
 
 
 @media screen and (min-width: 320px) and (max-width: 640px) {

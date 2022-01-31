@@ -206,6 +206,42 @@
     font-weight: bold;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #aboutMe {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #bio {
+        font-size: 1.7rem;
+    }
+
+    #box {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 10rem;
+        border: .5px solid rgba(253, 253, 253, 0.1);
+        z-index: 1;
+    }
+
+    .iconsGroupOne, .iconsGroupTwo {
+        width: 75vw;
+    }
+
+    .iconsGroupOne div, .iconsGroupTwo div{
+        font-size: 2rem;
+    }
+    .skills {
+        font-size: 2rem;
+    }
+
+    .icon {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 640px) {
 
     #box {
