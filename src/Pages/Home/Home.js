@@ -91,7 +91,7 @@ export default function Home(props) {
                     <span><a href="#projectC">PROJECTS</a></span>
                     <span><a href="https://medium.com/@syogifse"  target="_blank" rel="noopener noreferrer">BLOGS</a></span>
                     <span><a href="#aboutC">ABOUT</a></span>
-                    <span><a href="#aboutC">TECH-SKILLS</a></span>
+                    <span><a href="https://drive.google.com/file/d/1KXRYoWOLORcmp7IyGOOKmVPnsCZfxiBl/view?usp=sharing">RESUME</a></span>
                 </div>
                 <div className={ isVisible ?"menuContainer" : "menuContainer menuNinety" }>
                     <ul className="menu">
