@@ -181,6 +181,7 @@ textarea {
         align-items: center;
         justify-content: center;
     }
+    
     textarea, .userInfo input{
         width: 30rem;
     }
@@ -191,7 +192,7 @@ textarea {
     }
 
     .contactContainer {
-        margin-right: 9rem;
+        margin-right: 15rem;
     }
 
     #closeBtn {
