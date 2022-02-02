@@ -160,7 +160,7 @@ export default function Project() {
                           <h1 className="title titleSkyGazer" ref={titleOne}>Sky G<span>a</span><span id="e">ze</span>r</h1>
                           <h3> 
                             SkyGazer exhibits solar system through animation and allows user to interact with planets. User can fetch information about different planets using search tool or simply clicking the planets. 
-                            Two third party NASA APIs have been used to feed data.
+                            Three third party APIs have been used to feed data.
                           </h3>
                           <div className="techContainer">
                             <div className="techInfo skyGazerTechInfo">
