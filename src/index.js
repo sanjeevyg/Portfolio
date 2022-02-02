@@ -106,8 +106,6 @@ const videoPopUp = (state=false, action) => {
 }
 
 
-
-
 const allReducers = combineReducers({
   homeVisibility: homeVisibility,
   projectOneVisibility: projectOneVisibility,
