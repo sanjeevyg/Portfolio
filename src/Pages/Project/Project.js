@@ -198,7 +198,7 @@ export default function Project() {
                     <div className="appInfo">
                       <h1 className="title titleDog" ref={titleTwo}>D<IoPawSharp id="paw" size={31} />g  Scanner</h1>
                       <h3> 
-                        App uses the tensorflow to identify the different breeds of dog based on uploaded photo or captured photo.
+                        App uses the tensorflow to identify the different breeds of dogs based on uploaded photo or captured photo.
                       </h3>
                       <div className="techContainer">
                         <div className="techInfo dogScannerTinfo">
@@ -238,7 +238,7 @@ export default function Project() {
                         <div id="watchDiv"><MdOutlineWatchLater id="watch" size={60}/></div>
                     </div>
                     <h3 id="projectThreeInfo"> 
-                        Watchual is a mobile shopping app for watches. User can signup, sigin and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
+                        Watchual is a mobile shopping app for watches. User can sign up, sign in and scan through varieties of watches. Watches can be selected and put in cart for payment. App also employs dark and light theme.
                     </h3>
                     <div className="techContainer">
                       <div className="techInfo watchualTinfo">
