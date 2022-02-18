@@ -36,7 +36,7 @@ export default function About() {
                     <div id="introduction"> 
                         <div id="aboutMe">About me</div>
                         <div id="bio"> 
-                        Motivated Full Stack Software Engineer with experience using backend and frontend technologies like Node.js, Rails, React and React Native. Construction and architecture background
+                        Full Stack Software Engineer with experience using backend and frontend technologies like Node.js, Rails, React and React Native. Construction and architecture background
                         with an eye for art, design and technology. <br></br> 
                         Creative and logical problem solver. Committed and responsible team player with 
                         a get-it-done, on-time, and high-quality product spirit. Able to quickly learn, adapt and master new technologies, languages, and frameworks.<br></br>
