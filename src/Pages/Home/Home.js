@@ -110,7 +110,7 @@ export default function Home(props) {
             </section>
             <section id="centralContent">
                 <div id="centralText">
-                    <p id="intro">Hello, my name is</p>
+                    <p id="intro">Hello, my name iss</p>
                     <p id="name"> Sanjeev Yogi</p>
                     <p id="introTwo"> <span> I love art, design & technology.</span></p>
                     <p className="description">| Full Stack Software Engineer |</p>
