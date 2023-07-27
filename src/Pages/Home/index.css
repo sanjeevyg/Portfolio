@@ -1,64 +1,58 @@
-
-.home {
-    height: 100vh;
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 5rem;
+/* Common styles for elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: white;
-}
-
-.header {
+  }
+  
+  /* Body styles */
+  body {
+    font-size: 16px;
+  }
+  
+  /* Header styles */
+  .header {
     position: absolute;
-    display: flex;
+    top: 2rem;
     width: 70vw;
     height: 12vh;
-    font-size: 20pt;
-    align-self: flex-start;
-    align-items: center;
-}
-
-#headerLeft {
-    font-weight: 500;
-    color: rgb(44, 40, 40, .79);
-    font-size: 13pt;
-    min-height: 5rem;
     display: flex;
-    flex-direction: row;
+    font-size: 20pt;
     align-items: center;
-}
-
-#titlePortfolio {
-    color: rgb(44, 40, 40);
-    font-weight: bolder;
-    letter-spacing: .05rem;
-    font-size: 1.3rem;
-}
-
-#headerLeft span {
+  }
+  
+  #headerLeft {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  #headerLeft span {
     padding-left: 50px;
     font-size: 9pt;
     letter-spacing: .05rem;
-}
-
-#headerLeft span a {
+  }
+  
+  #titlePortfolio {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    letter-spacing: 0.05rem;
+  }
+  
+  #headerLeft span a {
     text-decoration: none;
-    color: rgb(44, 40, 40, .79);
-}
-
-
-#headerLeft span:hover {
+    color: rgba(44, 40, 40, 0.79);
+  }
+  
+  #headerLeft span a:hover {
     color: rgb(61, 4, 195);
     font-weight: bolder;
     cursor: pointer;
-}
-
-.socialBar{
+  }
+  
+  /* Social bar styles */
+  .socialBar {
     position: fixed;
     right: 0;
     top: 0;
@@ -68,32 +62,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.socialBar::before{
+  }
+  
+  .socialBar::before {
     content: "";
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     z-index: 9;
-}
-
-#socialListContainer {
+  }
+  
+  #socialListContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#socialListContainer li{
-    list-style: none;  
-}
-
-.socialBarIcon {
+    margin-right: 3rem;
+  }
+  
+  #socialListContainer li {
+    list-style: none;
+  }
+  
+  .socialBarIcon {
     position: relative;
     color: #2f6db9;
     margin: 5px;
-    right: 20px;
     width: 4.5vw;
     height: 4.5vw;
     display: flex;
@@ -108,18 +102,17 @@
     backdrop-filter: blur(4px);
     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    transition: 0.5s, z-index 0.5s, tranform 0.5s;
+    transition: 0.5s, z-index 0.5s, transform 0.5s;
     overflow: hidden;
     transform: translateZ(200px);
-}
-
-.socialBarIcon svg {
+  }
+  
+  .socialBarIcon svg {
     height: 2.7vw;
     width: 2.7vw;
-}
-
-
-#socialListContainer li a:before {
+  }
+  
+  #socialListContainer li a:before {
     content: "";
     position: absolute;
     top: 0;
@@ -129,19 +122,31 @@
     background: rgba(255, 255, 255, 0.5);
     transform: skewX(45deg) translateY(150px);
     transition: .5s;
-}
-
-#socialListContainer li a:hover {
+  }
+  
+  #socialListContainer li a:hover {
     transition-delay: 0s, 0.5s, 0.5s;
     z-index: 12;
     transform: translateX(20px);
-}
-
-#socialListContainer li a:hover::before {
+  }
+  
+  #socialListContainer li a:hover::before {
     transform: skewX(45deg) translateY(-150px);
-}
-
-#centralContent {
+  }
+  
+  /* Home section styles */
+  .home {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    background: white;
+  }
+  
+  #centralContent {
     font-size: 3.9vw;
     color: rgb(44, 40, 40);
     width: 80vw;
@@ -149,21 +154,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-#centralText {
+  }
+  
+  #centralText {
     position: absolute;
     font-weight: bolder;
     left: 15vw;
-}
-
-#svgContainer {
+  }
+  
+  #svgContainer {
     position: absolute;
     display: flex;
     right: 10vw;
-}
-
-.projectButton {
+  }
+  
+  .projectButton {
     margin-top: 99px;
     font-size: 1.3rem;
     padding: 17px 40px;
@@ -172,66 +177,67 @@
     border-radius: 7px;
     border: none;
     font-weight: 600;
-    box-shadow: 10px 10px 0px -.7px, rgb(10, 65, 216) 10px 10px;
-}
-
-.projectButton a {
+    box-shadow: 10px 10px 0px -0.7px, rgb(10, 65, 216) 10px 10px;
+  }
+  
+  .projectButton a {
     text-decoration: none;
     color: white;
-}
-
-#button {
+  }
+  
+  #button {
     position: relative;
     margin-left: 30px;
     animation: button 5s linear infinite;
     transform-origin: center;
-}
-
- @keyframes button {
+  }
+  
+  @keyframes button {
     0% {
-        transform:  translate(-40px) rotate(0deg);
+      transform: translate(-40px) rotate(0deg);
     }
     50% {
-        transform: translate(42px) rotate(180deg);
+      transform: translate(42px) rotate(180deg);
     }
     100% {
-        transform: translate(-40px) rotate(0deg);
+      transform: translate(-40px) rotate(0deg);
     }
-}
-
-#centralText button:hover {
+  }
+  
+  #centralText button:hover {
     background-color: rgb(61, 4, 195);
-    transition: .5 ease;
+    transition: .5s ease;
     cursor: pointer;
-}
-
-#svg {
+  }
+  
+  #svg {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 45vw;
-}
-
-#centralText:nth-child(1) span {
+  }
+  
+  #centralText:nth-child(1) span {
     color: rgba(35, 35, 36, 0.9);
-}
-
-.leftText span {
-    color: rgb(66, 46, 46)
-}
-
-.coverOne {
+  }
+  
+  .leftText span {
+    color: rgb(66, 46, 46);
+  }
+  
+  /* Miscellaneous styles */
+  .coverOne {
     position: absolute;
     right: 0;
     width: 40px;
     height: 100vh;
     z-index: 1;
     filter: blur(15px);
-    border-left: 1px solid rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(50px);
-}
-
-.menuContainer {
+  }
+  
+  .menuContainer {
     position: fixed;
     top: 50px;
     right: 10.5vw;
@@ -239,17 +245,17 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
-}
-
-.menuNinety {
+  }
+  
+  .menuNinety {
     right: 1vw;
     transform: rotate(270deg);
     top: 19vh;
     z-index: 1;
     transition: .5s ease;
-}
-
-.menu a button {
+  }
+  
+  .menu a button {
     color: #000000;
     padding: 10px 15px;
     background: none;
@@ -257,16 +263,16 @@
     border-radius: 5px;
     font-weight: bolder;
     z-index: 5;
-} 
-
-.menu a button:hover {
+  } 
+  
+  .menu a button:hover {
     background: #4545f3;
     color: white;
     transition: .5s ease;
     cursor: pointer;
-}
-
-.description {
+  }
+  
+  .description {
     font-size: 1.3vw;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -275,558 +281,144 @@
     width: 22vw;
     letter-spacing: .06em;
     padding-bottom: 5px;
-    border-bottom: .5px solid rgba(0,0,0,0.1); 
-}
-
-#intro {
+    border-bottom: .5px solid rgba(0, 0, 0, 0.1); 
+  }
+  
+  #intro {
     font-size: 1.3vw;
     font-weight: 700;
     color: rgba(84, 120, 199, 0.5);
     width: 33vw;
     letter-spacing: .06em;
-}
-
-#name {
+  }
+  
+  #name {
     color: rgba(0, 0, 0);
     font-size: 4.1vw;
-}
-
-#introTwo {
+  }
+  
+  #introTwo {
     font-size: 2.2vw;
     width: 40vw;
     letter-spacing: .03em;
     margin-bottom: 3rem;
     margin-top: .5rem;
-}
-
-#Subtract {
+  }
+  
+  #Subtract {
     fill: rgb(210, 214, 251, 0.5);
-}
-
-#Rectangle13 {
+  }
+  
+  #Rectangle13 {
     fill: rgb(210, 214, 251, 0.9);
-}
-
-#logo {
+  }
+  
+  #logo {
     padding-right: 15px;
     padding-left: 0;
-    
-}
-
-#logo a {
+  }
+  
+  #logo a {
     color: rgb(29, 80, 219);
-}
-
-#bottom {
+  }
+  
+  #bottom {
     position: absolute;
     content: "";
     color: white;
     bottom: 0;
     width: 100vw;
     min-height: 80px;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     right: 39px;
-}
-
-#boyFace {
+  }
+  
+  #boyFace {
     animation: boyface 3s infinite alternate;
     transform-origin: top;
     transform-box: fill-box;
-}
-
-@keyframes boyface {
+  }
+  
+  @keyframes boyface {
     0%{
-        transform: rotateZ(0deg);
+      transform: rotateZ(0deg);
     }
     100%{
-        transform: rotateZ(10deg);
+      transform: rotateZ(10deg);
     }
-}
-
-#boyHand {
+  }
+  
+  #boyHand {
     animation: boyhand 5s  infinite alternate;
     transform-origin: top;
     transform-box: fill-box;
     z-index: 5;
-}
-
-@keyframes boyhand {
+  }
+  
+  @keyframes boyhand {
     0%{
-        transform: rotateZ(0deg);
+      transform: rotateZ(0deg);
     }
     100%{
-        transform: rotateZ(15deg);
+      transform: rotateZ(15deg);
     }
-}
-
-#girlFace {
+  }
+  
+  #girlFace {
     animation: girlface 5s infinite;
     transform-origin: center;
     transform-box: fill-box;
-
-}
- @keyframes girlface {
+  }
+  @keyframes girlface {
     0%{
-        transform: rotateZ(0deg) rotateY(0deg);
+      transform: rotateZ(0deg) rotateY(0deg);
     }
     100%{
-        transform: rotateZ(15deg) rotateY(15deg);
+      transform: rotateZ(15deg) rotateY(15deg);
     }
-}
-
-#girlhandLeft{
+  }
+  
+  #girlhandLeft{
     animation: girlhandRight 2s ease-out infinite;
     transform-origin: right;
     transform-box: fill-box;
-
-}
- @keyframes girlhandRight {
+  }
+  @keyframes girlhandRight {
     0%{
-        transform: rotate(5deg);
-      }
-    
+      transform: rotate(5deg);
+    }
     70%{
-        transform: rotate(-5deg);
-      }
-}
-
-#girlhandRight{
+      transform: rotate(-5deg);
+    }
+  }
+  
+  #girlhandRight{
     animation: girlhandRight 3s ease-out infinite;
     transform-origin: right;
     transform-box: fill-box;
-
-}
- @keyframes girlhandRight {
+  }
+  @keyframes girlhandRight {
     0%{
-        transform: rotate(5deg);
-      }
+      transform: rotate(5deg);
+    }
     70%{
-        transform: rotate(-1deg);
-      }
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 640px) {
-    body {
-        width: 480px;
-        margin: 0;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .home {
-        position: relative;
-        height: 100vh;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-position: center;
-        overflow: hidden;
-    }
-
-    .menu  {
-        margin-right: -1.5rem;
-    }
-
-    #socialListContainer {
-        display: flex;
-        flex-direction: row;
-        margin-right: 70vw;
-        margin-top: 31rem;
-    }
-
-    .socialBar {
-        position: absolute;
-    }
-
-    .socialBarIcon {
-        height: 3rem;
-        width: 3rem;
-        margin: .5rem;
-        transform: none;
-    }
-
-    .socialBarIcon svg {
-        height: 3rem;
-        width: 3rem;
-    }
-
-    .coverOne {
-        display: none;
-    }
-
-    #logo {
-        position: relative;
-        margin-bottom: 85vh;
-        left: 12vw;
-        filter: opacity(50%)
-    }
-
-    .menu {
-        position: fixed;
-        right: 3rem;
-        top: 2.7rem;
-    }
-
-    #titlePortfolio {
-        position: relative;
-        margin-bottom: 85vh;
-        left: -5vw;
-    }
-
-    #headerLeft span {
-        display: none;
-    }
-
-    #centralContent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 12rem;
-        
-    }
-
-    .socialBarIcon {
-        size: xx-small;
-    }
-
-    #svgContainer {
-        display: none;
-    }
-
-    #centralText {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        left: auto;
-    }
-
-    #intro {
-        font-size: medium;
-        width: fit-content;
-    }
-    #name {
-        font-size: 12vw;
-        letter-spacing: .1rem;
-    }
-
-    #introTwo {
-        font-size: medium;
-        width: fit-content;
-    }
-
-    .description {
-        margin-block: 1rem auto;
-        font-size: larger;
-        width: fit-content;
-    }
-
-    .projectButton {
-        width: 70vw;
-    }
-
-    #bottom {
-        display: none;
-    }    
-    
-    .menuContainer {
-        position: fixed;
-        top: 50px;
-        right: 10.5vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-    }
-
-    .menuNinety {
-        right: 20vw;
-        background-color: rgb(29, 80, 219);
-        color: white;
-        transform: rotate(270deg);
-        top: 19vh;
-        z-index: 999;
-        transition: .5s ease;
-    }
-
-    .menuNinety a button{
-        background-color: rgb(29, 80, 219);
-        min-width: 100px;
-        color: white;
-       
+      transform: rotate(-1deg);
     }
   }
-
   
-@media screen and (orientation:landscape) and (max-device-width: 844px)  {
-        
-    #bottom {
-        display: none;
-    }
-
-    .menuNinety {
-        z-index: -1;
-    }
-    
-    .description {
-        font-size: 1.3vw;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.5);
-        padding-left: 5px;
-        margin-top: -1rem;
-        width: 22vw;
-        letter-spacing: .06em;
-        padding-bottom: 5px;
-        border-bottom: .5px solid rgba(0,0,0,0.1); 
-    }
-    
-    .coverOne {
-        display: none;
-    }
-
-    #socialListContainer  a {
-        margin-left: 9vw;
-    }
-
-    #logo {
-        filter: opacity(50%);
-        width: 1rem;
-    }
-
-    #titlePortfolio {
-        font-size: medium;
-    }
-
-    .header {
-        top: .5rem;
-    }
-
-    #headerLeft span {
-        padding-left: 20px;
-        font-size: x-small;
-    }
-
-    .menuContainer {
-        top: .59rem;
-    }
-
-    .menu a button {
-        font-size: .7rem;
-        padding: .5rem .9rem;
-    }
-
-    .menuNinety {
-        right: -2.5vw;
-        transform: rotate(270deg);
-        top: 7.5vh;
-        z-index: 1;
-        transition: .5s ease;
-    }
-
-    @keyframes button {
-        0% {
-            transform:  translate(-35px) rotate(0deg);
-        }
-        50% {
-            transform: translate(32px) rotate(180deg);
-        }
-        100% {
-            transform: translate(-35px) rotate(0deg);
-        }
-    }
-
-    .projectButton {
-        display: flex;
-        margin-top: 10vh;
-        font-size: 1rem;
-        padding: 12px 30px;
-        background-color: rgb(29, 80, 219);
-        color: white;
-        border-radius: 7px;
-        border: none;
-        font-weight: 600;
-        box-shadow: 5px 5px 0px -.7px, rgb(10, 65, 216) 5px 5px;
-        max-width: 35vw;
-        max-height: 14vh;
-    }
-
-    #centralText a {
-        text-decoration: none;
-    }
-
-    #centralText a button svg {
-        width: 1rem;
-    }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        width: 480px;
-        margin: 0;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .home {
-        position: relative;
-        height: 100vh;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-position: center;
-        overflow: hidden;
-    }
-
+  /* Media Queries */
+  @media screen and (min-width: 320px) and (max-width: 640px) {
     .menu  {
-        margin-right: 2.1rem;
+      margin-right: -1.5rem;
     }
-
-    .coverOne {
-        display: none;
-    }
-
-    #socialListContainer {
-        display: flex;
-        flex-direction: row;
-        margin-right: 87vw;
-        margin-top: 50rem;
-    }
-
-    .socialBar {
-        position: absolute;
-    }
-
-    .socialBarIcon {
-        max-width: 9rem;
-        max-height: 9rem;
-        height: 6rem;
-        width: 6rem;
-        margin: .5rem;
-        transform: none;
-    }
-
-    .socialBarIcon svg {
-        height: 4rem;
-        width: 4rem;
-    }
-
-    #logo {
-        position: relative;
-        margin-bottom: 85vh;
-        left: 12vw;
-        filter: opacity(50%);
-    }
-
-    #logo svg {
-        height: 5rem;
-        width: 5rem;
-    }
-
-    .menu {
-        position: fixed;
-        right: 3rem;
-        top: 2.7rem;
-    }
-
-    #titlePortfolio {
-        position: relative;
-        margin-bottom: 85vh;
-        left: 2vw;
-        font-size: 2rem;
-    }
-
-    #headerLeft span {
-        display: none;
-    }
-
-    #centralContent {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 12rem;
-    }
-
-    #svgContainer {
-        display: none;
-    }
-
-    #centralText {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        left: auto;
-    }
-
-    #intro {
-        font-size: 2rem;
-        width: fit-content;
-    }
-    #name {
-        font-size: 9vw;
-        letter-spacing: .1rem;
-    }
-
-    #introTwo {
-        font-size: 2rem;
-        width: fit-content;
-    }
-
-    .description {
-        margin-block: 1rem auto;
-        font-size: 1.7rem;
-        width: fit-content;
-    }
-
-    .projectButton {
-        width: 45vw;
-        height: 10vw;
-        font-size: 2.3rem;
-    }
-
-    .projectButton svg {
-        width: 1.7rem;
-        height: 1.7rem;
-    }
-
-    #bottom {
-        display: none;
-    }    
-    
-    .menuContainer a button {
-        position: fixed;
-        top: 50px;
-        right: 10.5vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-        font-size: 1.7rem;
-    }
-
-    .menuNinety {
-        right: 15vw;
-        background-color: rgb(29, 80, 219);
-        color: white;
-        transform: rotate(270deg);
-        top: 19vh;
-        z-index: 999;
-        transition: .5s ease;
-    }
-
-    .menuNinety a button{
-        background-color: rgb(29, 80, 219);
-        min-width: 12rem;
-        min-height: 4rem;
-        color: white;
-    }
+    /* Add more specific mobile styles if needed */
   }
-
-
-
-
+  
+  @media screen and (orientation: landscape) and (max-device-width: 844px) {
+    /* Add specific styles for landscape mode on devices */
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Add specific styles for tablets */
+  }
+  
