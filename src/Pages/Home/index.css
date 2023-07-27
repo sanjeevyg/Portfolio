@@ -407,9 +407,76 @@
   
   /* Media Queries */
   @media screen and (min-width: 320px) and (max-width: 640px) {
-    .menu  {
-      margin-right: -1.5rem;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    .menuContainer {
+        position: absolute;
+        top: 6rem;
+        right: 5.3rem;
+        width: 5rem;
+        height: 20px;
+        font-size: x-small;
+    }
+
+    .menu a button {
+        padding: 5px 5px;
+    }
+
+    .description {
+        font-size: xx-small;
+        font-weight: 400;
+        margin-top: 30px;
+        width: 40vw;
+    }
+    
+    #svgContainer,  #headerLeft span{
+        display: none;
+    }
+    #centralText {
+        display: flex;
+        position: absolute;
+        font-weight: bolder;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #intro {
+        text-align: center;
+        font-size: x-small;
+    }
+    #name {
+        font-size: xxx-large;
+    }
+    #introTwo {
+        text-align: center;
+        font-size: larger;
+    }
+
+    #socialListContainer {
+        display: none;
+    }
+
+    .techInfo {
+        margin-top: 2rem;
+        margin-bottom: 8vh;
+    }
+
+    .card {
+        min-width: 90vw !important;
+        min-height: 80vh;
+    }
+    .titleSkyGazer {
+        margin-left: 6rem;
+    }
+    
+
+
   }
   
   @media screen and (orientation: landscape) and (max-device-width: 844px) {
